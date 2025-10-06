@@ -1,30 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Google Drive Video Embed</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      background-color: #f0f0f0;
-      padding-top: 50px;
-    }
-    iframe {
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Engineering Cohort</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Watch Video (Fullscreen Supported)</h1>
-  <iframe
-    src="https://drive.google.com/file/d/1cgC0W8kqZlxtSC0AtdKDs0gQTrxhNjCw/view?usp=sharing"
-    width="800"
-    height="480"
-    allow="autoplay; fullscreen"
-    allowfullscreen>
-  </iframe>
+  <header>
+    <h1>📊 Data Engineering Cohort</h1>
+  </header>
+
+  <main>
+    <div class="category-grid">
+
+      <!-- SQL -->
+      <a href="sql.html" class="category-card">
+        <img src="images/sql.jpg" alt="SQL" class="card-thumbnail">
+        <div class="card-content">
+          <div class="card-title">SQL</div>
+          <div class="card-description">
+            Master SQL fundamentals — from SELECT statements to window functions for analytics.
+          </div>
+          <div class="card-footer">View Courses</div>
+        </div>
+      </a>
+
+      <!-- Data Modelling -->
+      <a href="data_modelling.html" class="category-card">
+        <img src="images/data_modelling.jpg" alt="Data Modelling" class="card-thumbnail">
+        <div class="card-content">
+          <div class="card-title">Data Modelling</div>
+          <div class="card-description">
+            Learn how to design scalable and efficient data models for analytics and storage.
+          </div>
+          <div class="card-footer">View Courses</div>
+        </div>
+      </a>
+
+      <!-- PySpark -->
+      <a href="pyspark.html" class="category-card">
+        <img src="images/pyspark.jpg" alt="PySpark" class="card-thumbnail">
+        <div class="card-content">
+          <div class="card-title">PySpark</div>
+          <div class="card-description">
+            Build and optimize distributed data pipelines using Apache Spark with Python.
+          </div>
+          <div class="card-footer">View Courses</div>
+        </div>
+      </a>
+
+      <!-- Databricks -->
+      <a href="databricks.html" class="category-card">
+        <img src="images/databricks.jpg" alt="Databricks" class="card-thumbnail">
+        <div class="card-content">
+          <div class="card-title">Databricks</div>
+          <div class="card-description">
+            Get hands-on with Databricks Lakehouse — workflows, Delta, and ML integrations.
+          </div>
+          <div class="card-footer">View Courses</div>
+        </div>
+      </a>
+
+      <!-- Azure Data Factory -->
+      <a href="azure_data_factory.html" class="category-card">
+        <img src="images/adf.jpg" alt="Azure Data Factory" class="card-thumbnail">
+        <div class="card-content">
+          <div class="card-title">Azure Data Factory</div>
+          <div class="card-description">
+            Learn how to orchestrate and automate ETL pipelines on Azure using ADF.
+          </div>
+          <div class="card-footer">View Courses</div>
+        </div>
+      </a>
+
+    </div>
+  </main>
 </body>
 </html>
