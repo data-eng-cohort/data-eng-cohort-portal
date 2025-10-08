@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning Portal | Data Engineering Cohort</title>
+  <style>
+    /* GLOBAL */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #333;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: linear-gradient(135deg, #00b894, #00a36c);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      font-size: 18px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    nav .logo {
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      font-size: 20px;
+    }
+
+    nav .logout {
+      background: #fff;
+      color: #00a36c;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 163, 108, 0.2);
+    }
+
+    nav .logout:hover {
+      background: #e9f9f3;
+      transform: scale(1.05);
+    }
+
+    /* MAIN CONTENT */
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #00a36c;
+      text-align: center;
+    }
+
+    /* MODULE GRID */
+    .module-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .module-card {
+      background: white;
+      border-radius: 14px;
+      border: 1.5px solid #e0e0e0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      padding: 30px 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .module-card:hover {
+      transform: translateY(-4px);
+      border-color: #00a36c;
+      box-shadow: 0 8px 20px rgba(0, 163, 108, 0.1);
+    }
+
+    .module-card h3 {
+      font-size: 20px;
+      color: #00a36c;
+      margin-bottom: 8px;
+    }
+
+    /* VIDEO GRID */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .video-card {
+      background: white;
+      border-radius: 14px;
+      border: 1.5px solid #e0e0e0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .video-card:hover {
+      transform: translateY(-4px);
+      border-color: #00a36c;
+      box-shadow: 0 8px 20px rgba(0, 163, 108, 0.1);
+    }
+
+    .video-card h4 {
+      font-size: 18px;
+      color: #111;
+      margin-bottom: 10px;
+    }
+
+    .video-card p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .play-btn {
+      background: #00a36c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .play-btn:hover {
+      background: #008f6c;
+      transform: scale(1.05);
+    }
+
+    iframe {
+      width: 100%;
+      height: 240px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 15px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-bottom: 25px;
+      color: #00a36c;
+      font-weight: 500;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .back-btn:hover {
+      color: #008f6c;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">Data Engineering Cohort</div>
+    <button class="logout" onclick="logout()">Logout</button>
+  </nav>
+
+  <div class="container">
+    <h2>Welcome, <span id="user-name"></span> 👋</h2>
+    <div id="module-section">
+      <div id="module-grid" class="module-grid"></div>
+    </div>
+
+    <div id="video-section" style="display: none;">
+      <span class="back-btn" onclick="showModules()">← Back to Modules</span>
+      <h2 id="module-title"></h2>
+      <div id="video-grid" class="video-grid"></div>
+    </div>
+  </div>
+
+  <script>
+    async function loadPortal() {
+      const userId = localStorage.getItem("user_id");
+      const userName = localStorage.getItem("user_name");
+      if (!userId) return (window.location.href = "index.html");
+
+      document.getElementById("user-name").innerText = userName;
+
+      const response = await fetch("data.json");
+      const data = await response.json();
+
+      const user = data.users.find((u) => u.user_id == userId);
+      const userModules = data.modules.filter((m) =>
+        user.modules.includes(m.module_id)
+      );
+
+      const moduleGrid = document.getElementById("module-grid");
+      moduleGrid.innerHTML = "";
+
+      userModules.forEach((m) => {
+        const card = document.createElement("div");
+        card.className = "module-card";
+        card.innerHTML = `<h3>${m.module_name}</h3>`;
+        card.onclick = () => loadVideosForModule(m.module_id, m.module_name, data, user);
+        moduleGrid.appendChild(card);
+      });
+    }
+
+    function loadVideosForModule(moduleId, moduleName, data, user) {
+      document.getElementById("module-section").style.display = "none";
+      document.getElementById("video-section").style.display = "block";
+      document.getElementById("module-title").innerText = moduleName + " Videos";
+
+      const videos = data.videos.filter(
+        (v) => v.module_id === moduleId && user.videos.includes(v.video_id)
+      );
+
+      const videoGrid = document.getElementById("video-grid");
+      videoGrid.innerHTML = "";
+
+      videos.forEach((v) => {
+        const card = document.createElement("div");
+        card.className = "video-card";
+        card.innerHTML = `
+          <h4>${v.title}</h4>
+          <p>${v.description}</p>
+          <button class="play-btn" onclick="playVideo('${v.drive_file_id}')">Play Video</button>
+          <div class="player" style="display:none;">
+            <iframe src="https://drive.google.com/file/d/${v.drive_file_id}/view?usp=sharing" allowfullscreen></iframe>
+          </div>`;
+        videoGrid.appendChild(card);
+      });
+    }
+
+    function playVideo(fileId) {
+        const url = `https://drive.google.com/file/d/${fileId}/preview`;
+        window.open(url, "_blank");
+    }
+
+
+    function showModules() {
+      document.getElementById("video-section").style.display = "none";
+      document.getElementById("module-section").style.display = "block";
+    }
+
+    function logout() {
+      localStorage.clear();
+      window.location.href = "index.html";
+    }
+
+    loadPortal();
+  </script>
+</body>
+</html>
+
