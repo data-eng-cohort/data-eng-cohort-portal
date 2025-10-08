@@ -14,7 +14,7 @@
       "password": "Test123",
       "name": "Test User",
       "modules": [1],
-      "videos": [1]
+      "videos": []
     }
   ],
   "modules": [
