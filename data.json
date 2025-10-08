@@ -13,8 +13,8 @@
       "email": "abiraminarayanan98@gmail.com",
       "password": "Test123",
       "name": "Test User",
-      "modules": [],
-      "videos": []
+      "modules": [1],
+      "videos": [1]
     }
   ],
   "modules": [
