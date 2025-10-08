@@ -7,6 +7,14 @@
       "name": "Test User",
       "modules": [1, 2],
       "videos": [1, 2, 3, 4]
+    },
+    {
+      "user_id": 2,
+      "email": "abiraminarayanan98@gmail.com",
+      "password": "Test123",
+      "name": "Test User",
+      "modules": [],
+      "videos": []
     }
   ],
   "modules": [
