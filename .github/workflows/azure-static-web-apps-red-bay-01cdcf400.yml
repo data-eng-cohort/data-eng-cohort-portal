@@ -20,3 +20,5 @@ jobs:
           app_location: "/"            # Folder with your HTML files
           output_location: "/"         # No build output, so same folder
           skip_app_build: true         # 👈 Tells Azure not to build
+          skip_deploy_on_missing_secrets: true
+
