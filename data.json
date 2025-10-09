@@ -67,8 +67,8 @@
       },
       
     {
-      "video_id": 1,
-      "module_id": 2,
+      "video_id": 2,
+      "module_id": 1,
       "title": "Building an Effective Data Pipeline Architecture 🚀",
       "description": "Learn about the overview of data pipeline and the high level architecture",
       "drive_file_id": "1hXurw4A5PmXGibKlqIggUM43G00ngCUF"
