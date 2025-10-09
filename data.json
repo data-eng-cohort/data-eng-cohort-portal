@@ -14,15 +14,15 @@
       "password": "Sourabh@123",
       "name": "Sourabh Joshi",
       "modules": [1],
-      "videos": [1]
+      "videos": [1,2]
     },
     {
       "user_id": 3,
       "email": "kiruthikasrinivasan@gmail.com",
       "password": "Test123",
       "name": "Kiruthika Srinivasan",
-      "modules": [1,2,3,4],
-      "videos": [1,2,3,4]
+      "modules": [1],
+      "videos": [1,2]
     },
     {
       "user_id": 4,
@@ -30,7 +30,7 @@
       "password": "Pradeep@123",
       "name": "Pradeep Selvam",
       "modules": [1],
-      "videos": [1]
+      "videos": [1,2]
     },
     {
       "user_id": 5,
@@ -38,7 +38,7 @@
       "password": "Vishnu@123",
       "name": "Vishnu Priya",
       "modules": [1],
-      "videos": [1]
+      "videos": [1,2]
     },
     {
       "user_id": 6,
@@ -46,13 +46,13 @@
       "password": "Deepika@123",
       "name": "Deepika Sekar",
       "modules": [1],
-      "videos": [1]
+      "videos": [1,2]
     }
 
     
   ],
   "modules": [
-    { "module_id": 1, "module_name": "SQL" },
+    { "module_id": 1, "module_name": "Data Engineering World" },
     { "module_id": 2, "module_name": "Data Modelling" },
     { "module_id": 3, "module_name": "Pyspark" },
     { "module_id": 4, "module_name": "Azure Cloud" }
@@ -62,30 +62,16 @@
       "video_id": 1,
       "module_id": 1,
       "title": "Introduction to Data Engineering",
-      "description": "Deep Dive into Data Engineering World",
-      "drive_file_id": "1QWdqt5QPVr11B-Vbizf8VnLeOkFz9oV5"
+      "description": "Introduction to Data Engineering Roles, Responsibilities, and Insights",
+      "drive_file_id": "10mwHgFD_WrPFFVoNnW2kb2WPTPwCNZo_"
       },
       
     {
-      "video_id": 2,
-      "module_id": 1,
-      "title": "Filtering Data",
-      "description": "Learn WHERE and LIKE conditions in SQL",
-      "drive_file_id": "1BBB111BBBBB"
-    },
-    {
-      "video_id": 3,
-      "module_id": 1,
-      "title": "Joins in SQL",
-      "description": "Inner, Left, Right Joins explained visually",
-      "drive_file_id": "1CCC111CCCCC"
-    },
-    {
-      "video_id": 4,
+      "video_id": 1,
       "module_id": 2,
-      "title": "PySpark DataFrames",
-      "description": "Understanding DataFrames and Transformations",
-      "drive_file_id": "1DDD111DDDDD"
+      "title": "Building an Effective Data Pipeline Architecture 🚀",
+      "description": "Learn about the overview of data pipeline and the high level architecture",
+      "drive_file_id": "1hXurw4A5PmXGibKlqIggUM43G00ngCUF"
     }
   ]
 }
