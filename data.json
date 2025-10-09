@@ -4,9 +4,9 @@
       "user_id": 1,
       "email": "sridharsundarrajande@gmail.com",
       "password": "@1Strongpasswo",
-      "name": "Sridhar Sundarajan",
+      "name": "Sridhar Sundarrajan",
       "modules": [1],
-      "videos": [1]
+      "videos": [1,2,3,4]
     },
     {
       "user_id": 2,
@@ -14,7 +14,7 @@
       "password": "Sourabh@123",
       "name": "Sourabh Joshi",
       "modules": [1],
-      "videos": [1]
+      "videos": [1,2]
     },
     {
       "user_id": 3,
@@ -22,7 +22,7 @@
       "password": "Test123",
       "name": "Kiruthika Srinivasan",
       "modules": [1],
-      "videos": [1]
+      "videos": [1,2]
     },
     {
       "user_id": 4,
@@ -30,7 +30,7 @@
       "password": "Pradeep@123",
       "name": "Pradeep Selvam",
       "modules": [1],
-      "videos": [1]
+      "videos": [1,2]
     },
     {
       "user_id": 5,
@@ -38,7 +38,7 @@
       "password": "Vishnu@123",
       "name": "Vishnu Priya",
       "modules": [1],
-      "videos": [1]
+      "videos": [1,2]
     },
     {
       "user_id": 6,
@@ -46,13 +46,13 @@
       "password": "Deepika@123",
       "name": "Deepika Sekar",
       "modules": [1],
-      "videos": [1]
+      "videos": [1,2]
     }
 
     
   ],
   "modules": [
-    { "module_id": 1, "module_name": "Data Engineering World" },
+    { "module_id": 1, "module_name": "Fundamentals of Data Engineering"},
     { "module_id": 2, "module_name": "Data Modelling" },
     { "module_id": 3, "module_name": "Pyspark" },
     { "module_id": 4, "module_name": "Azure Cloud" }
@@ -63,7 +63,8 @@
       "module_id": 1,
       "title": "Introduction to Data Engineering",
       "description": "Introduction to Data Engineering Roles, Responsibilities, and Insights",
-      "drive_file_id": "10mwHgFD_WrPFFVoNnW2kb2WPTPwCNZo_"
+      "drive_file_id": "10mwHgFD_WrPFFVoNnW2kb2WPTPwCNZo_",
+      "resource_id":""
       },
       
     {
@@ -71,7 +72,24 @@
       "module_id": 1,
       "title": "Building an Effective Data Pipeline Architecture 🚀",
       "description": "Learn about the overview of data pipeline and the high level architecture",
-      "drive_file_id": "1hXurw4A5PmXGibKlqIggUM43G00ngCUF"
+      "drive_file_id": "1hXurw4A5PmXGibKlqIggUM43G00ngCUF",
+      "resource_id":""
+    },
+    {
+      "video_id": 3,
+      "module_id": 1,
+      "title": "Setting Up SQL Workspace in Databricks Free Edition",
+      "description": "Create a Free Account in Databricks portal and load the input csv file attached in the resource section.",
+      "drive_file_id": "1DVZSm-f4SuJRjKli2ShWTOIRRL3uutw_",
+      "resource_id":"1wGmFN1xVxZYdntserquZrurF2z545E-m"
+    },
+    {
+      "video_id": 4,
+      "module_id": 1,
+      "title": "Introduction to SQL Querying in Databricks Free Edition 📊",
+      "description": "Understand the data, data types in the table, table creation methods.",
+      "drive_file_id": "1DVZSm-1Och443jCUCxel9kD08nNQ2hDNcoXDFiP",
+      "resource_id":"1wGmFN1xVxZYdntserquZrurF2z545E-m"
     }
   ]
 }

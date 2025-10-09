@@ -18,6 +18,28 @@
       color: #333;
     }
 
+
+    .play-btn, .download-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.download-btn {
+  background-color: #28a745;
+}
+
+.play-btn:hover, .download-btn:hover {
+  opacity: 0.85;
+}
+
+
     /* NAVBAR */
     nav {
       background: linear-gradient(135deg, #00b894, #00a36c);
@@ -223,7 +245,7 @@
     function loadVideosForModule(moduleId, moduleName, data, user) {
       document.getElementById("module-section").style.display = "none";
       document.getElementById("video-section").style.display = "block";
-      document.getElementById("module-title").innerText = moduleName + " Videos";
+      // document.getElementById("module-title").innerText = moduleName + " Videos";
 
       const videos = data.videos.filter(
         (v) => v.module_id === moduleId && user.videos.includes(v.video_id)
@@ -232,20 +254,67 @@
       const videoGrid = document.getElementById("video-grid");
       videoGrid.innerHTML = "";
 
-      videos.forEach((v) => {
-        const card = document.createElement("div");
-        card.className = "video-card";
-        card.innerHTML = `
-          <h4>${v.title}</h4>
-          <p>${v.description}</p>
-          <button class="play-btn" onclick="playVideo('${v.drive_file_id}')">Play Video</button>
-          <div class="player" style="display:none;">
-            <iframe src="https://drive.google.com/file/d/${v.drive_file_id}/view?usp=sharing" allowfullscreen></iframe>
-          </div>`;
-        videoGrid.appendChild(card);
-      });
+      // videos.forEach((v) => {
+      //   const card = document.createElement("div");
+      //   card.className = "video-card";
+      //   card.innerHTML = `
+      //     <h4>${v.title}</h4>
+      //     <p>${v.description}</p>
+      //     <button class="play-btn" onclick="playVideo('${v.drive_file_id}')">Play Video</button>
+      //     <br>
+      //     <a href="https://drive.google.com/uc?export=download&id=${v.resource_id}" target="_blank" class="download-btn">
+      //       📦 Download Resources
+      //     </a>
+          
+      //     <div class="player" style="display:none;">
+      //       <iframe src="https://drive.google.com/file/d/${v.drive_file_id}/view?usp=sharing" allowfullscreen></iframe>
+      //     </div>`;
+      //   videoGrid.appendChild(card);
+      // });
+
+        videos.forEach((v) => {
+    const card = document.createElement("div");
+    card.className = "video-card";
+
+    // base structure
+    let html = `
+      <h4>${v.title}</h4>
+      <p>${v.description}</p>
+      <button class="play-btn" onclick="playVideo('${v.drive_file_id}')">Play Video</button>
+    `;
+
+    // ✅ Add download link on next line if resource_id exists
+    if (v.resource_id && v.resource_id.trim() !== "") {
+      html += `
+        <br>
+        <a 
+          href="https://drive.google.com/uc?export=download&id=${v.resource_id}" 
+          target="_blank" 
+          class="download-btn"
+        >
+          📦 Download Resources
+        </a>
+      `;
     }
 
+    // player iframe
+    html += `
+      <div class="player" style="display:none;">
+        <iframe 
+          src="https://drive.google.com/file/d/${v.drive_file_id}/view?usp=sharing" 
+          allowfullscreen
+        ></iframe>
+      </div>
+    `;
+
+    // set inner HTML
+    card.innerHTML = html;
+    videoGrid.appendChild(card);
+  });
+
+    }
+
+    https://drive.google.com/file/d/1PXSfkqN3TSb8el375VV532_aZDXQSq95/view?usp=sharing
     function playVideo(fileId) {
         const url = `https://drive.google.com/file/d/${fileId}/preview`;
         window.open(url, "_blank");
