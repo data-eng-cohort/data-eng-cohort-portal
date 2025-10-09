@@ -12,14 +12,24 @@
       "user_id": 2,
       "email": "abiraminarayanan98@gmail.com",
       "password": "Test123",
-      "name": "Test User",
+      "name": "Abirami Narayanan",
       "modules": [1],
       "videos": []
+    },
+    {
+      "user_id": 3,
+      "email": "kiruthikasrinivasan@gmail.com",
+      "password": "Test123",
+      "name": "Kiruthika Srinivasan",
+      "modules": [1,2,3,4],
+      "videos": [1,2,3,4]
     }
   ],
   "modules": [
     { "module_id": 1, "module_name": "SQL" },
-    { "module_id": 2, "module_name": "PySpark" }
+    { "module_id": 2, "module_name": "Data Modelling" },
+    { "module_id": 3, "module_name": "Pyspark" },
+    { "module_id": 4, "module_name": "Azure Cloud" }
   ],
   "videos": [
     {
