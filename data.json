@@ -14,7 +14,7 @@
       "password": "Sourabh@123",
       "name": "Sourabh Joshi",
       "modules": [1],
-      "videos": [1,2]
+      "videos": [1]
     },
     {
       "user_id": 3,
@@ -22,7 +22,7 @@
       "password": "Test123",
       "name": "Kiruthika Srinivasan",
       "modules": [1],
-      "videos": [1,2]
+      "videos": [1]
     },
     {
       "user_id": 4,
@@ -30,7 +30,7 @@
       "password": "Pradeep@123",
       "name": "Pradeep Selvam",
       "modules": [1],
-      "videos": [1,2]
+      "videos": [1]
     },
     {
       "user_id": 5,
@@ -38,7 +38,7 @@
       "password": "Vishnu@123",
       "name": "Vishnu Priya",
       "modules": [1],
-      "videos": [1,2]
+      "videos": [1]
     },
     {
       "user_id": 6,
@@ -46,7 +46,7 @@
       "password": "Deepika@123",
       "name": "Deepika Sekar",
       "modules": [1],
-      "videos": [1,2]
+      "videos": [1]
     }
 
     
