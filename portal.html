@@ -5,40 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Learning Portal | Data Engineering Cohort</title>
   <style>
-    /* GLOBAL */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
-
-    body {
-      background: #f4f7fb;
-      color: #333;
-    }
-
-
-    .play-btn, .download-btn {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 8px 12px;
-  background-color: #0078d7;
-  color: white;
-  border: none;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.download-btn {
-  background-color: #28a745;
-}
-
-.play-btn:hover, .download-btn:hover {
-  opacity: 0.85;
-}
-
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+    body { background: #f4f7fb; color: #333; }
 
     /* NAVBAR */
     nav {
@@ -49,148 +17,97 @@
       align-items: center;
       padding: 15px 40px;
       font-size: 18px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-
-    nav .logo {
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      font-size: 20px;
-    }
-
+    nav .logo { font-weight: 600; font-size: 20px; }
     nav .logout {
-      background: #fff;
-      color: #00a36c;
-      border: none;
-      padding: 8px 18px;
-      border-radius: 6px;
-      font-weight: 500;
-      cursor: pointer;
+      background: #fff; color: #00a36c; border: none;
+      padding: 8px 18px; border-radius: 6px;
+      font-weight: 500; cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,163,108,0.2);
       transition: all 0.3s ease;
-      box-shadow: 0 2px 8px rgba(0, 163, 108, 0.2);
     }
+    nav .logout:hover { background: #e9f9f3; transform: scale(1.05); }
 
-    nav .logout:hover {
-      background: #e9f9f3;
-      transform: scale(1.05);
-    }
+    /* MAIN CONTAINER */
+    .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+    h2 { color: #00a36c; text-align: center; margin-bottom: 30px; font-weight: 600; }
 
-    /* MAIN CONTENT */
-    .container {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      color: #00a36c;
-      text-align: center;
-    }
-
-    /* MODULE GRID */
-    .module-grid {
+    /* GRID */
+    .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: 25px;
-      margin-top: 30px;
+      justify-items: center;
     }
 
+    /* MODULE CARD (smaller & square) */
     .module-card {
       background: white;
-      border-radius: 14px;
+      border-radius: 12px;
       border: 1.5px solid #e0e0e0;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      padding: 30px 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+      width: 100%;
+      height: 140px;               /* smaller height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: #00a36c;
+      font-weight: 600;
       text-align: center;
       cursor: pointer;
       transition: all 0.3s ease;
     }
-
     .module-card:hover {
       transform: translateY(-4px);
       border-color: #00a36c;
-      box-shadow: 0 8px 20px rgba(0, 163, 108, 0.1);
+      box-shadow: 0 6px 15px rgba(0,163,108,0.15);
     }
 
-    .module-card h3 {
-      font-size: 20px;
-      color: #00a36c;
-      margin-bottom: 8px;
-    }
-
-    /* VIDEO GRID */
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 25px;
-      margin-top: 30px;
-    }
-
+    /* VIDEO CARD */
     .video-card {
       background: white;
-      border-radius: 14px;
+      border-radius: 12px;
       border: 1.5px solid #e0e0e0;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
       padding: 20px;
       text-align: center;
       transition: all 0.3s ease;
+      width: 100%;
     }
+    .video-card:hover { transform: translateY(-4px); border-color: #00a36c; }
+    .video-card h4 { font-size: 16px; color: #111; margin-bottom: 6px; }
+    .video-card p { color: #555; font-size: 13px; margin-bottom: 12px; }
 
-    .video-card:hover {
-      transform: translateY(-4px);
-      border-color: #00a36c;
-      box-shadow: 0 8px 20px rgba(0, 163, 108, 0.1);
-    }
-
-    .video-card h4 {
-      font-size: 18px;
-      color: #111;
-      margin-bottom: 10px;
-    }
-
-    .video-card p {
-      color: #666;
-      font-size: 14px;
-      margin-bottom: 15px;
-    }
-
-    .play-btn {
-      background: #00a36c;
+    /* BUTTONS */
+    .play-btn, .download-btn, .home-btn {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 8px 20px;
       color: white;
       border: none;
-      border-radius: 8px;
-      padding: 10px 16px;
-      font-size: 14px;
-      cursor: pointer;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
       transition: all 0.3s ease;
     }
-
-    .play-btn:hover {
-      background: #008f6c;
-      transform: scale(1.05);
-    }
-
-    iframe {
-      width: 100%;
-      height: 240px;
-      border: none;
-      border-radius: 10px;
-      margin-top: 15px;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    .back-btn {
-      display: inline-block;
+    .play-btn { background-color: #0078d7; }
+    .download-btn { background-color: #28a745; margin-left: 4px; }
+    .home-btn {
+      background: linear-gradient(135deg, #00b894, #00a36c);
       margin-bottom: 25px;
-      color: #00a36c;
-      font-weight: 500;
-      cursor: pointer;
-      transition: color 0.3s ease;
     }
+    .play-btn:hover, .download-btn:hover, .home-btn:hover { opacity: 0.9; transform: scale(1.03); }
 
-    .back-btn:hover {
-      color: #008f6c;
+    /* RESPONSIVE */
+    @media (max-width: 1024px) { .grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); } }
+    @media (max-width: 768px)  { .grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); } }
+    @media (max-width: 480px)  {
+      .grid { grid-template-columns: 1fr; }
+      .play-btn, .download-btn { width: 100%; }
+      .module-card { height: 120px; font-size: 16px; }
     }
   </style>
 </head>
@@ -198,23 +115,123 @@
 <body>
   <nav>
     <div class="logo">Data Engineering Cohort</div>
+		<div class"logo"> Welcome, <span id="user-name"></span> 👋 </div>
+		  <!-- <h2>Welcome, <span id="user-name"></span> 👋</h2> -->
     <button class="logout" onclick="logout()">Logout</button>
   </nav>
 
   <div class="container">
-    <h2>Welcome, <span id="user-name"></span> 👋</h2>
+
+    <!-- Module Section -->
     <div id="module-section">
-      <div id="module-grid" class="module-grid"></div>
+      <div id="module-grid" class="grid"></div>
     </div>
 
-    <div id="video-section" style="display: none;">
-      <span class="back-btn" onclick="showModules()">← Back to Modules</span>
+    <!-- Video Section -->
+    <div id="video-section" style="display:none;">
+      <div style="text-align:center;">
+        <button class="home-btn" onclick="showModules()">🏠 Back to Home</button>
+      </div>
       <h2 id="module-title"></h2>
-      <div id="video-grid" class="video-grid"></div>
+      <div id="video-grid" class="grid"></div>
     </div>
   </div>
+	<script>
+  async function loadPortal() {
+    const userId = localStorage.getItem("user_id");
+    const userName = localStorage.getItem("user_name");
+    if (!userId) return (window.location.href = "index.html");
 
-  <script>
+    document.getElementById("user-name").innerText = userName;
+
+    const response = await fetch("data.json");
+    const data = await response.json();
+
+    // 🔹 Find the current user
+    const user = data.users.find((u) => u.user_id == userId);
+    if (!user) return alert("User not found!");
+
+    // 🔹 Extract module IDs the user has access to
+    const userModuleIds = user.module_access.map((m) => m.module_id);
+
+    // 🔹 Filter only modules the user can access
+    const userModules = data.modules.filter((m) =>
+      userModuleIds.includes(m.module_id)
+    );
+
+    const moduleGrid = document.getElementById("module-grid");
+    moduleGrid.innerHTML = "";
+
+    // 🔹 Render each accessible module
+    userModules.forEach((m) => {
+      const card = document.createElement("div");
+      card.className = "module-card";
+      card.innerText = m.module_name;
+
+      card.onclick = () => showVideos(m, user);
+      moduleGrid.appendChild(card);
+    });
+  }
+
+  function showVideos(module, user) {
+    document.getElementById("module-section").style.display = "none";
+    document.getElementById("video-section").style.display = "block";
+
+    const videoGrid = document.getElementById("video-grid");
+    videoGrid.innerHTML = "";
+
+    // 🔹 Find this module's access entry for the user
+    const moduleAccess = user.module_access.find((m) => m.module_id === module.module_id);
+    if (!moduleAccess) {
+      videoGrid.innerHTML = "<p>You don’t have access to this module’s videos.</p>";
+      return;
+    }
+
+    // 🔹 Get allowed video IDs for this module
+    const allowedVideoIds = moduleAccess.videos;
+
+    // 🔹 Filter videos within the module based on user permission
+    const accessibleVideos = module.videos.filter((v) =>
+      allowedVideoIds.includes(v.video_id)
+    );
+
+    // 🔹 Build video cards
+    accessibleVideos.forEach((v) => {
+      const card = document.createElement("div");
+      card.className = "video-card";
+
+      let html = `
+        <h4>${v.title}</h4>
+        <p>${v.description}</p>
+        <a class="play-btn" href="https://drive.google.com/file/d/${v.drive_file_id}/preview" target="_blank">▶ Play Video</a>
+      `;
+
+      if (v.resource_id && v.resource_id.trim() !== "") {
+        html += `<br><a class="download-btn" href="https://drive.google.com/uc?export=download&id=${v.resource_id}" target="_blank">📦 Download</a>`;
+      }
+
+      card.innerHTML = html;
+      videoGrid.appendChild(card);
+    });
+  }
+
+  function showModules() {
+    document.getElementById("video-section").style.display = "none";
+    document.getElementById("module-section").style.display = "block";
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function logout() {
+    localStorage.clear();
+    window.location.href = "index.html";
+  }
+
+  loadPortal();
+</script>
+
+
+
+  <!-- <script>
     async function loadPortal() {
       const userId = localStorage.getItem("user_id");
       const userName = localStorage.getItem("user_name");
@@ -226,9 +243,7 @@
       const data = await response.json();
 
       const user = data.users.find((u) => u.user_id == userId);
-      const userModules = data.modules.filter((m) =>
-        user.modules.includes(m.module_id)
-      );
+      const userModules = data.modules.filter((m) => user.modules.includes(m.module_id));
 
       const moduleGrid = document.getElementById("module-grid");
       moduleGrid.innerHTML = "";
@@ -236,94 +251,43 @@
       userModules.forEach((m) => {
         const card = document.createElement("div");
         card.className = "module-card";
-        card.innerHTML = `<h3>${m.module_name}</h3>`;
-        card.onclick = () => loadVideosForModule(m.module_id, m.module_name, data, user);
+        card.innerText = m.module_name;
+        card.onclick = () => showVideos(m, user);
         moduleGrid.appendChild(card);
       });
     }
 
-    function loadVideosForModule(moduleId, moduleName, data, user) {
+    function showVideos(module, user) {
       document.getElementById("module-section").style.display = "none";
       document.getElementById("video-section").style.display = "block";
-      // document.getElementById("module-title").innerText = moduleName + " Videos";
-
-      const videos = data.videos.filter(
-        (v) => v.module_id === moduleId && user.videos.includes(v.video_id)
-      );
+      // document.getElementById("module-title").innerText = module.module_name + " Videos";
 
       const videoGrid = document.getElementById("video-grid");
       videoGrid.innerHTML = "";
 
-      // videos.forEach((v) => {
-      //   const card = document.createElement("div");
-      //   card.className = "video-card";
-      //   card.innerHTML = `
-      //     <h4>${v.title}</h4>
-      //     <p>${v.description}</p>
-      //     <button class="play-btn" onclick="playVideo('${v.drive_file_id}')">Play Video</button>
-      //     <br>
-      //     <a href="https://drive.google.com/uc?export=download&id=${v.resource_id}" target="_blank" class="download-btn">
-      //       📦 Download Resources
-      //     </a>
-          
-      //     <div class="player" style="display:none;">
-      //       <iframe src="https://drive.google.com/file/d/${v.drive_file_id}/view?usp=sharing" allowfullscreen></iframe>
-      //     </div>`;
-      //   videoGrid.appendChild(card);
-      // });
+      const userVideos = module.videos.filter((v) => user.videos.includes(v.video_id));
 
-        videos.forEach((v) => {
-    const card = document.createElement("div");
-    card.className = "video-card";
+      userVideos.forEach((v) => {
+        const card = document.createElement("div");
+        card.className = "video-card";
 
-    // base structure
-    let html = `
-      <h4>${v.title}</h4>
-      <p>${v.description}</p>
-      <button class="play-btn" onclick="playVideo('${v.drive_file_id}')">Play Video</button>
-    `;
-
-    // ✅ Add download link on next line if resource_id exists
-    if (v.resource_id && v.resource_id.trim() !== "") {
-      html += `
-        <br>
-        <a 
-          href="https://drive.google.com/uc?export=download&id=${v.resource_id}" 
-          target="_blank" 
-          class="download-btn"
-        >
-          📦 Download Resources
-        </a>
-      `;
+        let html = `
+          <h4>${v.title}</h4>
+          <p>${v.description}</p>
+          <a class="play-btn" href="https://drive.google.com/file/d/${v.drive_file_id}/preview" target="_blank">▶ Play Video</a>
+        `;
+        if (v.resource_id && v.resource_id.trim() !== "") {
+          html += `<br><a class="download-btn" href="https://drive.google.com/uc?export=download&id=${v.resource_id}" target="_blank">📦 Download</a>`;
+        }
+        card.innerHTML = html;
+        videoGrid.appendChild(card);
+      });
     }
-
-    // player iframe
-    html += `
-      <div class="player" style="display:none;">
-        <iframe 
-          src="https://drive.google.com/file/d/${v.drive_file_id}/view?usp=sharing" 
-          allowfullscreen
-        ></iframe>
-      </div>
-    `;
-
-    // set inner HTML
-    card.innerHTML = html;
-    videoGrid.appendChild(card);
-  });
-
-    }
-
-    https://drive.google.com/file/d/1PXSfkqN3TSb8el375VV532_aZDXQSq95/view?usp=sharing
-    function playVideo(fileId) {
-        const url = `https://drive.google.com/file/d/${fileId}/preview`;
-        window.open(url, "_blank");
-    }
-
 
     function showModules() {
       document.getElementById("video-section").style.display = "none";
       document.getElementById("module-section").style.display = "block";
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
     function logout() {
@@ -332,7 +296,6 @@
     }
 
     loadPortal();
-  </script>
+  </script> -->
 </body>
 </html>
-
