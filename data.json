@@ -4,92 +4,371 @@
       "user_id": 1,
       "email": "sridharsundarrajande@gmail.com",
       "password": "@1Strongpasswo",
+			"batch_id":"oct_2025",
       "name": "Sridhar Sundarrajan",
-      "modules": [1],
-      "videos": [1,2,3,4]
+      "module_access": [
+        {
+          "module_id": 1,
+          "videos": [1, 2, 3, 4, 5,6,7,8,9,10,11,12,13,14]
+        },
+        {
+          "module_id": 2,
+          "videos": [1,2,3,4]
+        }
+      ]
     },
     {
       "user_id": 2,
-      "email": "ourabhvj01@gmail.com",
+      "email": "sourabhvj01@gmail.com",
       "password": "Sourabh@123",
+			"batch_id":"oct_2025",
       "name": "Sourabh Joshi",
-      "modules": [1],
-      "videos": [1,2]
+      "module_access": [
+        {
+          "module_id": 1,
+          "videos": [9,10,11,12,13,14]
+        },
+        {
+          "module_id": 2,
+          "videos": [1,2,3,4]
+        }
+      ]
     },
     {
       "user_id": 3,
       "email": "kiruthikasrinivasan@gmail.com",
-      "password": "Test123",
+      "password": "Kiruthika@123",
+			"batch_id":"oct_2025",
       "name": "Kiruthika Srinivasan",
-      "modules": [1],
-      "videos": [1,2]
+      "module_access": [
+        {
+          "module_id": 1,
+          "videos": [1, 2, 3, 4, 5,6,7,8,9,10,11,12,13,14]
+        },
+        {
+          "module_id": 2,
+          "videos": [1,2,3,4]
+        }
+      ]
     },
     {
       "user_id": 4,
       "email": "pradeepselvam98@gmail.com",
       "password": "Pradeep@123",
+			"batch_id":"oct_2025",
       "name": "Pradeep Selvam",
-      "modules": [1],
-      "videos": [1,2]
+     "module_access": [
+         {
+          "module_id": 1,
+          "videos": [9,10,11,12,13,14]
+        },
+        {
+          "module_id": 2,
+          "videos": [1,2,3,4]
+        }
+      ]
     },
     {
       "user_id": 5,
       "email": "vishpriya17@gmail.com",
       "password": "Vishnu@123",
+			"batch_id":"oct_2025",
       "name": "Vishnu Priya",
-      "modules": [1],
-      "videos": [1,2]
+      "module_access": [
+         {
+          "module_id": 1,
+          "videos": [9,10,11,12,13,14]
+        },
+        {
+          "module_id": 2,
+          "videos": [1,2,3,4]
+        }
+      ]
     },
     {
       "user_id": 6,
       "email": "dpsekar01@gmail.com",
       "password": "Deepika@123",
+			"batch_id":"oct_2025",
       "name": "Deepika Sekar",
       "modules": [1],
-      "videos": [1,2]
+     "module_access": [
+         {
+          "module_id": 1,
+          "videos": [9,10,11,12,13,14]
+        },
+        {
+          "module_id": 2,
+          "videos": [1,2,3,4]
+        }
+      ]
+    },
+    {
+      "user_id": 7,
+      "email": "sindhu.sundararajan27@gmail.com",
+      "password": "Sindhu@123",
+			"batch_id":"oct_2025",
+      "name": "Sindhu Sundararajan",
+      "module_access": [
+         {
+          "module_id": 1,
+          "videos": [9,10,11,12,13,14]
+        },
+        {
+          "module_id": 2,
+          "videos": [1,2,3,4]
+        }
+      ]
+    },
+    {
+      "user_id": 8,
+      "email": "sharanappakanavi7@gmail.com",
+      "password": "Sharan@123",
+			"batch_id":"oct_2025",
+      "name": "Sharan",
+      "module_access": [
+        {
+          "module_id": 1,
+          "videos": [9,10,11,12,13,14]
+        },
+        {
+          "module_id": 2,
+          "videos": [1,2,3,4]
+        }
+      ]
+    },
+		  {
+      "user_id": 9,
+      "email": "gopinath1995gb@gmail.com",
+      "password": "Gopidata@123",
+			"batch_id":"oct_2025",
+      "name": "Gopinath",
+     "module_access": [
+         {
+          "module_id": 1,
+          "videos": [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+        },
+        {
+          "module_id": 2,
+          "videos": [1,2,3,4]
+        }
+      ]
+    },
+		{
+      "user_id": 10,
+      "email": "vigneshwaran.viki@gmail.com",
+      "password": "Vignesh@123",
+			"batch_id":"april_2025",
+      "name": "Vigneshwaran",
+      "module_access": [
+          {
+          "module_id": 1,
+          "videos": [9,10,11,12,13,14]
+        },
+        {
+          "module_id": 2,
+          "videos": [1,2,3,4]
+        }
+        ]
+    },
+		{
+      "user_id": 11,
+      "email": "ragulmanohar939@gmail.com",
+      "password": "Ragul@123",
+			"batch_id":"april_2025",
+      "name": "Raghul",
+      "module_access": [
+          {
+          "module_id": 1,
+          "videos": [9,10,11,12,13,14]
+        },
+        {
+          "module_id": 2,
+          "videos": [1,2,3,4]
+        }
+        ]
+    },
+		{
+      "user_id": 12,
+      "email": "devramkrish33@gmail.com",
+      "password": "Deva@123",
+			"batch_id":"april_2025",
+      "name": "Deva",
+      "module_access": [
+        {
+          "module_id": 1,
+          "videos": [9,10,11,12,13,14]
+        },
+        {
+          "module_id": 2,
+          "videos": [1,2,3,4]
+        }
+        ]
+    },
+		{
+      "user_id": 13,
+      "email": "sailajachelli2812@gmail.com",
+      "password": "Shailaja@123",
+			"batch_id":"april_2025",
+      "name": "Shailaja",
+      "module_access": [
+        {
+          "module_id": 1,
+          "videos": [9,10,11,12,13,14]
+        },
+        {
+          "module_id": 2,
+          "videos": [1,2,3,4]
+        }
+      ]
     }
-
-    
   ],
   "modules": [
-    { "module_id": 1, "module_name": "Fundamentals of Data Engineering"},
-    { "module_id": 2, "module_name": "Data Modelling" },
+    { 
+    "module_id": 1, 
+    "module_name": "SQL",
+      "videos": [
+        {
+          "video_id": 1,
+          "title": "1. Introduction to Data Engineering",
+          "description": "Introduction to Data Engineering Roles, Responsibilities, and Insights",
+          "drive_file_id": "10mwHgFD_WrPFFVoNnW2kb2WPTPwCNZo_",
+          "resource_id": ""
+        },
+        {
+          "video_id": 2,
+          "title": "2. Building an Effective Data Pipeline Architecture 🚀",
+          "description": "Learn about the overview of data pipeline and the high level architecture",
+          "drive_file_id": "1hXurw4A5PmXGibKlqIggUM43G00ngCUF",
+          "resource_id": ""
+        },
+        {
+          "video_id": 3,
+          "title": "3. Setting Up SQL Workspace in Databricks Free Edition",
+          "description": "Create a Free Account in Databricks portal and load the input csv file attached in the resource section.",
+          "drive_file_id": "1DVZSm-f4SuJRjKli2ShWTOIRRL3uutw_",
+          "resource_id": "1Eil43YrOoQbl8hP_gxF_XlUXBV0Gjyvb"
+        },
+        {
+          "video_id": 4,
+          "title": "4. Introduction to SQL: Data Analysis and Filtering Techniques 📊",
+          "description": "Understand the data analysis techniques and get the stats from the table",
+          "drive_file_id": "1_3AlHo7FUB568KwubbUsdg7bCjKB39Pv",
+          "resource_id": "17yGWAuxhJW7atkM2VVS2S7eukF5o9WEy"
+        },
+        {
+          "video_id": 5,
+          "title": "5. Filtering Data_ Validating Email Addresses with Regex Patterns📊",
+          "description": "Learn about how the REGEXP pattern is applied in SQL for data filtering.",
+          "drive_file_id": "1agUU6u7-MpFzkh4R57CIWqF4HEj1Io5c",
+          "resource_id": "1yqwBu4mpRALpT3ukXqVef3rGwZQ3hay9"
+        },
+        {
+          "video_id": 6,
+          "module_id": 1,
+          "title": "6. Date based filtering techniques and extraction of table metadata 📊",
+          "description": "Learn about DATE columns can be used in filters, and how the extraction of day or week or month happens in SQL",
+          "drive_file_id": "1wvZKadki_TiSBn4AQJHiwWIisKRIrFtx",
+          "resource_id": "1B00jYuIOQfr3srUslr_lYhaPIxEUwfSt"
+        }	,
+        {
+          "video_id": 7,
+          "module_id": 1,
+          "title": "7. Metadata Extraction and Creation of table using select query📊",
+          "description": "Learn about how the date column details are retreived using the in-built functions in SQL and how the tables were created using select query",
+          "drive_file_id": "1gSk3XRqW3rqhtv_u_-8MOwT1Ej4TJ2n2",
+          "resource_id": "1plPtvtxqumQWYsbmyhQTaD_AS_pIB9-8"
+        },
+        {
+          "video_id": 8,
+          "module_id": 1,
+          "title": "8. Understanding SQL Constraints, Primary Key, Foreign Key for Effective Database Management 📊",
+          "description": "Learn about the constaints available in SQL,and how to use if efficiently",
+          "drive_file_id": "1iZ_6lcZlXDa7Wj1zJrosLANV7XiaDv-_"
+        },
+        {
+          "video_id": 9,
+          "module_id": 1,
+          "title": "9. Implementing Database Constraints and Triggers in Student Enrollment System 📊",
+          "description": "Learn about how the triggers plays a key role in data ingestion and primary key, unique , not null constraints usages.",
+          "drive_file_id": "1DSH8jOxykthZ7DTISeXketj9sAshg7Qt"
+        },
+        {
+          "video_id": 10,
+          "module_id": 1,
+          "title": "10. Implementing Foreign Key, CHECK Constraints and Relationships in SQL 📊",
+          "description": "Learn about how the foreign keys creates relationship between tables and the usage of triggers to avoid entering invalid records..",
+          "drive_file_id": "151K3_1Rsx_W4_Y66ie_Y6MyruXMx3_33",
+          "resource_id":"1ZCJLsKkHwbbYUGenMSPq1Y8qww5-kf4f"
+        },
+        {
+          "video_id": 11,
+          "module_id": 1,
+          "title": "11. Understanding SQL Aggregation Functions for Data Analysis 📊",
+          "description": "Practice MIN,MAX,AVG,SUM Functions",
+          "drive_file_id": "1OtImf3YtZ22Xat35pGF816KaSf6vMi88"
+        },
+				{
+          "video_id": 12,
+          "module_id": 1,
+          "title": "12. Understanding Group By 📊",
+          "description": "Learn about Grouping Concepts practically ",
+          "drive_file_id": "1Tzwvpxeb3pmHdqeAn-UZwxAgxdzOUJT0",
+					"resource_id":"1B-VIwQ1qjwPUhkUx-w9SMa0OBXaowQ7X"
+        },
+				{
+          "video_id": 13,
+          "module_id": 1,
+          "title": "13. Understanding SQL Joins",
+          "description": "Learn types of joins ",
+          "drive_file_id": "1-Eo5vFBZgYVKW8fr4H7vPd7BRprjhITj",
+					"resource_id":"12Fzp6-36g4fHShtBQC_4z1tQPZE2XTgS"
+        },
+					{
+          "video_id": 14,
+          "module_id": 1,
+          "title": "14. Understanding Union,Union All,Except",
+          "description": "Learn types of Data Merging Techniques ",
+          "drive_file_id": "1cfapKfDEVnFwJlTql3vfSJeLOP_tuZp7",
+					"resource_id":"12Fzp6-36g4fHShtBQC_4z1tQPZE2XTgS"
+        }
+      ]
+    },
+    { 
+		 "module_id": 2,
+		 "module_name": "Big Data",
+		   "videos": [
+        {
+          "video_id": 1,
+          "title": "1. What is 5'Vs of Big Data?",
+          "description": "What is Volume, Velocity,Veracity,Value,Vareity",
+          "drive_file_id": "1iUcJX_O2zazCXJ0FMExyJSRYCL2LbmSD",
+          "resource_id": ""
+        },
+       {
+          "video_id": 2,
+          "title": "2. What is Hadoop Architecture ?",
+          "description": "Understanding Hadoop Architecture and Its Components 🛠️",
+          "drive_file_id": "1A-yu3ANPYVFPCl4fGYTnSbbNroAsWGl3",
+          "resource_id": ""
+        },
+				{
+          "video_id": 3,
+          "title": "3. How Apollo  group can build decision making software ?",
+          "description": "Understanding Hadoop Architecture and Its Applications in Healthcare 🏥",
+          "drive_file_id": "1kTwr-yRsSO10O-FjbMWWwhszblPOjtV",
+          "resource_id": ""
+        },
+				{
+          "video_id": 4,
+          "title": "4. How Hadoop Distributed File System stores Apollo hospital data ?",
+          "description": "Understanding HDFS Storage Concepts : Replication, Rack Awareness, Metadata",
+          "drive_file_id": "1Q72ko0oidzVYTDkiX3ayMjcfUMJmxmbu",
+          "resource_id": ""
+				}
+			]
+		},
     { "module_id": 3, "module_name": "Pyspark" },
     { "module_id": 4, "module_name": "Azure Cloud" }
-  ],
-  "videos": [
-    {
-      "video_id": 1,
-      "module_id": 1,
-      "title": "Introduction to Data Engineering",
-      "description": "Introduction to Data Engineering Roles, Responsibilities, and Insights",
-      "drive_file_id": "10mwHgFD_WrPFFVoNnW2kb2WPTPwCNZo_",
-      "resource_id":""
-      },
-      
-    {
-      "video_id": 2,
-      "module_id": 1,
-      "title": "Building an Effective Data Pipeline Architecture 🚀",
-      "description": "Learn about the overview of data pipeline and the high level architecture",
-      "drive_file_id": "1hXurw4A5PmXGibKlqIggUM43G00ngCUF",
-      "resource_id":""
-    },
-    {
-      "video_id": 3,
-      "module_id": 1,
-      "title": "Setting Up SQL Workspace in Databricks Free Edition",
-      "description": "Create a Free Account in Databricks portal and load the input csv file attached in the resource section.",
-      "drive_file_id": "1DVZSm-f4SuJRjKli2ShWTOIRRL3uutw_",
-      "resource_id":"1wGmFN1xVxZYdntserquZrurF2z545E-m"
-    },
-    {
-      "video_id": 4,
-      "module_id": 1,
-      "title": "Introduction to SQL Querying in Databricks Free Edition 📊",
-      "description": "Understand the data, data types in the table, table creation methods.",
-      "drive_file_id": "1DVZSm-1Och443jCUCxel9kD08nNQ2hDNcoXDFiP",
-      "resource_id":"1wGmFN1xVxZYdntserquZrurF2z545E-m"
-    }
   ]
 }
