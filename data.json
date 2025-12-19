@@ -238,7 +238,21 @@
           "videos": [1,2,3,4]
         }
       ]
+    },
+	{
+      "user_id": 14,
+      "email": "Swapna.knbashan@gmail.com",
+      "password": "Swapna@123",
+	  "batch_id":"jan_2026",
+      "name": "Swapna K",
+      "module_access": [
+        {
+          "module_id": 2,
+          "videos": [1,2,3,4]
+        }
+      ]
     }  
+	  
   ],
   "modules": [
     { 
