@@ -4,16 +4,52 @@
       "user_id": 1,
       "email": "sridharsundarrajande@gmail.com",
       "password": "@1Strongpasswo",
-			"batch_id":"oct_2025",
+      "batch_id": "oct_2025",
       "name": "Sridhar Sundarrajan",
       "module_access": [
         {
           "module_id": 1,
-          "videos": [1, 2, 3, 4, 5,6,7,8,9,10,11,12,13,14]
+          "videos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
         },
         {
           "module_id": 2,
-          "videos": [1,2,3,4,5,6,7,8,9,10,11,12]
+          "videos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "module_id": 3,
+          "videos": [
+            1,
+            2,
+            3
+          ]
         }
       ]
     },
@@ -21,16 +57,44 @@
       "user_id": 2,
       "email": "sourabhvj01@gmail.com",
       "password": "Sourabh@123",
-			"batch_id":"oct_2025",
+      "batch_id": "oct_2025",
       "name": "Sourabh Joshi",
       "module_access": [
         {
           "module_id": 1,
-          "videos": [9,10,11,12,13,14]
+          "videos": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
         },
         {
           "module_id": 2,
-          "videos": [1,2,3,4,5,6,7,8,9,10,11,12]
+          "videos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "module_id": 3,
+          "videos": [
+            1,
+            2,
+            3
+          ]
         }
       ]
     },
@@ -38,16 +102,52 @@
       "user_id": 3,
       "email": "kiruthikasrinivasan@gmail.com",
       "password": "Kiruthika@123",
-			"batch_id":"oct_2025",
+      "batch_id": "oct_2025",
       "name": "Kiruthika Srinivasan",
       "module_access": [
         {
           "module_id": 1,
-          "videos": [1, 2, 3, 4, 5,6,7,8,9,10,11,12,13,14]
+          "videos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
         },
         {
           "module_id": 2,
-               "videos": [1,2,3,4,5,6,7,8,9,10,11,12]
+          "videos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "module_id": 3,
+          "videos": [
+            1,
+            2,
+            3
+          ]
         }
       ]
     },
@@ -55,16 +155,44 @@
       "user_id": 4,
       "email": "pradeepselvam98@gmail.com",
       "password": "Pradeep@123",
-			"batch_id":"oct_2025",
+      "batch_id": "oct_2025",
       "name": "Pradeep Selvam",
-     "module_access": [
-         {
+      "module_access": [
+        {
           "module_id": 1,
-          "videos": [9,10,11,12,13,14]
+          "videos": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
         },
         {
           "module_id": 2,
-              "videos": [1,2,3,4,5,6,7,8,9,10,11,12]
+          "videos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "module_id": 3,
+          "videos": [
+            1,
+            2,
+            3
+          ]
         }
       ]
     },
@@ -72,16 +200,44 @@
       "user_id": 5,
       "email": "vishpriya17@gmail.com",
       "password": "Vishnu@123",
-			"batch_id":"oct_2025",
+      "batch_id": "oct_2025",
       "name": "Vishnu Priya",
       "module_access": [
-         {
+        {
           "module_id": 1,
-          "videos": [9,10,11,12,13,14]
+          "videos": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
         },
         {
           "module_id": 2,
-               "videos": [1,2,3,4,5,6,7,8,9,10,11,12]
+          "videos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "module_id": 3,
+          "videos": [
+            1,
+            2,
+            3
+          ]
         }
       ]
     },
@@ -89,17 +245,47 @@
       "user_id": 6,
       "email": "dpsekar01@gmail.com",
       "password": "Deepika@123",
-			"batch_id":"oct_2025",
+      "batch_id": "oct_2025",
       "name": "Deepika Sekar",
-      "modules": [1],
-     "module_access": [
-         {
+      "modules": [
+        1
+      ],
+      "module_access": [
+        {
           "module_id": 1,
-          "videos": [9,10,11,12,13,14]
+          "videos": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
         },
         {
           "module_id": 2,
-               "videos": [1,2,3,4,5,6,7,8,9,10,11,12]
+          "videos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "module_id": 3,
+          "videos": [
+            1,
+            2,
+            3
+          ]
         }
       ]
     },
@@ -107,16 +293,44 @@
       "user_id": 7,
       "email": "sindhu.sundararajan27@gmail.com",
       "password": "Sindhu@123",
-			"batch_id":"oct_2025",
+      "batch_id": "oct_2025",
       "name": "Sindhu Sundararajan",
       "module_access": [
-         {
+        {
           "module_id": 1,
-          "videos": [9,10,11,12,13,14]
+          "videos": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
         },
         {
           "module_id": 2,
-             "videos": [1,2,3,4,5,6,7,8,9,10,11,12]
+          "videos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "module_id": 3,
+          "videos": [
+            1,
+            2,
+            3
+          ]
         }
       ]
     },
@@ -124,140 +338,364 @@
       "user_id": 8,
       "email": "sharanappakanavi7@gmail.com",
       "password": "Sharan@123",
-			"batch_id":"oct_2025",
+      "batch_id": "oct_2025",
       "name": "Sharan",
       "module_access": [
         {
           "module_id": 1,
-          "videos": [9,10,11,12,13,14]
+          "videos": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
         },
         {
           "module_id": 2,
-              "videos": [1,2,3,4,5,6,7,8,9,10,11,12]
+          "videos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "module_id": 3,
+          "videos": [
+            1,
+            2,
+            3
+          ]
         }
       ]
     },
-		  {
+    {
       "user_id": 9,
       "email": "gopinath1995gb@gmail.com",
       "password": "Gopidata@123",
-			"batch_id":"oct_2025",
+      "batch_id": "oct_2025",
       "name": "Gopinath",
-     "module_access": [
-         {
+      "module_access": [
+        {
           "module_id": 1,
-          "videos": [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+          "videos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
         },
         {
           "module_id": 2,
-               "videos": [1,2,3,4,5,6,7,8,9,10,11,12]
+          "videos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "module_id": 3,
+          "videos": [
+            1,
+            2,
+            3
+          ]
         }
       ]
     },
-		{
+    {
       "user_id": 10,
       "email": "vigneshwaran.viki@gmail.com",
       "password": "Vignesh@123",
-			"batch_id":"april_2025",
+      "batch_id": "april_2025",
       "name": "Vigneshwaran",
       "module_access": [
-          {
+        {
           "module_id": 1,
-          "videos": [9,10,11,12,13,14]
+          "videos": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
         },
         {
           "module_id": 2,
-              "videos": [1,2,3,4,5,6,7,8,9,10,11,12]
+          "videos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "module_id": 3,
+          "videos": [
+            1,
+            2,
+            3
+          ]
         }
-        ]
+      ]
     },
-		{
+    {
       "user_id": 11,
       "email": "ragulmanohar939@gmail.com",
       "password": "Ragul@123",
-			"batch_id":"april_2025",
+      "batch_id": "april_2025",
       "name": "Raghul",
       "module_access": [
-          {
+        {
           "module_id": 1,
-          "videos": [9,10,11,12,13,14]
+          "videos": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
         },
         {
           "module_id": 2,
-             "videos": [1,2,3,4,5,6,7,8,9,10,11,12]
+          "videos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "module_id": 3,
+          "videos": [
+            1,
+            2,
+            3
+          ]
         }
-        ]
+      ]
     },
-		{
+    {
       "user_id": 12,
       "email": "devramkrish33@gmail.com",
       "password": "Deva@123",
-			"batch_id":"april_2025",
+      "batch_id": "april_2025",
       "name": "Deva",
       "module_access": [
         {
           "module_id": 1,
-          "videos": [9,10,11,12,13,14]
+          "videos": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
         },
         {
           "module_id": 2,
-               "videos": [1,2,3,4,5,6,7,8,9,10,11,12]
+          "videos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "module_id": 3,
+          "videos": [
+            1,
+            2,
+            3
+          ]
         }
-        ]
+      ]
     },
-		{
+    {
       "user_id": 13,
       "email": "sailajachelli2812@gmail.com",
       "password": "Shailaja@123",
-			"batch_id":"april_2025",
+      "batch_id": "april_2025",
       "name": "Shailaja",
       "module_access": [
         {
           "module_id": 1,
-          "videos": [9,10,11,12,13,14]
+          "videos": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
         },
         {
           "module_id": 2,
-             "videos": [1,2,3,4,5,6,7,8,9,10,11,12]
+          "videos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "module_id": 3,
+          "videos": [
+            1,
+            2,
+            3
+          ]
         }
       ]
     },
-	{
+    {
       "user_id": 13,
       "email": "govindhan.ss@gmail.com",
       "password": "Govindhan@123",
-	  "batch_id":"jan_2026",
+      "batch_id": "jan_2026",
       "name": "Govindhan S",
       "module_access": [
         {
           "module_id": 1,
-          "videos": [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+          "videos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
         },
         {
           "module_id": 2,
-          "videos": [1,2,3,4]
+          "videos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "module_id": 3,
+          "videos": [
+            1,
+            2,
+            3
+          ]
         }
       ]
     },
-	{
+    {
       "user_id": 14,
       "email": "Swapna.knbashan@gmail.com",
       "password": "Swapna@123",
-	  "batch_id":"jan_2026",
+      "batch_id": "jan_2026",
       "name": "Swapna K",
       "module_access": [
         {
           "module_id": 2,
-           "videos": [1,2,3,4,5,6,7,8,9,10,11,12]
+          "videos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "module_id": 3,
+          "videos": [
+            1,
+            2,
+            3
+          ]
         }
       ]
-    }  
-	  
+    }
   ],
   "modules": [
-    { 
-    "module_id": 1, 
-    "module_name": "SQL",
+    {
+      "module_id": 1,
+      "module_name": "SQL",
       "videos": [
         {
           "video_id": 1,
@@ -301,7 +739,7 @@
           "description": "Learn about DATE columns can be used in filters, and how the extraction of day or week or month happens in SQL",
           "drive_file_id": "1wvZKadki_TiSBn4AQJHiwWIisKRIrFtx",
           "resource_id": "1B00jYuIOQfr3srUslr_lYhaPIxEUwfSt"
-        }	,
+        },
         {
           "video_id": 7,
           "module_id": 1,
@@ -330,7 +768,7 @@
           "title": "10. Implementing Foreign Key, CHECK Constraints and Relationships in SQL 📊",
           "description": "Learn about how the foreign keys creates relationship between tables and the usage of triggers to avoid entering invalid records..",
           "drive_file_id": "151K3_1Rsx_W4_Y66ie_Y6MyruXMx3_33",
-          "resource_id":"1ZCJLsKkHwbbYUGenMSPq1Y8qww5-kf4f"
+          "resource_id": "1ZCJLsKkHwbbYUGenMSPq1Y8qww5-kf4f"
         },
         {
           "video_id": 11,
@@ -339,36 +777,36 @@
           "description": "Practice MIN,MAX,AVG,SUM Functions",
           "drive_file_id": "1OtImf3YtZ22Xat35pGF816KaSf6vMi88"
         },
-				{
+        {
           "video_id": 12,
           "module_id": 1,
           "title": "12. Understanding Group By 📊",
           "description": "Learn about Grouping Concepts practically ",
           "drive_file_id": "1Tzwvpxeb3pmHdqeAn-UZwxAgxdzOUJT0",
-					"resource_id":"1B-VIwQ1qjwPUhkUx-w9SMa0OBXaowQ7X"
+          "resource_id": "1B-VIwQ1qjwPUhkUx-w9SMa0OBXaowQ7X"
         },
-				{
+        {
           "video_id": 13,
           "module_id": 1,
           "title": "13. Understanding SQL Joins",
           "description": "Learn types of joins ",
           "drive_file_id": "1-Eo5vFBZgYVKW8fr4H7vPd7BRprjhITj",
-					"resource_id":"12Fzp6-36g4fHShtBQC_4z1tQPZE2XTgS"
+          "resource_id": "12Fzp6-36g4fHShtBQC_4z1tQPZE2XTgS"
         },
-					{
+        {
           "video_id": 14,
           "module_id": 1,
           "title": "14. Understanding Union,Union All,Except",
           "description": "Learn types of Data Merging Techniques ",
           "drive_file_id": "1cfapKfDEVnFwJlTql3vfSJeLOP_tuZp7",
-					"resource_id":"12Fzp6-36g4fHShtBQC_4z1tQPZE2XTgS"
+          "resource_id": "12Fzp6-36g4fHShtBQC_4z1tQPZE2XTgS"
         }
       ]
     },
-    { 
-		 "module_id": 2,
-		 "module_name": "Big Data",
-		   "videos": [
+    {
+      "module_id": 2,
+      "module_name": "Big Data",
+      "videos": [
         {
           "video_id": 1,
           "title": "1. What is 5'Vs of Big Data?",
@@ -376,86 +814,115 @@
           "drive_file_id": "1iUcJX_O2zazCXJ0FMExyJSRYCL2LbmSD",
           "resource_id": ""
         },
-       {
+        {
           "video_id": 2,
           "title": "2. What is Hadoop Architecture ?",
           "description": "Understanding Hadoop Architecture and Its Components 🛠️",
           "drive_file_id": "1A-yu3ANPYVFPCl4fGYTnSbbNroAsWGl3",
           "resource_id": ""
         },
-		{
+        {
           "video_id": 3,
           "title": "3. How Apollo  group can build decision making software ?",
           "description": "Understanding Hadoop Architecture and Its Applications in Healthcare 🏥",
           "drive_file_id": "1kTwr-yRsSO10O-FjbMWWwhszblPOjtV",
           "resource_id": ""
         },
-		{
+        {
           "video_id": 4,
           "title": "4. How Hadoop Distributed File System stores Apollo hospital data ?",
           "description": "Understanding HDFS Storage Concepts : Replication, Rack Awareness, Metadata",
           "drive_file_id": "1Q72ko0oidzVYTDkiX3ayMjcfUMJmxmbu",
           "resource_id": ""
-		},
-		{
+        },
+        {
           "video_id": 5,
           "title": "5. Bird Eye View of Data Platforms ?",
           "description": "Understanding how the data platforms works",
           "drive_file_id": "1UDz1OxwcuyBpj7Xp0CwCtk3BgTf4JmBk",
           "resource_id": ""
-		},
-		{
+        },
+        {
           "video_id": 6,
           "title": "6. Technology Stack ?",
           "description": "Understanding the tech stack used in data platforms",
           "drive_file_id": "19LnwM0enu-skKfk-1jjwri7rIv1FW_fu",
           "resource_id": ""
-		},
-		{
+        },
+        {
           "video_id": 7,
           "title": "7. Role of Data Engineer 1 ?",
           "description": "",
           "drive_file_id": "1Qh_si9f6AfPq0r34WIMRYeZhpA2iH17Q",
           "resource_id": ""
-		},
-		{
+        },
+        {
           "video_id": 8,
           "title": "8. Role of Data Engineer 2 ?",
           "description": "",
           "drive_file_id": "1zabID659sZadJoJu4DD5gw8LdQid5y-j",
           "resource_id": ""
-		},
-		{
+        },
+        {
           "video_id": 9,
           "title": "9. Data Ingestion Process 1",
           "description": "How data ingestion happens in azure data engineering ?",
           "drive_file_id": "1WRKnq_Fn3t4TnbxzF7suAdFi_vgu9cnQ",
           "resource_id": ""
-		},
-		{
+        },
+        {
           "video_id": 10,
           "title": "10. Azure Data Factory Integration Run Time ",
           "description": "How the Integration Run time helps in accessing on prem and cloud storage ?",
           "drive_file_id": "1y7OC-KmPnAjFdiU4tGraGrGyFus9__HS",
           "resource_id": ""
-		},
-		{
+        },
+        {
           "video_id": 11,
           "title": "11. Data Cleaning Task ",
           "description": "What is Data Cleaning?",
           "drive_file_id": "1BqH3sh5z1PRUlKbZkRUpo-CrdXZSzwMZ",
           "resource_id": ""
-		},
-		{
+        },
+        {
           "video_id": 12,
           "title": "11. Data Transformation Task ",
           "description": "What is Data Transformation?",
           "drive_file_id": "19NOzOLhJEEaqc4ToyxDIWCkiLYpQ7pZt",
           "resource_id": ""
-		}
-		]
-		},
-    { "module_id": 3, "module_name": "Pyspark" },
-    { "module_id": 4, "module_name": "Azure Cloud" }
+        }
+      ]
+    },
+    {
+      "module_id": 3,
+      "module_name": "Pyspark",
+      "videos": [
+        {
+          "video_id": 1,
+          "title": "1. What is Apache Spark Architecture ?",
+          "description": "Apache Spark Architecture in High Level",
+          "drive_file_id": "1arC8VU_6NSClYzbOjii9DIH2h49q_5rQ",
+          "resource_id": ""
+        },
+        {
+          "video_id": 2,
+          "title": "2. Apache Spark Architecture in Depth",
+          "description": "Deep Dive of Apace Spark Architecture",
+          "drive_file_id": "1yXXPc2OdcInVqPQzXd4399WXe3iKPXtX",
+          "resource_id": ""
+        },
+        {
+          "video_id": 3,
+          "title": "3. Why Spark not Map Reduce ?",
+          "description": "Reason behing choosing Apache Spark over Apache Map Reduce",
+          "drive_file_id": "141vV8HwInP8bg1LVsyUOpkJl7G6QzOY1",
+          "resource_id": ""
+        }
+      ]
+    },
+    {
+      "module_id": 4,
+      "module_name": "Azure Cloud"
+    }
   ]
 }
