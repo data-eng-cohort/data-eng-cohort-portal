@@ -961,9 +961,23 @@
         {
           "video_id": 6,
           "title": "6. What is Lazy Evaluation ?",
-          "description": "Understand the what is transformations and actions in apache spark ",
+          "description": "Understand what are transformations and actions in apache spark ",
           "drive_file_id": "14HKHtPKznVho3BM1VX3bevzD_d7xUzIe",
           "resource_id": ""
+        },
+        {
+          "video_id": 7,
+          "title": "7. Narrow Versus Wide Transformations ",
+          "description": "Understand the difference between narrow and wide transformations in Apache Spark",
+          "drive_file_id": "1cDC_N4pMomD9aEgQHsiVpLaSmPLNByKt",
+          "resource_id": ""
+        },
+        {
+          "video_id": 8,
+          "title": "8. Practical - Narrow Versus Wide Transformations ",
+          "description": "Practical Demonstration  difference between narrow and wide transformations in Apache Spark",
+          "drive_file_id": "1_L8AWkmSIoSiKAoMWBYFZi5SgJ6nhCfU",
+          "resource_id": "13niqdKEvdcchj1sNxwaNTl-9eSL1vY6G"
         }
       ]
     },
