@@ -51,7 +51,10 @@
             3,
             4,
             5,
-            6
+            6,
+            7,
+            8,
+            9
           ]
         }
       ]
@@ -98,7 +101,11 @@
             2,
             3,
             4,
-            5,6
+            5,
+            6,
+            7,
+            8,
+            9
           ]
         }
       ]
@@ -153,7 +160,11 @@
             2,
             3,
             4,
-            5,6
+            5,
+            6,
+            7,
+            8,
+            9
           ]
         }
       ]
@@ -200,7 +211,11 @@
             2,
             3,
             4,
-            5,6
+            5,
+            6,
+            7,
+            8,
+            9
           ]
         }
       ]
@@ -247,7 +262,11 @@
             2,
             3,
             4,
-            5,6
+            5,
+            6,
+            7,
+            8,
+            9
           ]
         }
       ]
@@ -297,7 +316,11 @@
             2,
             3,
             4,
-            5,6
+            5,
+            6,
+            7,
+            8,
+            9
           ]
         }
       ]
@@ -344,7 +367,11 @@
             2,
             3,
             4,
-            5,6
+            5,
+            6,
+            7,
+            8,
+            9
           ]
         }
       ]
@@ -391,7 +418,11 @@
             2,
             3,
             4,
-            5,6
+            5,
+            6,
+            7,
+            8,
+            9
           ]
         }
       ]
@@ -446,7 +477,11 @@
             2,
             3,
             4,
-            5,6
+            5,
+            6,
+            7,
+            8,
+            9
           ]
         }
       ]
@@ -493,7 +528,11 @@
             2,
             3,
             4,
-            5,6
+            5,
+            6,
+            7,
+            8,
+            9
           ]
         }
       ]
@@ -540,7 +579,11 @@
             2,
             3,
             4,
-            5,6
+            5,
+            6,
+            7,
+            8,
+            9
           ]
         }
       ]
@@ -587,7 +630,11 @@
             2,
             3,
             4,
-            5,6
+            5,
+            6,
+            7,
+            8,
+            9
           ]
         }
       ]
@@ -634,7 +681,11 @@
             2,
             3,
             4,
-            5,6
+            5,
+            6,
+            7,
+            8,
+            9
           ]
         }
       ]
@@ -978,6 +1029,13 @@
           "description": "Practical Demonstration  difference between narrow and wide transformations in Apache Spark",
           "drive_file_id": "1_L8AWkmSIoSiKAoMWBYFZi5SgJ6nhCfU",
           "resource_id": "13niqdKEvdcchj1sNxwaNTl-9eSL1vY6G"
+        },
+        {
+          "video_id": 9,
+          "title": "9. Practical - Apache Spark File Read Modes",
+          "description": "Practical Demonstration  of each file modes in apache spark",
+          "drive_file_id": "18uAyW6aWYWERi0UdR1rPpIAeVvG-upx3",
+          "resource_id": "15vYF0xiQmqT3cl3-EPY70_WJHO1cXTyS"
         }
       ]
     },
