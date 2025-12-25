@@ -13,7 +13,7 @@
         },
         {
           "module_id": 2,
-          "videos": [1,2,3,4]
+          "videos": [1,2,3,4,5,6,7,8]
         }
       ]
     },
@@ -30,7 +30,7 @@
         },
         {
           "module_id": 2,
-          "videos": [1,2,3,4]
+          "videos": [1,2,3,4,5,6,7,8]
         }
       ]
     },
@@ -47,7 +47,7 @@
         },
         {
           "module_id": 2,
-          "videos": [1,2,3,4]
+          "videos": [1,2,3,4,5,6,7,8]
         }
       ]
     },
@@ -64,7 +64,7 @@
         },
         {
           "module_id": 2,
-          "videos": [1,2,3,4]
+          "videos": [1,2,3,4,5,6,7,8]
         }
       ]
     },
@@ -81,7 +81,7 @@
         },
         {
           "module_id": 2,
-          "videos": [1,2,3,4]
+          "videos": [1,2,3,4,5,6,7,8]
         }
       ]
     },
@@ -99,7 +99,7 @@
         },
         {
           "module_id": 2,
-          "videos": [1,2,3,4]
+          "videos": [1,2,3,4,5,6,7,8]
         }
       ]
     },
@@ -116,7 +116,7 @@
         },
         {
           "module_id": 2,
-          "videos": [1,2,3,4]
+          "videos": [1,2,3,4,5,6,7,8]
         }
       ]
     },
@@ -133,7 +133,7 @@
         },
         {
           "module_id": 2,
-          "videos": [1,2,3,4]
+          "videos": [1,2,3,4,5,6,7,8]
         }
       ]
     },
@@ -150,7 +150,7 @@
         },
         {
           "module_id": 2,
-          "videos": [1,2,3,4]
+          "videos": [1,2,3,4,5,6,7,8]
         }
       ]
     },
@@ -167,7 +167,7 @@
         },
         {
           "module_id": 2,
-          "videos": [1,2,3,4]
+          "videos": [1,2,3,4,5,6,7,8]
         }
         ]
     },
@@ -184,7 +184,7 @@
         },
         {
           "module_id": 2,
-          "videos": [1,2,3,4]
+          "videos": [1,2,3,4,5,6,7,8]
         }
         ]
     },
@@ -201,7 +201,7 @@
         },
         {
           "module_id": 2,
-          "videos": [1,2,3,4]
+          "videos": [1,2,3,4,5,6,7,8]
         }
         ]
     },
@@ -218,7 +218,7 @@
         },
         {
           "module_id": 2,
-          "videos": [1,2,3,4]
+          "videos": [1,2,3,4,5,6,7,8]
         }
       ]
     },
@@ -248,7 +248,7 @@
       "module_access": [
         {
           "module_id": 2,
-          "videos": [1,2,3,4]
+          "videos": [1,2,3,4,5,6,7,8]
         }
       ]
     }  
@@ -383,21 +383,49 @@
           "drive_file_id": "1A-yu3ANPYVFPCl4fGYTnSbbNroAsWGl3",
           "resource_id": ""
         },
-				{
+		{
           "video_id": 3,
           "title": "3. How Apollo  group can build decision making software ?",
           "description": "Understanding Hadoop Architecture and Its Applications in Healthcare 🏥",
           "drive_file_id": "1kTwr-yRsSO10O-FjbMWWwhszblPOjtV",
           "resource_id": ""
         },
-				{
+		{
           "video_id": 4,
           "title": "4. How Hadoop Distributed File System stores Apollo hospital data ?",
           "description": "Understanding HDFS Storage Concepts : Replication, Rack Awareness, Metadata",
           "drive_file_id": "1Q72ko0oidzVYTDkiX3ayMjcfUMJmxmbu",
           "resource_id": ""
-				}
-			]
+		},
+		{
+          "video_id": 5,
+          "title": "5. Bird Eye View of Data Platforms ?",
+          "description": "Understanding how the data platforms works",
+          "drive_file_id": "1UDz1OxwcuyBpj7Xp0CwCtk3BgTf4JmBk",
+          "resource_id": ""
+		},
+		{
+          "video_id": 6,
+          "title": "6. Technology Stack ?",
+          "description": "Understanding the tech stack used in data platforms",
+          "drive_file_id": "1UDz1OxwcuyBpj7Xp0CwCtk3BgTf4JmBk",
+          "resource_id": ""
+		},
+		{
+          "video_id": 7,
+          "title": "7. Role of Data Engineer 1 ?",
+          "description": "",
+          "drive_file_id": "1Qh_si9f6AfPq0r34WIMRYeZhpA2iH17Q",
+          "resource_id": ""
+		},
+		{
+          "video_id": 8,
+          "title": "8. Role of Data Engineer 2 ?",
+          "description": "",
+          "drive_file_id": "1zabID659sZadJoJu4DD5gw8LdQid5y-j",
+          "resource_id": ""
+		},
+		]
 		},
     { "module_id": 3, "module_name": "Pyspark" },
     { "module_id": 4, "module_name": "Azure Cloud" }
