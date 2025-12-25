@@ -49,7 +49,8 @@
             1,
             2,
             3,
-            4
+            4,
+            5
           ]
         }
       ]
@@ -95,7 +96,8 @@
             1,
             2,
             3,
-            4
+            4,
+            5
           ]
         }
       ]
@@ -149,7 +151,8 @@
             1,
             2,
             3,
-            4
+            4,
+            5
           ]
         }
       ]
@@ -195,7 +198,8 @@
             1,
             2,
             3,
-            4
+            4,
+            5
           ]
         }
       ]
@@ -241,7 +245,8 @@
             1,
             2,
             3,
-            4
+            4,
+            5
           ]
         }
       ]
@@ -290,7 +295,8 @@
             1,
             2,
             3,
-            4
+            4,
+            5
           ]
         }
       ]
@@ -336,7 +342,8 @@
             1,
             2,
             3,
-            4
+            4,
+            5
           ]
         }
       ]
@@ -382,7 +389,8 @@
             1,
             2,
             3,
-            4
+            4,
+            5
           ]
         }
       ]
@@ -436,7 +444,8 @@
             1,
             2,
             3,
-            4
+            4,
+            5
           ]
         }
       ]
@@ -482,7 +491,8 @@
             1,
             2,
             3,
-            4
+            4,
+            5
           ]
         }
       ]
@@ -528,7 +538,8 @@
             1,
             2,
             3,
-            4
+            4,
+            5
           ]
         }
       ]
@@ -574,7 +585,8 @@
             1,
             2,
             3,
-            4
+            4,
+            5
           ]
         }
       ]
@@ -620,7 +632,8 @@
             1,
             2,
             3,
-            4
+            4,
+            5
           ]
         }
       ]
@@ -935,6 +948,13 @@
           "title": "4. What is Rack Awareness Algorithm ?",
           "description": "How the data is replicated in hdfs and internals behind rack awareness.",
           "drive_file_id": "1buF_MaOOSGf7ZVu0vyaZ_j6OU9Xd3xln",
+          "resource_id": ""
+        },
+        {
+          "video_id": 5,
+          "title": "4. What is RDD ?",
+          "description": "Understand the internal of Resilient Distributed Dataset",
+          "drive_file_id": "1LH9mnPDx4d3Xp_SBK1BT0fzZqV_S2u9k",
           "resource_id": ""
         }
       ]
