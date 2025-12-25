@@ -146,7 +146,8 @@
           "videos": [
             1,
             2,
-            3
+            3,
+            4
           ]
         }
       ]
@@ -191,7 +192,8 @@
           "videos": [
             1,
             2,
-            3
+            3,
+            4
           ]
         }
       ]
@@ -236,7 +238,8 @@
           "videos": [
             1,
             2,
-            3
+            3,
+            4
           ]
         }
       ]
@@ -284,7 +287,8 @@
           "videos": [
             1,
             2,
-            3
+            3,
+            4
           ]
         }
       ]
@@ -329,7 +333,8 @@
           "videos": [
             1,
             2,
-            3
+            3,
+            4
           ]
         }
       ]
@@ -374,7 +379,8 @@
           "videos": [
             1,
             2,
-            3
+            3,
+            4
           ]
         }
       ]
@@ -427,7 +433,8 @@
           "videos": [
             1,
             2,
-            3
+            3,
+            4
           ]
         }
       ]
@@ -472,7 +479,8 @@
           "videos": [
             1,
             2,
-            3
+            3,
+            4
           ]
         }
       ]
@@ -517,7 +525,8 @@
           "videos": [
             1,
             2,
-            3
+            3,
+            4
           ]
         }
       ]
@@ -562,7 +571,8 @@
           "videos": [
             1,
             2,
-            3
+            3,
+            4
           ]
         }
       ]
@@ -607,7 +617,8 @@
           "videos": [
             1,
             2,
-            3
+            3,
+            4
           ]
         }
       ]
@@ -643,8 +654,7 @@
           "videos": [
             1,
             2,
-            3,
-            4
+            3
           ]
         },
         {
@@ -916,6 +926,13 @@
           "title": "3. Why Spark not Map Reduce ?",
           "description": "Reason behing choosing Apache Spark over Apache Map Reduce",
           "drive_file_id": "141vV8HwInP8bg1LVsyUOpkJl7G6QzOY1",
+          "resource_id": ""
+        },
+        {
+          "video_id": 4,
+          "title": "4. What is Rack Awareness Algorithm ?",
+          "description": "How the data is replicated in hdfs and internals behind rack awareness.",
+          "drive_file_id": "1buF_MaOOSGf7ZVu0vyaZ_j6OU9Xd3xln",
           "resource_id": ""
         }
       ]
