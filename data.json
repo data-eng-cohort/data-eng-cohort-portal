@@ -438,6 +438,20 @@
           "description": "How the Integration Run time helps in accessing on prem and cloud storage ?",
           "drive_file_id": "1y7OC-KmPnAjFdiU4tGraGrGyFus9__HS",
           "resource_id": ""
+		},
+		{
+          "video_id": 11,
+          "title": "11. Data Cleaning Task ",
+          "description": "What is Data Cleaning?",
+          "drive_file_id": "1BqH3sh5z1PRUlKbZkRUpo-CrdXZSzwMZ",
+          "resource_id": ""
+		},
+		{
+          "video_id": 12,
+          "title": "11. Data Transformation Task ",
+          "description": "What is Data Transformation?",
+          "drive_file_id": "19NOzOLhJEEaqc4ToyxDIWCkiLYpQ7pZt",
+          "resource_id": ""
 		}
 		]
 		},
