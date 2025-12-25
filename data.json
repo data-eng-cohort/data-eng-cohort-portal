@@ -424,7 +424,7 @@
           "description": "",
           "drive_file_id": "1zabID659sZadJoJu4DD5gw8LdQid5y-j",
           "resource_id": ""
-		},
+		}
 		]
 		},
     { "module_id": 3, "module_name": "Pyspark" },
