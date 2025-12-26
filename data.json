@@ -54,7 +54,8 @@
             6,
             7,
             8,
-            9
+            9,
+            10
           ]
         }
       ]
@@ -105,7 +106,8 @@
             6,
             7,
             8,
-            9
+            9,
+            10
           ]
         }
       ]
@@ -164,7 +166,8 @@
             6,
             7,
             8,
-            9
+            9,
+            10
           ]
         }
       ]
@@ -215,7 +218,8 @@
             6,
             7,
             8,
-            9
+            9,
+            10
           ]
         }
       ]
@@ -266,7 +270,8 @@
             6,
             7,
             8,
-            9
+            9,
+            10
           ]
         }
       ]
@@ -320,7 +325,8 @@
             6,
             7,
             8,
-            9
+            9,
+            10
           ]
         }
       ]
@@ -371,7 +377,8 @@
             6,
             7,
             8,
-            9
+            9,
+            10
           ]
         }
       ]
@@ -422,7 +429,8 @@
             6,
             7,
             8,
-            9
+            9,
+            10
           ]
         }
       ]
@@ -481,7 +489,8 @@
             6,
             7,
             8,
-            9
+            9,
+            10
           ]
         }
       ]
@@ -532,7 +541,8 @@
             6,
             7,
             8,
-            9
+            9,
+            10
           ]
         }
       ]
@@ -583,7 +593,8 @@
             6,
             7,
             8,
-            9
+            9,
+            10
           ]
         }
       ]
@@ -634,7 +645,8 @@
             6,
             7,
             8,
-            9
+            9,
+            10
           ]
         }
       ]
@@ -685,7 +697,8 @@
             6,
             7,
             8,
-            9
+            9,
+            10
           ]
         }
       ]
@@ -763,7 +776,14 @@
           "videos": [
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
           ]
         }
       ]
@@ -1032,7 +1052,14 @@
         },
         {
           "video_id": 9,
-          "title": "9. Practical - Apache Spark File Read Modes",
+          "title": "9. Practical - How to read a file in apache spark",
+          "description": "Practical Demonstration  of reading a csv file in apache spark",
+          "drive_file_id": "1XV5QjHU3mZnirbncJwLnpndwkeQ_2pUg",
+          "resource_id": "1OpUKwmAC7FRQxFNaLkdD68_A9j9Kjus8"
+        },
+        {
+          "video_id": 10,
+          "title": "10. Practical - Apache Spark File Read Modes",
           "description": "Practical Demonstration  of each file modes in apache spark",
           "drive_file_id": "18uAyW6aWYWERi0UdR1rPpIAeVvG-upx3",
           "resource_id": "15vYF0xiQmqT3cl3-EPY70_WJHO1cXTyS"
