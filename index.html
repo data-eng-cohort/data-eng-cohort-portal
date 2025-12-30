@@ -3,183 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data Engineering Cohort | Login</title>
+  <title>Sign In | Enterprise Learning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
+    :root {
+      --primary: #1a73e8;
+      --primary-hover: #1557b0;
+      --bg-body: #f0f2f5;
+      --bg-surface: #ffffff;
+      --text-main: #202124;
+      --text-secondary: #5f6368;
+      --border: #dadce0;
     }
 
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+    
     body {
-      background: #f4f7fb;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      background-color: var(--bg-body);
       height: 100vh;
-    }
-
-    .login-container {
-      display: flex;
-      width: 900px;
-      max-width: 95%;
-      height: 550px;
-      background: #fff;
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
-    }
-
-    /* LEFT PANEL */
-    .left-panel {
-      flex: 1;
-      background: #fff;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      padding: 50px;
+      justify-content: center;
     }
 
-    .left-panel h1 {
-      font-size: 36px;
-      font-weight: 700;
-      color: #00a36c;
-      margin-bottom: 20px;
-    }
-
-    .left-panel p {
-      color: #666;
-      font-size: 14px;
-      margin-bottom: 35px;
+    /* --- LOGIN CARD --- */
+    .login-card {
+      background: var(--bg-surface);
+      width: 450px;
+      padding: 48px 40px 36px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+      border: 1px solid var(--border);
       text-align: center;
-      max-width: 300px;
+    }
+
+    /* BRANDING */
+    .brand-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .brand-icon { color: var(--primary); font-size: 28px; }
+
+    .subtitle {
+      color: var(--text-main);
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    
+    .instruction {
+      color: var(--text-secondary);
+      font-size: 16px;
+      margin-bottom: 40px;
       line-height: 1.5;
     }
 
-    form {
+    /* --- FORM STYLES --- */
+    .input-group {
+      position: relative;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    /* Floating Label Inputs */
+    .input-field {
       width: 100%;
-      max-width: 320px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    input {
-      padding: 12px 15px;
-      margin-bottom: 18px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 15px;
-      transition: all 0.3s ease;
-    }
-
-    input:focus {
-      border-color: #00a36c;
-      box-shadow: 0 0 0 2px rgba(0, 163, 108, 0.2);
+      padding: 13px 15px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-size: 16px;
+      color: var(--text-main);
       outline: none;
+      transition: all 0.2s;
+      background: transparent;
     }
 
-    button {
-      background: #00a36c;
+    .input-field:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(26,115,232,0.2);
+    }
+
+    /* Button */
+    .btn-login {
+      width: 100%;
+      background-color: var(--primary);
       color: white;
+      font-weight: 500;
+      font-size: 14px;
+      padding: 12px 0;
       border: none;
-      border-radius: 8px;
-      padding: 12px;
-      font-size: 16px;
-      font-weight: 600;
+      border-radius: 4px;
       cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 3px 12px rgba(0, 163, 108, 0.2);
+      margin-top: 10px;
+      transition: background 0.2s;
+    }
+    
+    .btn-login:hover { background-color: var(--primary-hover); }
+
+    /* Footer / Help */
+    .footer-links {
+      margin-top: 30px;
+      font-size: 14px;
+    }
+    .footer-links a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
     }
 
-    button:hover {
-      background: #008f6c;
-      transform: scale(1.05);
-    }
-
-    /* RIGHT PANEL */
-    .right-panel {
-      flex: 1;
-      background: linear-gradient(135deg, #00b894, #00a36c);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 60px 40px;
-      position: relative;
-    }
-
-    .right-panel::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: radial-gradient(
-        circle at top left,
-        rgba(255, 255, 255, 0.1),
-        rgba(255, 255, 255, 0)
-      );
-      z-index: 0;
-    }
-
-    .right-panel h2 {
-      font-size: 30px;
-      font-weight: 700;
-      margin-bottom: 15px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .right-panel p {
-      font-size: 16px;
-      line-height: 1.6;
-      max-width: 400px;
-      opacity: 0.95;
-      position: relative;
-      z-index: 1;
-    }
-
-    @media (max-width: 900px) {
-      .login-container {
+    /* Simple responsiveness */
+    @media (max-width: 480px) {
+      .login-card {
+        width: 100%;
+        height: 100vh;
+        border: none;
+        box-shadow: none;
+        display: flex;
         flex-direction: column;
-        height: auto;
-      }
-
-      .right-panel {
-        padding: 50px 20px;
-        height: 220px;
+        justify-content: center;
       }
     }
   </style>
 </head>
 <body>
-  <div class="login-container">
-    <!-- LEFT PANEL -->
-    <div class="left-panel">
-      <h1>Login Account</h1>
-      <p>Sign in to access your learning dashboard and continue your Data Engineering journey.</p>
-      <form onsubmit="login(event)">
-        <input id="email" type="email" placeholder="Email ID" required />
-        <input id="password" type="password" placeholder="Password" required />
-        <button type="submit">Login</button>
-      </form>
-    </div>
 
-    <!-- RIGHT PANEL -->
-    <div class="right-panel">
-      <h2>Welcome Back!</h2>
-      <p>
-        Glad to see you again at <strong>Data Engineering Cohort</strong>.<br />
-        Access your personalized training modules and videos.
-      </p>
+  <div class="login-card">
+    <div class="brand-logo">
+      <span class="brand-icon">⚡</span> Data Engineering Cohort
     </div>
+    
+    <h1 class="subtitle">Sign in</h1>
+    <p class="instruction">Use your Data Engineering Account</p>
+
+    <form onsubmit="login(event)">
+      <div class="input-group">
+        <input type="email" id="email" class="input-field" placeholder="Email or phone" required>
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" class="input-field" placeholder="Password" required>
+      </div>
+
+      <button type="submit" class="btn-login">Login</button>
+    </form>
   </div>
-
-<script src="auth.js"></script>
+  <script src="auth.js"></script>
 </body>
 </html>
