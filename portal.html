@@ -3,299 +3,352 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Learning Portal | Data Engineering Cohort</title>
+  <title>Data Engineering Learning Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
-    body { background: #f4f7fb; color: #333; }
-
-    /* NAVBAR */
-    nav {
-      background: linear-gradient(135deg, #00b894, #00a36c);
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 40px;
-      font-size: 18px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    nav .logo { font-weight: 600; font-size: 20px; }
-    nav .logout {
-      background: #fff; color: #00a36c; border: none;
-      padding: 8px 18px; border-radius: 6px;
-      font-weight: 500; cursor: pointer;
-      box-shadow: 0 2px 8px rgba(0,163,108,0.2);
-      transition: all 0.3s ease;
-    }
-    nav .logout:hover { background: #e9f9f3; transform: scale(1.05); }
-
-    /* MAIN CONTAINER */
-    .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
-    h2 { color: #00a36c; text-align: center; margin-bottom: 30px; font-weight: 600; }
-
-    /* GRID */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 25px;
-      justify-items: center;
+    :root {
+      --primary: #1a73e8;
+      --primary-dark: #1557b0;
+      --accent: #34a853;
+      --bg-body: #f8f9fa;
+      --bg-surface: #ffffff;
+      --text-primary: #202124;
+      --text-secondary: #5f6368;
+      --border-light: #dadce0;
+      --shadow-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      --shadow-2: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      --sidebar-width: 300px;
+      --nav-height: 64px;
     }
 
-    /* MODULE CARD (smaller & square) */
-    .module-card {
-      background: white;
-      border-radius: 12px;
-      border: 1.5px solid #e0e0e0;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-      width: 100%;
-      height: 140px;               /* smaller height */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-      color: #00a36c;
-      font-weight: 600;
-      text-align: center;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-    .module-card:hover {
-      transform: translateY(-4px);
-      border-color: #00a36c;
-      box-shadow: 0 6px 15px rgba(0,163,108,0.15);
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+    body { background-color: var(--bg-body); color: var(--text-primary); height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
 
-    /* VIDEO CARD */
-    .video-card {
-      background: white;
-      border-radius: 12px;
-      border: 1.5px solid #e0e0e0;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-      padding: 20px;
-      text-align: center;
-      transition: all 0.3s ease;
-      width: 100%;
-    }
-    .video-card:hover { transform: translateY(-4px); border-color: #00a36c; }
-    .video-card h4 { font-size: 16px; color: #111; margin-bottom: 6px; }
-    .video-card p { color: #555; font-size: 13px; margin-bottom: 12px; }
+    /* --- ANIMATIONS --- */
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .animate-fadeUp { animation: fadeUp 0.4s cubic-bezier(0.4, 0.0, 0.2, 1) forwards; }
 
-    /* BUTTONS */
-    .play-btn, .download-btn, .home-btn {
-      display: inline-block;
-      margin-top: 6px;
-      padding: 8px 20px;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      font-size: 13px;
-      font-weight: 500;
-      text-decoration: none;
-      transition: all 0.3s ease;
+    /* --- NAVBAR --- */
+    .navbar {
+      height: var(--nav-height); background: var(--bg-surface); border-bottom: 1px solid var(--border-light);
+      display: flex; align-items: center; justify-content: space-between; padding: 0 30px; flex-shrink: 0; z-index: 50;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
-    .play-btn { background-color: #0078d7; }
-    .download-btn { background-color: #28a745; margin-left: 4px; }
-    .home-btn {
-      background: linear-gradient(135deg, #00b894, #00a36c);
-      margin-bottom: 25px;
+    .brand-area { display: flex; align-items: center; gap: 20px; }
+    .brand-logo { font-weight: 700; font-size: 20px; color: var(--text-primary); display: flex; align-items: center; gap: 8px; }
+    .brand-icon { color: var(--primary); font-size: 24px; }
+    
+    .btn-back {
+      background: transparent; border: 1px solid var(--border-light); color: var(--text-secondary);
+      padding: 8px 16px; border-radius: 4px; cursor: pointer; font-weight: 500; display: none; transition: all 0.2s;
     }
-    .play-btn:hover, .download-btn:hover, .home-btn:hover { opacity: 0.9; transform: scale(1.03); }
+    .btn-back:hover { background: var(--bg-body); color: var(--text-primary); border-color: var(--text-secondary); }
 
-    /* RESPONSIVE */
-    @media (max-width: 1024px) { .grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); } }
-    @media (max-width: 768px)  { .grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); } }
-    @media (max-width: 480px)  {
-      .grid { grid-template-columns: 1fr; }
-      .play-btn, .download-btn { width: 100%; }
-      .module-card { height: 120px; font-size: 16px; }
+    .user-menu { display: flex; align-items: center; gap: 20px; font-size: 14px; color: var(--text-secondary); }
+    .user-avatar { width: 32px; height: 32px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; }
+    .btn-logout { color: var(--text-secondary); text-decoration: none; font-weight: 500; transition: 0.2s; }
+    .btn-logout:hover { color: var(--primary); }
+
+    /* --- MAIN LAYOUT CONTAINER --- */
+    .main-container { flex: 1; position: relative; overflow: hidden; }
+
+    /* ====== DASHBOARD VIEW ====== */
+    #dashboard-view { padding: 40px; height: 100%; overflow-y: auto; }
+    .dash-header { max-width: 1200px; margin: 0 auto 40px auto; }
+    .dash-header h1 { font-size: 32px; font-weight: 400; color: var(--text-primary); }
+    .dash-header p { color: var(--text-secondary); margin-top: 8px; font-size: 16px; }
+
+    .module-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; padding-bottom: 60px;}
+
+    /* CARD DESIGN (Cleaned) */
+    .learning-card {
+      background: var(--bg-surface); border-radius: 12px; overflow: hidden;
+      box-shadow: var(--shadow-1); transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      cursor: pointer; position: relative; display: flex; flex-direction: column;
+      border: 1px solid transparent; height: 220px; /* Fixed height for consistency */
+    }
+    .learning-card:hover { box-shadow: var(--shadow-2); transform: translateY(-5px); border-color: var(--primary-dark); }
+
+    .card-body { padding: 30px; flex: 1; display: flex; flex-direction: column; }
+    .card-top-meta { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
+    .module-icon { width: 50px; height: 50px; background: #e8f0fe; color: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; }
+    .module-type-badge { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; color: var(--text-secondary); background: var(--bg-body); padding: 6px 12px; border-radius: 20px; }
+    
+    .learning-card h3 { font-size: 22px; margin-bottom: auto; color: var(--text-primary); }
+    
+    /* Stats Row at bottom of card body */
+    .module-stats { 
+      margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--bg-body);
+      color: var(--text-secondary); font-size: 14px; display: flex; gap: 15px; 
+    }
+    .stat-item { display: flex; align-items: center; gap: 6px; }
+
+    /* ====== PLAYER VIEW ====== */
+    #player-view { display: none; height: 100%; }
+    .player-layout { display: grid; grid-template-columns: var(--sidebar-width) 1fr; height: 100%; }
+
+    /* Player Sidebar */
+    .course-sidebar { background: var(--bg-surface); border-right: 1px solid var(--border-light); overflow-y: auto; display: flex; flex-direction: column; }
+    .sidebar-course-title { padding: 24px; font-size: 18px; font-weight: 700; border-bottom: 1px solid var(--border-light); color: var(--primary-dark); background: #fdfdfd; }
+
+    .accordion-header {
+      padding: 16px 24px; background: var(--bg-surface); cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 14px; font-weight: 700; color: var(--text-secondary);
+      text-transform: uppercase; border-bottom: 1px solid var(--border-light); transition: background 0.2s;
+    }
+    .accordion-header:hover { background: var(--bg-body); color: var(--text-primary); }
+    .accordion-header::after { content: '▼'; font-size: 10px; transition: transform 0.3s; }
+    .accordion-header.active::after { transform: rotate(180deg); }
+    
+    .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; background: #fcfcfc;}
+    .accordion-content.open { max-height: 1000px; }
+
+    /* Video Links */
+    .video-link {
+      padding: 14px 24px 14px 32px; display: flex; align-items: flex-start; gap: 12px;
+      cursor: pointer; color: var(--text-primary); font-size: 14px;
+      border-left: 4px solid transparent; transition: all 0.2s;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .video-link:hover { background: #e8f0fe; color: var(--primary); }
+    .video-link.active { background: #e8f0fe; border-left-color: var(--primary); color: var(--primary-dark); font-weight: 500; }
+    .video-status-icon { font-size: 12px; color: var(--text-secondary); margin-top: 3px; }
+    .video-link.active .video-status-icon { color: var(--primary); }
+
+    /* Player Content Area */
+    .player-content { background: #f4f5f7; overflow-y: auto; padding: 40px; }
+    .video-stage-container { max-width: 1000px; margin: 0 auto; background: var(--bg-surface); border-radius: 16px; padding: 30px; box-shadow: var(--shadow-1); }
+    
+    .video-breadcrumbs { font-size: 14px; color: var(--text-secondary); margin-bottom: 15px; }
+    .video-breadcrumbs span { color: var(--primary); font-weight: 500; }
+    .current-video-title { font-size: 26px; margin-bottom: 25px; color: var(--text-primary); }
+
+    .video-aspect-ratio { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; background: #000; box-shadow: var(--shadow-2); }
+    .video-aspect-ratio iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
+    .video-meta-tabs { margin-top: 30px; border-bottom: 1px solid var(--border-light); display: flex; gap: 30px; }
+    .tab-btn { padding-bottom: 15px; cursor: pointer; font-weight: 500; color: var(--text-secondary); border-bottom: 3px solid transparent; transition: 0.3s; }
+    .tab-btn.active { color: var(--primary); border-bottom-color: var(--primary); }
+    
+    .tab-content { padding: 25px 0; color: var(--text-secondary); line-height: 1.6; }
+    .resource-box { margin-top: 20px; padding: 20px; background: #f8f9fa; border-radius: 8px; border: 1px solid var(--border-light); display: flex; align-items: center; justify-content: space-between; }
+    .btn-download { background: var(--primary); color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 500; transition: 0.2s; box-shadow: var(--shadow-1); }
+    .btn-download:hover { background: var(--primary-dark); box-shadow: var(--shadow-2); }
+
+    .hidden { display: none !important; }
+    @media (max-width: 768px) {
+      .player-layout { grid-template-columns: 1fr; }
+      .course-sidebar { display: none; }
+      .navbar { padding: 0 15px; }
+      .player-content { padding: 20px; }
     }
   </style>
 </head>
-
 <body>
-  <nav>
-    <div class="logo">Data Engineering Cohort</div>
-		<div class"logo"> Welcome, <span id="user-name"></span> 👋 </div>
-		  <!-- <h2>Welcome, <span id="user-name"></span> 👋</h2> -->
-    <button class="logout" onclick="logout()">Logout</button>
+
+  <nav class="navbar">
+    <div class="brand-area">
+      <button id="back-btn" class="btn-back" onclick="goHome()">← Dashboard</button>
+      <div class="brand-logo">
+        <span class="brand-icon">⚡</span> Data Engineering Cohort
+      </div>
+    </div>
+    <div class="user-menu">
+      <div id="user-greeting">Do Great Things</div>
+      <div class="user-avatar" id="user-initial">U</div>
+      <a href="#" class="btn-logout" onclick="logout()">Logout</a>
+    </div>
   </nav>
 
-  <div class="container">
-
-    <!-- Module Section -->
-    <div id="module-section">
-      <div id="module-grid" class="grid"></div>
-    </div>
-
-    <!-- Video Section -->
-    <div id="video-section" style="display:none;">
-      <div style="text-align:center;">
-        <button class="home-btn" onclick="showModules()">🏠 Back to Home</button>
+  <div class="main-container">
+    
+    <div id="dashboard-view">
+      <div class="dash-header animate-fadeUp">
+        <h1 id="welcome-title">Welcome back!</h1>
+        <p>Pick up where you left off or start a new path.</p>
       </div>
-      <h2 id="module-title"></h2>
-      <div id="video-grid" class="grid"></div>
+      <div id="module-grid" class="module-grid"></div>
     </div>
+
+    <div id="player-view">
+      <div class="player-layout">
+        <div class="course-sidebar" id="sidebar-content"></div>
+        <div class="player-content">
+          <div class="video-stage-container animate-fadeUp" id="video-stage">
+             <div style="text-align:center; padding: 60px; color: var(--text-secondary);">
+               <h2>Select a lesson from the sidebar to begin.</h2>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
-	<script>
-  async function loadPortal() {
-    const userId = localStorage.getItem("user_id");
-    const userName = localStorage.getItem("user_name");
-    if (!userId) return (window.location.href = "index.html");
 
-    document.getElementById("user-name").innerText = userName;
+<script>
+    let currentUser = null;
+    let allModules = [];
 
-    const response = await fetch("data.json");
-    const data = await response.json();
-
-    // 🔹 Find the current user
-    const user = data.users.find((u) => u.user_id == userId);
-    if (!user) return alert("User not found!");
-
-    // 🔹 Extract module IDs the user has access to
-    const userModuleIds = user.module_access.map((m) => m.module_id);
-
-    // 🔹 Filter only modules the user can access
-    const userModules = data.modules.filter((m) =>
-      userModuleIds.includes(m.module_id)
-    );
-
-    const moduleGrid = document.getElementById("module-grid");
-    moduleGrid.innerHTML = "";
-
-    // 🔹 Render each accessible module
-    userModules.forEach((m) => {
-      const card = document.createElement("div");
-      card.className = "module-card";
-      card.innerText = m.module_name;
-
-      card.onclick = () => showVideos(m, user);
-      moduleGrid.appendChild(card);
-    });
-  }
-
-  function showVideos(module, user) {
-    document.getElementById("module-section").style.display = "none";
-    document.getElementById("video-section").style.display = "block";
-
-    const videoGrid = document.getElementById("video-grid");
-    videoGrid.innerHTML = "";
-
-    // 🔹 Find this module's access entry for the user
-    const moduleAccess = user.module_access.find((m) => m.module_id === module.module_id);
-    if (!moduleAccess) {
-      videoGrid.innerHTML = "<p>You don’t have access to this module’s videos.</p>";
-      return;
-    }
-
-    // 🔹 Get allowed video IDs for this module
-    const allowedVideoIds = moduleAccess.videos;
-
-    // 🔹 Filter videos within the module based on user permission
-    const accessibleVideos = module.videos.filter((v) =>
-      allowedVideoIds.includes(v.video_id)
-    );
-
-    // 🔹 Build video cards
-    accessibleVideos.forEach((v) => {
-      const card = document.createElement("div");
-      card.className = "video-card";
-
-      let html = `
-        <h4>${v.title}</h4>
-        <p>${v.description}</p>
-        <a class="play-btn" href="https://drive.google.com/file/d/${v.drive_file_id}/preview" target="_blank">▶ Play Video</a>
-      `;
-
-      if (v.resource_id && v.resource_id.trim() !== "") {
-        html += `<br><a class="download-btn" href="https://drive.google.com/uc?export=download&id=${v.resource_id}" target="_blank">📦 Download</a>`;
-      }
-
-      card.innerHTML = html;
-      videoGrid.appendChild(card);
-    });
-  }
-
-  function showModules() {
-    document.getElementById("video-section").style.display = "none";
-    document.getElementById("module-section").style.display = "block";
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-
-  function logout() {
-    localStorage.clear();
-    window.location.href = "index.html";
-  }
-
-  loadPortal();
-</script>
-
-
-
-  <!-- <script>
-    async function loadPortal() {
+    async function init() {
       const userId = localStorage.getItem("user_id");
       const userName = localStorage.getItem("user_name");
-      if (!userId) return (window.location.href = "index.html");
+      if (!userId) return window.location.href = "index.html";
 
-      document.getElementById("user-name").innerText = userName;
+      document.getElementById("user-greeting").innerText = `Do Great Things, ${userName.split(" ")[0]}`;
+      document.getElementById("user-initial").innerText = userName.charAt(0);
+      document.getElementById("welcome-title").innerText = `Welcome back, ${userName}!`;
 
-      const response = await fetch("data.json");
-      const data = await response.json();
-
-      const user = data.users.find((u) => u.user_id == userId);
-      const userModules = data.modules.filter((m) => user.modules.includes(m.module_id));
-
-      const moduleGrid = document.getElementById("module-grid");
-      moduleGrid.innerHTML = "";
-
-      userModules.forEach((m) => {
-        const card = document.createElement("div");
-        card.className = "module-card";
-        card.innerText = m.module_name;
-        card.onclick = () => showVideos(m, user);
-        moduleGrid.appendChild(card);
-      });
+      try {
+        const res = await fetch("data.json");
+        const data = await res.json();
+        currentUser = data.users.find(u => u.user_id == userId);
+        allModules = data.modules;
+        renderDashboard();
+      } catch (e) {
+        console.error("Failed data load", e);
+      }
     }
 
-    function showVideos(module, user) {
-      document.getElementById("module-section").style.display = "none";
-      document.getElementById("video-section").style.display = "block";
-      // document.getElementById("module-title").innerText = module.module_name + " Videos";
+    function renderDashboard() {
+      const grid = document.getElementById("module-grid");
+      grid.innerHTML = "";
+      const userAccessMap = new Map(currentUser.module_access.map(m => [m.module_id, m]));
 
-      const videoGrid = document.getElementById("video-grid");
-      videoGrid.innerHTML = "";
+      allModules.forEach((mod, index) => {
+        if (!userAccessMap.has(mod.module_id)) return;
 
-      const userVideos = module.videos.filter((v) => user.videos.includes(v.video_id));
+        let icon = "📊"; let type = "Course";
+        if(mod.module_name.includes("SQL")) { icon = "🗄️"; }
+        if(mod.module_name.includes("Big Data")) { icon = "🐘"; type = "Learning Path"; }
+        if(mod.module_name.includes("Pyspark")) { icon = "⚡"; type = "Specialization"; }
+        if(mod.module_name.includes("Cloud")) { icon = "☁️"; }
 
-      userVideos.forEach((v) => {
+        let totalVideos = mod.has_submodules 
+            ? mod.sub_modules.reduce((acc, sub) => acc + sub.videos.length, 0) 
+            : (mod.videos ? mod.videos.length : 0);
+        let totalTopics = mod.has_submodules ? mod.sub_modules.length : 1;
+
         const card = document.createElement("div");
-        card.className = "video-card";
+        card.className = "learning-card animate-fadeUp";
+        card.style.animationDelay = `${index * 0.1}s`;
 
-        let html = `
-          <h4>${v.title}</h4>
-          <p>${v.description}</p>
-          <a class="play-btn" href="https://drive.google.com/file/d/${v.drive_file_id}/preview" target="_blank">▶ Play Video</a>
+        // Footer removed, clean stats view
+        card.innerHTML = `
+          <div class="card-body">
+            <div class="card-top-meta">
+               <div class="module-icon">${icon}</div>
+               <span class="module-type-badge">${type}</span>
+            </div>
+            <h3>${mod.module_name}</h3>
+            <div class="module-stats">
+               <div class="stat-item"><span>📚</span> ${totalTopics} Topics</div>
+               <div class="stat-item"><span>▶️</span> ${totalVideos} Lessons</div>
+            </div>
+          </div>
         `;
-        if (v.resource_id && v.resource_id.trim() !== "") {
-          html += `<br><a class="download-btn" href="https://drive.google.com/uc?export=download&id=${v.resource_id}" target="_blank">📦 Download</a>`;
-        }
-        card.innerHTML = html;
-        videoGrid.appendChild(card);
+        card.onclick = () => openPlayer(mod, userAccessMap.get(mod.module_id));
+        grid.appendChild(card);
       });
     }
 
-    function showModules() {
-      document.getElementById("video-section").style.display = "none";
-      document.getElementById("module-section").style.display = "block";
-      window.scrollTo({ top: 0, behavior: "smooth" });
+    function openPlayer(module, accessRight) {
+      document.getElementById("dashboard-view").classList.add("hidden");
+      document.getElementById("player-view").style.display = "block";
+      document.getElementById("back-btn").style.display = "block";
+      
+      const sidebar = document.getElementById("sidebar-content");
+      sidebar.innerHTML = `<div class="sidebar-course-title">${module.module_name}</div>`;
+
+      const hasAccess = (vidId) => accessRight.videos.includes("*") || accessRight.videos.includes(vidId);
+
+      const createSection = (title, videos, isOpen = false) => {
+          const validVideos = videos.filter(v => hasAccess(v.video_id));
+          if (validVideos.length === 0) return;
+
+          const header = document.createElement("div");
+          header.className = `accordion-header ${isOpen ? 'active' : ''}`;
+          header.innerText = title;
+          
+          const content = document.createElement("div");
+          content.className = `accordion-content ${isOpen ? 'open' : ''}`;
+
+          header.onclick = () => {
+             header.classList.toggle('active');
+             content.classList.toggle('open');
+          };
+
+          validVideos.forEach(v => {
+             const link = document.createElement("div");
+             link.className = "video-link";
+             // Changed logic: Just show a standard play icon for all
+             link.innerHTML = `<span class="video-status-icon">▶</span> <span>${v.title}</span>`;
+             link.onclick = () => {
+                 document.querySelectorAll(".video-link").forEach(l => l.classList.remove("active"));
+                 link.classList.add("active");
+                 playVideo(v, module.module_name, title);
+             };
+             content.appendChild(link);
+          });
+          
+          sidebar.appendChild(header);
+          sidebar.appendChild(content);
+      }
+
+      if (module.has_submodules) {
+        module.sub_modules.forEach((sub, idx) => createSection(sub.title, sub.videos, idx === 0)); 
+      } else if (module.videos) {
+        createSection("Course Modules", module.videos, true);
+      } else {
+        sidebar.innerHTML += `<div style="padding:24px;">No content available.</div>`;
+      }
     }
 
-    function logout() {
-      localStorage.clear();
-      window.location.href = "index.html";
+    function playVideo(video, courseTitle, sectionTitle) {
+      const stage = document.getElementById("video-stage");
+      
+      if (!video.drive_file_id) {
+         stage.innerHTML = `<div style="text-align:center; padding:40px;"><h2>🚧 Coming Soon</h2><p>This lesson is under development.</p></div>`;
+         return;
+      }
+
+      stage.innerHTML = `
+        <div class="video-breadcrumbs">${courseTitle} > <span>${sectionTitle}</span></div>
+        <h2 class="current-video-title">${video.title}</h2>
+        <div class="video-aspect-ratio">
+           <iframe src="https://drive.google.com/file/d/${video.drive_file_id}/preview" allow="autoplay; fullscreen"></iframe>
+        </div>
+        <div class="video-meta-tabs">
+           <div class="tab-btn active">Overview</div>
+        </div>
+        <div class="tab-content">
+           <h3>About this lesson</h3>
+           <p>${video.description || "No description provided for this lesson."}</p>
+           
+           ${video.resource_id ? `
+           <div class="resource-box">
+              <div><strong>Lesson Files</strong><br><span style="font-size:13px">Supporting materials for this exercise.</span></div>
+              <a href="https://drive.google.com/uc?export=download&id=${video.resource_id}" target="_blank" class="btn-download">Download</a>
+           </div>` : ''}
+        </div>
+      `;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    loadPortal();
-  </script> -->
+    function goHome() {
+      document.getElementById("player-view").style.display = "none";
+      document.getElementById("dashboard-view").classList.remove("hidden");
+      document.getElementById("back-btn").style.display = "none";
+      document.getElementById("video-stage").innerHTML = `<div style="text-align:center; padding: 60px; color: var(--text-secondary);"><h2>Select a lesson to begin.</h2></div>`;
+    }
+
+    function logout() { localStorage.clear(); window.location.href = "index.html"; }
+
+    const style = document.createElement('style');
+    style.innerHTML = '.hidden { display: none !important; }';
+    document.head.appendChild(style);
+
+    init();
+</script>
 </body>
 </html>
