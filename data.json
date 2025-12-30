@@ -249,26 +249,8 @@
         {
           "title": "JSON Handling",
           "videos": [
-            { "video_id": 12, "title": "Parsing Single Dict Json (Coming Soon)", "description": "Handling Single JSON", "drive_file_id": "" },
-            { "video_id": 13, "title": "Parsing Array of JSON (Coming Soon)", "description": "Handling multi-line JSON", "drive_file_id": "" }
-          ]
-        },
-        {
-          "title": "API Handling",
-          "videos": [
-            { "video_id": 301, "title": "Connecting to APIs (Coming Soon)", "description": "Requests library with PySpark", "drive_file_id": "" }
-          ]
-        },
-        {
-          "title": "Sharepoint Handling",
-          "videos": [
-            { "video_id": 401, "title": "Sharepoint Integration (Coming Soon)", "description": "Reading lists from Sharepoint", "drive_file_id": "" }
-          ]
-        },
-        {
-          "title": "Performance Tuning",
-          "videos": [
-            { "video_id": 501, "title": "Performance Tuning (Coming Soon)", "description": "Caching & Persist", "drive_file_id": "" }
+            { "video_id": 13, "title": "Parsing Single Dict Json (Coming Soon)", "description": "Handling Single JSON", "drive_file_id": "" },
+            { "video_id": 14, "title": "Parsing Array of JSON (Coming Soon)", "description": "Handling multi-line JSON", "drive_file_id": "" }
           ]
         }
       ]
