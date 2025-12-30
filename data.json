@@ -7,57 +7,9 @@
       "batch_id": "oct_2025",
       "name": "Sridhar Sundarrajan",
       "module_access": [
-        {
-          "module_id": 1,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14
-          ]
-        },
-        {
-          "module_id": 2,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12
-          ]
-        },
-        {
-          "module_id": 3,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ]
-        }
+        { "module_id": 1, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] },
+        { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+        { "module_id": 3, "videos": ["*"] }
       ]
     },
     {
@@ -67,49 +19,9 @@
       "batch_id": "oct_2025",
       "name": "Sourabh Joshi",
       "module_access": [
-        {
-          "module_id": 1,
-          "videos": [
-            9,
-            10,
-            11,
-            12,
-            13,
-            14
-          ]
-        },
-        {
-          "module_id": 2,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12
-          ]
-        },
-        {
-          "module_id": 3,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ]
-        }
+        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+        { "module_id": 3, "videos": ["*"] }
       ]
     },
     {
@@ -119,57 +31,9 @@
       "batch_id": "oct_2025",
       "name": "Kiruthika Srinivasan",
       "module_access": [
-        {
-          "module_id": 1,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14
-          ]
-        },
-        {
-          "module_id": 2,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12
-          ]
-        },
-        {
-          "module_id": 3,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ]
-        }
+        { "module_id": 1, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] },
+        { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+        { "module_id": 3, "videos": ["*"] }
       ]
     },
     {
@@ -179,49 +43,9 @@
       "batch_id": "oct_2025",
       "name": "Pradeep Selvam",
       "module_access": [
-        {
-          "module_id": 1,
-          "videos": [
-            9,
-            10,
-            11,
-            12,
-            13,
-            14
-          ]
-        },
-        {
-          "module_id": 2,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12
-          ]
-        },
-        {
-          "module_id": 3,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ]
-        }
+        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+        { "module_id": 3, "videos": ["*"] }
       ]
     },
     {
@@ -231,49 +55,9 @@
       "batch_id": "oct_2025",
       "name": "Vishnu Priya",
       "module_access": [
-        {
-          "module_id": 1,
-          "videos": [
-            9,
-            10,
-            11,
-            12,
-            13,
-            14
-          ]
-        },
-        {
-          "module_id": 2,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12
-          ]
-        },
-        {
-          "module_id": 3,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ]
-        }
+        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+        { "module_id": 3, "videos": ["*"] }
       ]
     },
     {
@@ -282,53 +66,10 @@
       "password": "Deepika@123",
       "batch_id": "oct_2025",
       "name": "Deepika Sekar",
-      "modules": [
-        1
-      ],
       "module_access": [
-        {
-          "module_id": 1,
-          "videos": [
-            9,
-            10,
-            11,
-            12,
-            13,
-            14
-          ]
-        },
-        {
-          "module_id": 2,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12
-          ]
-        },
-        {
-          "module_id": 3,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ]
-        }
+        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+        { "module_id": 3, "videos": ["*"] }
       ]
     },
     {
@@ -338,49 +79,9 @@
       "batch_id": "oct_2025",
       "name": "Sindhu Sundararajan",
       "module_access": [
-        {
-          "module_id": 1,
-          "videos": [
-            9,
-            10,
-            11,
-            12,
-            13,
-            14
-          ]
-        },
-        {
-          "module_id": 2,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12
-          ]
-        },
-        {
-          "module_id": 3,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ]
-        }
+        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+        { "module_id": 3, "videos": ["*"] }
       ]
     },
     {
@@ -390,49 +91,9 @@
       "batch_id": "oct_2025",
       "name": "Sharan",
       "module_access": [
-        {
-          "module_id": 1,
-          "videos": [
-            9,
-            10,
-            11,
-            12,
-            13,
-            14
-          ]
-        },
-        {
-          "module_id": 2,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12
-          ]
-        },
-        {
-          "module_id": 3,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ]
-        }
+        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+        { "module_id": 3, "videos": ["*"] }
       ]
     },
     {
@@ -442,57 +103,9 @@
       "batch_id": "oct_2025",
       "name": "Gopinath",
       "module_access": [
-        {
-          "module_id": 1,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14
-          ]
-        },
-        {
-          "module_id": 2,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12
-          ]
-        },
-        {
-          "module_id": 3,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ]
-        }
+        { "module_id": 1, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] },
+        { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+        { "module_id": 3, "videos": ["*"] }
       ]
     },
     {
@@ -502,49 +115,9 @@
       "batch_id": "april_2025",
       "name": "Vigneshwaran",
       "module_access": [
-        {
-          "module_id": 1,
-          "videos": [
-            9,
-            10,
-            11,
-            12,
-            13,
-            14
-          ]
-        },
-        {
-          "module_id": 2,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12
-          ]
-        },
-        {
-          "module_id": 3,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ]
-        }
+        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+        { "module_id": 3, "videos": ["*"] }
       ]
     },
     {
@@ -554,49 +127,9 @@
       "batch_id": "april_2025",
       "name": "Raghul",
       "module_access": [
-        {
-          "module_id": 1,
-          "videos": [
-            9,
-            10,
-            11,
-            12,
-            13,
-            14
-          ]
-        },
-        {
-          "module_id": 2,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12
-          ]
-        },
-        {
-          "module_id": 3,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ]
-        }
+        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+        { "module_id": 3, "videos": ["*"] }
       ]
     },
     {
@@ -606,49 +139,9 @@
       "batch_id": "april_2025",
       "name": "Deva",
       "module_access": [
-        {
-          "module_id": 1,
-          "videos": [
-            9,
-            10,
-            11,
-            12,
-            13,
-            14
-          ]
-        },
-        {
-          "module_id": 2,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12
-          ]
-        },
-        {
-          "module_id": 3,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ]
-        }
+        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+        { "module_id": 3, "videos": ["*"] }
       ]
     },
     {
@@ -658,49 +151,9 @@
       "batch_id": "april_2025",
       "name": "Shailaja",
       "module_access": [
-        {
-          "module_id": 1,
-          "videos": [
-            9,
-            10,
-            11,
-            12,
-            13,
-            14
-          ]
-        },
-        {
-          "module_id": 2,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12
-          ]
-        },
-        {
-          "module_id": 3,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ]
-        }
+        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+        { "module_id": 3, "videos": ["*"] }
       ]
     },
     {
@@ -710,41 +163,9 @@
       "batch_id": "jan_2026",
       "name": "Govindhan S",
       "module_access": [
-        {
-          "module_id": 1,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14
-          ]
-        },
-        {
-          "module_id": 2,
-          "videos": [
-            1,
-            2,
-            3
-          ]
-        },
-        {
-          "module_id": 3,
-          "videos": [
-            1,
-            2,
-            3
-          ]
-        }
+        { "module_id": 1, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] },
+        { "module_id": 2, "videos": [1, 2, 3] },
+        { "module_id": 3, "videos": ["*"] }
       ]
     },
     {
@@ -754,38 +175,8 @@
       "batch_id": "jan_2026",
       "name": "Swapna K",
       "module_access": [
-        {
-          "module_id": 2,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12
-          ]
-        },
-        {
-          "module_id": 3,
-          "videos": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ]
-        }
+        { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+        { "module_id": 3, "videos": ["*"] }
       ]
     }
   ],
@@ -794,281 +185,97 @@
       "module_id": 1,
       "module_name": "SQL",
       "videos": [
-        {
-          "video_id": 1,
-          "title": "1. Introduction to Data Engineering",
-          "description": "Introduction to Data Engineering Roles, Responsibilities, and Insights",
-          "drive_file_id": "10mwHgFD_WrPFFVoNnW2kb2WPTPwCNZo_",
-          "resource_id": ""
-        },
-        {
-          "video_id": 2,
-          "title": "2. Building an Effective Data Pipeline Architecture 🚀",
-          "description": "Learn about the overview of data pipeline and the high level architecture",
-          "drive_file_id": "1hXurw4A5PmXGibKlqIggUM43G00ngCUF",
-          "resource_id": ""
-        },
-        {
-          "video_id": 3,
-          "title": "3. Setting Up SQL Workspace in Databricks Free Edition",
-          "description": "Create a Free Account in Databricks portal and load the input csv file attached in the resource section.",
-          "drive_file_id": "1DVZSm-f4SuJRjKli2ShWTOIRRL3uutw_",
-          "resource_id": "1Eil43YrOoQbl8hP_gxF_XlUXBV0Gjyvb"
-        },
-        {
-          "video_id": 4,
-          "title": "4. Introduction to SQL: Data Analysis and Filtering Techniques 📊",
-          "description": "Understand the data analysis techniques and get the stats from the table",
-          "drive_file_id": "1_3AlHo7FUB568KwubbUsdg7bCjKB39Pv",
-          "resource_id": "17yGWAuxhJW7atkM2VVS2S7eukF5o9WEy"
-        },
-        {
-          "video_id": 5,
-          "title": "5. Filtering Data_ Validating Email Addresses with Regex Patterns📊",
-          "description": "Learn about how the REGEXP pattern is applied in SQL for data filtering.",
-          "drive_file_id": "1agUU6u7-MpFzkh4R57CIWqF4HEj1Io5c",
-          "resource_id": "1yqwBu4mpRALpT3ukXqVef3rGwZQ3hay9"
-        },
-        {
-          "video_id": 6,
-          "module_id": 1,
-          "title": "6. Date based filtering techniques and extraction of table metadata 📊",
-          "description": "Learn about DATE columns can be used in filters, and how the extraction of day or week or month happens in SQL",
-          "drive_file_id": "1wvZKadki_TiSBn4AQJHiwWIisKRIrFtx",
-          "resource_id": "1B00jYuIOQfr3srUslr_lYhaPIxEUwfSt"
-        },
-        {
-          "video_id": 7,
-          "module_id": 1,
-          "title": "7. Metadata Extraction and Creation of table using select query📊",
-          "description": "Learn about how the date column details are retreived using the in-built functions in SQL and how the tables were created using select query",
-          "drive_file_id": "1gSk3XRqW3rqhtv_u_-8MOwT1Ej4TJ2n2",
-          "resource_id": "1plPtvtxqumQWYsbmyhQTaD_AS_pIB9-8"
-        },
-        {
-          "video_id": 8,
-          "module_id": 1,
-          "title": "8. Understanding SQL Constraints, Primary Key, Foreign Key for Effective Database Management 📊",
-          "description": "Learn about the constaints available in SQL,and how to use if efficiently",
-          "drive_file_id": "1iZ_6lcZlXDa7Wj1zJrosLANV7XiaDv-_"
-        },
-        {
-          "video_id": 9,
-          "module_id": 1,
-          "title": "9. Implementing Database Constraints and Triggers in Student Enrollment System 📊",
-          "description": "Learn about how the triggers plays a key role in data ingestion and primary key, unique , not null constraints usages.",
-          "drive_file_id": "1DSH8jOxykthZ7DTISeXketj9sAshg7Qt"
-        },
-        {
-          "video_id": 10,
-          "module_id": 1,
-          "title": "10. Implementing Foreign Key, CHECK Constraints and Relationships in SQL 📊",
-          "description": "Learn about how the foreign keys creates relationship between tables and the usage of triggers to avoid entering invalid records..",
-          "drive_file_id": "151K3_1Rsx_W4_Y66ie_Y6MyruXMx3_33",
-          "resource_id": "1ZCJLsKkHwbbYUGenMSPq1Y8qww5-kf4f"
-        },
-        {
-          "video_id": 11,
-          "module_id": 1,
-          "title": "11. Understanding SQL Aggregation Functions for Data Analysis 📊",
-          "description": "Practice MIN,MAX,AVG,SUM Functions",
-          "drive_file_id": "1OtImf3YtZ22Xat35pGF816KaSf6vMi88"
-        },
-        {
-          "video_id": 12,
-          "module_id": 1,
-          "title": "12. Understanding Group By 📊",
-          "description": "Learn about Grouping Concepts practically ",
-          "drive_file_id": "1Tzwvpxeb3pmHdqeAn-UZwxAgxdzOUJT0",
-          "resource_id": "1B-VIwQ1qjwPUhkUx-w9SMa0OBXaowQ7X"
-        },
-        {
-          "video_id": 13,
-          "module_id": 1,
-          "title": "13. Understanding SQL Joins",
-          "description": "Learn types of joins ",
-          "drive_file_id": "1-Eo5vFBZgYVKW8fr4H7vPd7BRprjhITj",
-          "resource_id": "12Fzp6-36g4fHShtBQC_4z1tQPZE2XTgS"
-        },
-        {
-          "video_id": 14,
-          "module_id": 1,
-          "title": "14. Understanding Union,Union All,Except",
-          "description": "Learn types of Data Merging Techniques ",
-          "drive_file_id": "1cfapKfDEVnFwJlTql3vfSJeLOP_tuZp7",
-          "resource_id": "12Fzp6-36g4fHShtBQC_4z1tQPZE2XTgS"
-        }
+        { "video_id": 1, "title": "1. Introduction to Data Engineering", "description": "Roles, Responsibilities, and Insights", "drive_file_id": "10mwHgFD_WrPFFVoNnW2kb2WPTPwCNZo_", "resource_id": "" },
+        { "video_id": 2, "title": "2. Building an Effective Data Pipeline Architecture", "description": "Overview of data pipeline", "drive_file_id": "1hXurw4A5PmXGibKlqIggUM43G00ngCUF", "resource_id": "" },
+        { "video_id": 3, "title": "3. Setting Up SQL Workspace in Databricks", "description": "Create Free Account and load CSV", "drive_file_id": "1DVZSm-f4SuJRjKli2ShWTOIRRL3uutw_", "resource_id": "1Eil43YrOoQbl8hP_gxF_XlUXBV0Gjyvb" },
+        { "video_id": 4, "title": "4. Intro to SQL: Analysis & Filtering", "description": "Data analysis techniques", "drive_file_id": "1_3AlHo7FUB568KwubbUsdg7bCjKB39Pv", "resource_id": "17yGWAuxhJW7atkM2VVS2S7eukF5o9WEy" },
+        { "video_id": 5, "title": "5. Filtering: Regex Patterns", "description": "REGEXP pattern in SQL", "drive_file_id": "1agUU6u7-MpFzkh4R57CIWqF4HEj1Io5c", "resource_id": "1yqwBu4mpRALpT3ukXqVef3rGwZQ3hay9" },
+        { "video_id": 6, "title": "6. Date Based Filtering", "description": "Extraction of day/week/month", "drive_file_id": "1wvZKadki_TiSBn4AQJHiwWIisKRIrFtx", "resource_id": "1B00jYuIOQfr3srUslr_lYhaPIxEUwfSt" },
+        { "video_id": 7, "title": "7. Metadata Extraction", "description": "Creating tables using select query", "drive_file_id": "1gSk3XRqW3rqhtv_u_-8MOwT1Ej4TJ2n2", "resource_id": "1plPtvtxqumQWYsbmyhQTaD_AS_pIB9-8" },
+        { "video_id": 8, "title": "8. SQL Constraints (PK, FK)", "description": "Database Management", "drive_file_id": "1iZ_6lcZlXDa7Wj1zJrosLANV7XiaDv-_" },
+        { "video_id": 9, "title": "9. Triggers & Ingestion", "description": "Data ingestion and constraints", "drive_file_id": "1DSH8jOxykthZ7DTISeXketj9sAshg7Qt" },
+        { "video_id": 10, "title": "10. Relationships & CHECK Constraints", "description": "Foreign keys and triggers", "drive_file_id": "151K3_1Rsx_W4_Y66ie_Y6MyruXMx3_33", "resource_id": "1ZCJLsKkHwbbYUGenMSPq1Y8qww5-kf4f" },
+        { "video_id": 11, "title": "11. Aggregation Functions", "description": "MIN, MAX, AVG, SUM", "drive_file_id": "1OtImf3YtZ22Xat35pGF816KaSf6vMi88" },
+        { "video_id": 12, "title": "12. Understanding Group By", "description": "Grouping Concepts", "drive_file_id": "1Tzwvpxeb3pmHdqeAn-UZwxAgxdzOUJT0", "resource_id": "1B-VIwQ1qjwPUhkUx-w9SMa0OBXaowQ7X" },
+        { "video_id": 13, "title": "13. Understanding SQL Joins", "description": "Types of joins", "drive_file_id": "1-Eo5vFBZgYVKW8fr4H7vPd7BRprjhITj", "resource_id": "12Fzp6-36g4fHShtBQC_4z1tQPZE2XTgS" },
+        { "video_id": 14, "title": "14. Union, Union All, Except", "description": "Data Merging Techniques", "drive_file_id": "1cfapKfDEVnFwJlTql3vfSJeLOP_tuZp7", "resource_id": "12Fzp6-36g4fHShtBQC_4z1tQPZE2XTgS" }
       ]
     },
     {
       "module_id": 2,
       "module_name": "Big Data",
       "videos": [
-        {
-          "video_id": 1,
-          "title": "1. What is 5'Vs of Big Data?",
-          "description": "What is Volume, Velocity,Veracity,Value,Vareity",
-          "drive_file_id": "1iUcJX_O2zazCXJ0FMExyJSRYCL2LbmSD",
-          "resource_id": ""
-        },
-        {
-          "video_id": 2,
-          "title": "2. What is Hadoop Architecture ?",
-          "description": "Understanding Hadoop Architecture and Its Components 🛠️",
-          "drive_file_id": "1A-yu3ANPYVFPCl4fGYTnSbbNroAsWGl3",
-          "resource_id": ""
-        },
-        {
-          "video_id": 3,
-          "title": "3. How Apollo  group can build decision making software ?",
-          "description": "Understanding Hadoop Architecture and Its Applications in Healthcare 🏥",
-          "drive_file_id": "1kTwr-yRsSO10O-FjbMWWwhszblPOjtV",
-          "resource_id": ""
-        },
-        {
-          "video_id": 4,
-          "title": "4. How Hadoop Distributed File System stores Apollo hospital data ?",
-          "description": "Understanding HDFS Storage Concepts : Replication, Rack Awareness, Metadata",
-          "drive_file_id": "1Q72ko0oidzVYTDkiX3ayMjcfUMJmxmbu",
-          "resource_id": ""
-        },
-        {
-          "video_id": 5,
-          "title": "5. Bird Eye View of Data Platforms ?",
-          "description": "Understanding how the data platforms works",
-          "drive_file_id": "1UDz1OxwcuyBpj7Xp0CwCtk3BgTf4JmBk",
-          "resource_id": ""
-        },
-        {
-          "video_id": 6,
-          "title": "6. Technology Stack ?",
-          "description": "Understanding the tech stack used in data platforms",
-          "drive_file_id": "19LnwM0enu-skKfk-1jjwri7rIv1FW_fu",
-          "resource_id": ""
-        },
-        {
-          "video_id": 7,
-          "title": "7. Role of Data Engineer 1 ?",
-          "description": "",
-          "drive_file_id": "1Qh_si9f6AfPq0r34WIMRYeZhpA2iH17Q",
-          "resource_id": ""
-        },
-        {
-          "video_id": 8,
-          "title": "8. Role of Data Engineer 2 ?",
-          "description": "",
-          "drive_file_id": "1zabID659sZadJoJu4DD5gw8LdQid5y-j",
-          "resource_id": ""
-        },
-        {
-          "video_id": 9,
-          "title": "9. Data Ingestion Process 1",
-          "description": "How data ingestion happens in azure data engineering ?",
-          "drive_file_id": "1WRKnq_Fn3t4TnbxzF7suAdFi_vgu9cnQ",
-          "resource_id": ""
-        },
-        {
-          "video_id": 10,
-          "title": "10. Azure Data Factory Integration Run Time ",
-          "description": "How the Integration Run time helps in accessing on prem and cloud storage ?",
-          "drive_file_id": "1y7OC-KmPnAjFdiU4tGraGrGyFus9__HS",
-          "resource_id": ""
-        },
-        {
-          "video_id": 11,
-          "title": "11. Data Cleaning Task ",
-          "description": "What is Data Cleaning?",
-          "drive_file_id": "1BqH3sh5z1PRUlKbZkRUpo-CrdXZSzwMZ",
-          "resource_id": ""
-        },
-        {
-          "video_id": 12,
-          "title": "11. Data Transformation Task ",
-          "description": "What is Data Transformation?",
-          "drive_file_id": "19NOzOLhJEEaqc4ToyxDIWCkiLYpQ7pZt",
-          "resource_id": ""
-        }
+        { "video_id": 1, "title": "1. What is 5'Vs of Big Data?", "description": "Volume, Velocity, Veracity, Value, Variety", "drive_file_id": "1iUcJX_O2zazCXJ0FMExyJSRYCL2LbmSD" },
+        { "video_id": 2, "title": "2. What is Hadoop Architecture?", "description": "Components", "drive_file_id": "1A-yu3ANPYVFPCl4fGYTnSbbNroAsWGl3" },
+        { "video_id": 3, "title": "3. Decision Making Software", "description": "Healthcare applications", "drive_file_id": "1kTwr-yRsSO10O-FjbMWWwhszblPOjtV" },
+        { "video_id": 4, "title": "4. HDFS Storage", "description": "Replication, Rack Awareness", "drive_file_id": "1Q72ko0oidzVYTDkiX3ayMjcfUMJmxmbu" },
+        { "video_id": 5, "title": "5. Bird Eye View of Data Platforms", "description": "How platforms work", "drive_file_id": "1UDz1OxwcuyBpj7Xp0CwCtk3BgTf4JmBk" },
+        { "video_id": 6, "title": "6. Technology Stack", "description": "Tech stack details", "drive_file_id": "19LnwM0enu-skKfk-1jjwri7rIv1FW_fu" },
+        { "video_id": 7, "title": "7. Role of Data Engineer 1", "description": "", "drive_file_id": "1Qh_si9f6AfPq0r34WIMRYeZhpA2iH17Q" },
+        { "video_id": 8, "title": "8. Role of Data Engineer 2", "description": "", "drive_file_id": "1zabID659sZadJoJu4DD5gw8LdQid5y-j" },
+        { "video_id": 9, "title": "9. Data Ingestion Process 1", "description": "Ingestion in Azure", "drive_file_id": "1WRKnq_Fn3t4TnbxzF7suAdFi_vgu9cnQ" },
+        { "video_id": 10, "title": "10. ADF Integration Run Time", "description": "On-prem and cloud storage", "drive_file_id": "1y7OC-KmPnAjFdiU4tGraGrGyFus9__HS" },
+        { "video_id": 11, "title": "11. Data Cleaning Task", "description": "What is Data Cleaning?", "drive_file_id": "1BqH3sh5z1PRUlKbZkRUpo-CrdXZSzwMZ" },
+        { "video_id": 12, "title": "12. Data Transformation Task", "description": "What is Data Transformation?", "drive_file_id": "19NOzOLhJEEaqc4ToyxDIWCkiLYpQ7pZt" }
       ]
     },
     {
       "module_id": 3,
       "module_name": "Pyspark",
-      "videos": [
+      "has_submodules": true,
+      "sub_modules": [
         {
-          "video_id": 1,
-          "title": "1. What is Apache Spark Architecture ?",
-          "description": "Apache Spark Architecture in High Level",
-          "drive_file_id": "1arC8VU_6NSClYzbOjii9DIH2h49q_5rQ",
-          "resource_id": ""
+          "title": "Core Concepts",
+          "videos": [
+            { "video_id": 1, "title": "1. Apache Spark Architecture", "description": "High Level", "drive_file_id": "1arC8VU_6NSClYzbOjii9DIH2h49q_5rQ" },
+            { "video_id": 2, "title": "2. Apache Spark Architecture in Depth", "description": "Deep Dive", "drive_file_id": "1yXXPc2OdcInVqPQzXd4399WXe3iKPXtX" },
+            { "video_id": 3, "title": "3. Why Spark not Map Reduce?", "description": "Comparison", "drive_file_id": "141vV8HwInP8bg1LVsyUOpkJl7G6QzOY1" },
+            { "video_id": 4, "title": "4. Rack Awareness Algorithm", "description": "Replication internals", "drive_file_id": "1buF_MaOOSGf7ZVu0vyaZ_j6OU9Xd3xln" },
+            { "video_id": 5, "title": "5. What is RDD?", "description": "Resilient Distributed Dataset", "drive_file_id": "1LH9mnPDx4d3Xp_SBK1BT0fzZqV_S2u9k" },
+            { "video_id": 6, "title": "6. What is Lazy Evaluation?", "description": "Transformations and actions", "drive_file_id": "14HKHtPKznVho3BM1VX3bevzD_d7xUzIe" },
+            { "video_id": 7, "title": "7. Narrow vs Wide Transformations", "description": "Difference explained", "drive_file_id": "1cDC_N4pMomD9aEgQHsiVpLaSmPLNByKt" },
+            { "video_id": 8, "title": "8. Practical - Transformations", "description": "Practical Demonstration", "drive_file_id": "1_L8AWkmSIoSiKAoMWBYFZi5SgJ6nhCfU", "resource_id": "13niqdKEvdcchj1sNxwaNTl-9eSL1vY6G" }
+          ]
         },
         {
-          "video_id": 2,
-          "title": "2. Apache Spark Architecture in Depth",
-          "description": "Deep Dive of Apace Spark Architecture",
-          "drive_file_id": "1yXXPc2OdcInVqPQzXd4399WXe3iKPXtX",
-          "resource_id": ""
+          "title": "CSV Handling",
+          "videos": [
+            { "video_id": 9, "title": "9. Practical - Read a file", "description": "Reading CSV in Spark", "drive_file_id": "1XV5QjHU3mZnirbncJwLnpndwkeQ_2pUg", "resource_id": "1OpUKwmAC7FRQxFNaLkdD68_A9j9Kjus8" },
+            { "video_id": 10, "title": "10. Practical - File Read Modes", "description": "File modes explained", "drive_file_id": "18uAyW6aWYWERi0UdR1rPpIAeVvG-upx3", "resource_id": "15vYF0xiQmqT3cl3-EPY70_WJHO1cXTyS" },
+            { "video_id": 11, "title": "11. CSV File Read Options", "description": "Spark Read API options", "drive_file_id": "1ExoWTBIYKGowRBUmuAsA4me9bdSFlhq6" }
+          ]
         },
         {
-          "video_id": 3,
-          "title": "3. Why Spark not Map Reduce ?",
-          "description": "Reason behing choosing Apache Spark over Apache Map Reduce",
-          "drive_file_id": "141vV8HwInP8bg1LVsyUOpkJl7G6QzOY1",
-          "resource_id": ""
+          "title": "JSON Handling",
+          "videos": [
+            { "video_id": 12, "title": "Parsing Single Dict Json (Coming Soon)", "description": "Handling Single JSON", "drive_file_id": "" },
+            { "video_id": 13, "title": "Parsing Array of JSON (Coming Soon)", "description": "Handling multi-line JSON", "drive_file_id": "" }
+          ]
         },
         {
-          "video_id": 4,
-          "title": "4. What is Rack Awareness Algorithm ?",
-          "description": "How the data is replicated in hdfs and internals behind rack awareness.",
-          "drive_file_id": "1buF_MaOOSGf7ZVu0vyaZ_j6OU9Xd3xln",
-          "resource_id": ""
+          "title": "API Handling",
+          "videos": [
+            { "video_id": 301, "title": "Connecting to APIs (Coming Soon)", "description": "Requests library with PySpark", "drive_file_id": "" }
+          ]
         },
         {
-          "video_id": 5,
-          "title": "5. What is RDD ?",
-          "description": "Understand the internal of Resilient Distributed Dataset",
-          "drive_file_id": "1LH9mnPDx4d3Xp_SBK1BT0fzZqV_S2u9k",
-          "resource_id": ""
+          "title": "Sharepoint Handling",
+          "videos": [
+            { "video_id": 401, "title": "Sharepoint Integration (Coming Soon)", "description": "Reading lists from Sharepoint", "drive_file_id": "" }
+          ]
         },
         {
-          "video_id": 6,
-          "title": "6. What is Lazy Evaluation ?",
-          "description": "Understand what are transformations and actions in apache spark ",
-          "drive_file_id": "14HKHtPKznVho3BM1VX3bevzD_d7xUzIe",
-          "resource_id": ""
-        },
-        {
-          "video_id": 7,
-          "title": "7. Narrow Versus Wide Transformations ",
-          "description": "Understand the difference between narrow and wide transformations in Apache Spark",
-          "drive_file_id": "1cDC_N4pMomD9aEgQHsiVpLaSmPLNByKt",
-          "resource_id": ""
-        },
-        {
-          "video_id": 8,
-          "title": "8. Practical - Narrow Versus Wide Transformations ",
-          "description": "Practical Demonstration  difference between narrow and wide transformations in Apache Spark",
-          "drive_file_id": "1_L8AWkmSIoSiKAoMWBYFZi5SgJ6nhCfU",
-          "resource_id": "13niqdKEvdcchj1sNxwaNTl-9eSL1vY6G"
-        },
-        {
-          "video_id": 9,
-          "title": "9. Practical - How to read a file in apache spark",
-          "description": "Practical Demonstration  of reading a csv file in apache spark",
-          "drive_file_id": "1XV5QjHU3mZnirbncJwLnpndwkeQ_2pUg",
-          "resource_id": "1OpUKwmAC7FRQxFNaLkdD68_A9j9Kjus8"
-        },
-        {
-          "video_id": 10,
-          "title": "10. Practical - Apache Spark File Read Modes",
-          "description": "Practical Demonstration  of each file modes in apache spark",
-          "drive_file_id": "18uAyW6aWYWERi0UdR1rPpIAeVvG-upx3",
-          "resource_id": "15vYF0xiQmqT3cl3-EPY70_WJHO1cXTyS"
+          "title": "Performance Tuning",
+          "videos": [
+            { "video_id": 501, "title": "Performance Tuning (Coming Soon)", "description": "Caching & Persist", "drive_file_id": "" }
+          ]
         }
       ]
     },
     {
       "module_id": 4,
-      "module_name": "Azure Cloud"
+      "module_name": "Azure Cloud",
+      "videos": []
     }
   ]
 }
