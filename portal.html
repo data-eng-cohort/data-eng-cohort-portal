@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data Engineering Learning Portal</title>
+  <title>Data Engineering Cohort</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -15,9 +15,7 @@
       --text-primary: #202124;
       --text-secondary: #5f6368;
       --border-light: #dadce0;
-      --shadow-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-      --shadow-2: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-      --sidebar-width: 300px;
+      --sidebar-width: 320px;
       --nav-height: 64px;
     }
 
@@ -32,7 +30,6 @@
     .navbar {
       height: var(--nav-height); background: var(--bg-surface); border-bottom: 1px solid var(--border-light);
       display: flex; align-items: center; justify-content: space-between; padding: 0 30px; flex-shrink: 0; z-index: 50;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
     .brand-area { display: flex; align-items: center; gap: 20px; }
     .brand-logo { font-weight: 700; font-size: 20px; color: var(--text-primary); display: flex; align-items: center; gap: 8px; }
@@ -49,7 +46,7 @@
     .btn-logout { color: var(--text-secondary); text-decoration: none; font-weight: 500; transition: 0.2s; }
     .btn-logout:hover { color: var(--primary); }
 
-    /* --- MAIN LAYOUT CONTAINER --- */
+    /* --- MAIN LAYOUT --- */
     .main-container { flex: 1; position: relative; overflow: hidden; }
 
     /* ====== DASHBOARD VIEW ====== */
@@ -60,81 +57,76 @@
 
     .module-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; padding-bottom: 60px;}
 
-    /* CARD DESIGN (Cleaned) */
     .learning-card {
       background: var(--bg-surface); border-radius: 12px; overflow: hidden;
-      box-shadow: var(--shadow-1); transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-      cursor: pointer; position: relative; display: flex; flex-direction: column;
-      border: 1px solid transparent; height: 220px; /* Fixed height for consistency */
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12); transition: all 0.3s;
+      cursor: pointer; display: flex; flex-direction: column;
+      border: 1px solid transparent; height: 220px;
     }
-    .learning-card:hover { box-shadow: var(--shadow-2); transform: translateY(-5px); border-color: var(--primary-dark); }
+    .learning-card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.15); transform: translateY(-5px); border-color: var(--primary); }
 
     .card-body { padding: 30px; flex: 1; display: flex; flex-direction: column; }
     .card-top-meta { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
     .module-icon { width: 50px; height: 50px; background: #e8f0fe; color: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; }
-    .module-type-badge { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; color: var(--text-secondary); background: var(--bg-body); padding: 6px 12px; border-radius: 20px; }
-    
+    .module-type-badge { font-size: 11px; text-transform: uppercase; font-weight: 700; color: var(--text-secondary); background: var(--bg-body); padding: 6px 12px; border-radius: 20px; }
     .learning-card h3 { font-size: 22px; margin-bottom: auto; color: var(--text-primary); }
-    
-    /* Stats Row at bottom of card body */
-    .module-stats { 
-      margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--bg-body);
-      color: var(--text-secondary); font-size: 14px; display: flex; gap: 15px; 
-    }
-    .stat-item { display: flex; align-items: center; gap: 6px; }
+    .module-stats { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--bg-body); color: var(--text-secondary); font-size: 14px; display: flex; gap: 15px; }
 
     /* ====== PLAYER VIEW ====== */
     #player-view { display: none; height: 100%; }
     .player-layout { display: grid; grid-template-columns: var(--sidebar-width) 1fr; height: 100%; }
 
-    /* Player Sidebar */
-    .course-sidebar { background: var(--bg-surface); border-right: 1px solid var(--border-light); overflow-y: auto; display: flex; flex-direction: column; }
-    .sidebar-course-title { padding: 24px; font-size: 18px; font-weight: 700; border-bottom: 1px solid var(--border-light); color: var(--primary-dark); background: #fdfdfd; }
+    /* SIDEBAR STYLES (Fixed Accordion) */
+    .course-sidebar { background: #f8f9fa; border-right: 1px solid var(--border-light); overflow-y: auto; display: flex; flex-direction: column; }
+    .sidebar-course-title { padding: 24px; font-size: 18px; font-weight: 700; border-bottom: 1px solid var(--border-light); color: var(--primary-dark); background: #ffffff; }
 
+    /* Distinct Headers */
     .accordion-header {
-      padding: 16px 24px; background: var(--bg-surface); cursor: pointer;
+      padding: 18px 24px; 
+      background: #ffffff; 
+      cursor: pointer;
       display: flex; justify-content: space-between; align-items: center;
       font-size: 14px; font-weight: 700; color: var(--text-secondary);
-      text-transform: uppercase; border-bottom: 1px solid var(--border-light); transition: background 0.2s;
+      text-transform: uppercase; letter-spacing: 0.5px;
+      border-bottom: 1px solid var(--border-light);
+      border-top: 4px solid #f1f3f4; /* Creates the gap between topics */
+      transition: all 0.2s;
     }
-    .accordion-header:hover { background: var(--bg-body); color: var(--text-primary); }
+    .accordion-header:hover { background: #e8f0fe; color: var(--primary); }
+    .accordion-header.active { background: #e8f0fe; color: var(--primary-dark); border-bottom: 1px solid transparent; }
     .accordion-header::after { content: '▼'; font-size: 10px; transition: transform 0.3s; }
     .accordion-header.active::after { transform: rotate(180deg); }
     
-    .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; background: #fcfcfc;}
-    .accordion-content.open { max-height: 1000px; }
+    .accordion-content { 
+      max-height: 0; overflow: hidden; transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+      background: #ffffff; 
+      border-bottom: 1px solid var(--border-light);
+    }
+    .accordion-content.open { max-height: 2000px; }
 
     /* Video Links */
     .video-link {
       padding: 14px 24px 14px 32px; display: flex; align-items: flex-start; gap: 12px;
       cursor: pointer; color: var(--text-primary); font-size: 14px;
-      border-left: 4px solid transparent; transition: all 0.2s;
-      border-bottom: 1px solid #f0f0f0;
+      border-left: 4px solid transparent; transition: all 0.2s; border-bottom: 1px solid #f8f9fa;
     }
-    .video-link:hover { background: #e8f0fe; color: var(--primary); }
+    .video-link:hover { background: #f1f3f4; }
     .video-link.active { background: #e8f0fe; border-left-color: var(--primary); color: var(--primary-dark); font-weight: 500; }
     .video-status-icon { font-size: 12px; color: var(--text-secondary); margin-top: 3px; }
-    .video-link.active .video-status-icon { color: var(--primary); }
 
-    /* Player Content Area */
+    /* CONTENT AREA */
     .player-content { background: #f4f5f7; overflow-y: auto; padding: 40px; }
-    .video-stage-container { max-width: 1000px; margin: 0 auto; background: var(--bg-surface); border-radius: 16px; padding: 30px; box-shadow: var(--shadow-1); }
+    .video-stage-container { max-width: 1000px; margin: 0 auto; background: var(--bg-surface); border-radius: 16px; padding: 30px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
     
     .video-breadcrumbs { font-size: 14px; color: var(--text-secondary); margin-bottom: 15px; }
     .video-breadcrumbs span { color: var(--primary); font-weight: 500; }
     .current-video-title { font-size: 26px; margin-bottom: 25px; color: var(--text-primary); }
-
-    .video-aspect-ratio { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; background: #000; box-shadow: var(--shadow-2); }
+    .video-aspect-ratio { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; background: #000; }
     .video-aspect-ratio iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-
-    .video-meta-tabs { margin-top: 30px; border-bottom: 1px solid var(--border-light); display: flex; gap: 30px; }
-    .tab-btn { padding-bottom: 15px; cursor: pointer; font-weight: 500; color: var(--text-secondary); border-bottom: 3px solid transparent; transition: 0.3s; }
-    .tab-btn.active { color: var(--primary); border-bottom-color: var(--primary); }
     
     .tab-content { padding: 25px 0; color: var(--text-secondary); line-height: 1.6; }
     .resource-box { margin-top: 20px; padding: 20px; background: #f8f9fa; border-radius: 8px; border: 1px solid var(--border-light); display: flex; align-items: center; justify-content: space-between; }
-    .btn-download { background: var(--primary); color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 500; transition: 0.2s; box-shadow: var(--shadow-1); }
-    .btn-download:hover { background: var(--primary-dark); box-shadow: var(--shadow-2); }
+    .btn-download { background: var(--primary); color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 500; }
 
     .hidden { display: none !important; }
     @media (max-width: 768px) {
@@ -150,9 +142,7 @@
   <nav class="navbar">
     <div class="brand-area">
       <button id="back-btn" class="btn-back" onclick="goHome()">← Dashboard</button>
-      <div class="brand-logo">
-        <span class="brand-icon">⚡</span> Data Engineering Cohort
-      </div>
+      <div class="brand-logo"><span class="brand-icon">⚡</span>Data Engineering Cohort</div>
     </div>
     <div class="user-menu">
       <div id="user-greeting">Do Great Things</div>
@@ -162,7 +152,6 @@
   </nav>
 
   <div class="main-container">
-    
     <div id="dashboard-view">
       <div class="dash-header animate-fadeUp">
         <h1 id="welcome-title">Welcome back!</h1>
@@ -183,7 +172,6 @@
         </div>
       </div>
     </div>
-
   </div>
 
 <script>
@@ -205,9 +193,7 @@
         currentUser = data.users.find(u => u.user_id == userId);
         allModules = data.modules;
         renderDashboard();
-      } catch (e) {
-        console.error("Failed data load", e);
-      }
+      } catch (e) { console.error(e); }
     }
 
     function renderDashboard() {
@@ -219,10 +205,10 @@
         if (!userAccessMap.has(mod.module_id)) return;
 
         let icon = "📊"; let type = "Course";
-        if(mod.module_name.includes("SQL")) { icon = "🗄️"; }
+        if(mod.module_name.includes("SQL")) icon = "🗄️";
         if(mod.module_name.includes("Big Data")) { icon = "🐘"; type = "Learning Path"; }
         if(mod.module_name.includes("Pyspark")) { icon = "⚡"; type = "Specialization"; }
-        if(mod.module_name.includes("Cloud")) { icon = "☁️"; }
+        if(mod.module_name.includes("Cloud")) icon = "☁️";
 
         let totalVideos = mod.has_submodules 
             ? mod.sub_modules.reduce((acc, sub) => acc + sub.videos.length, 0) 
@@ -233,7 +219,6 @@
         card.className = "learning-card animate-fadeUp";
         card.style.animationDelay = `${index * 0.1}s`;
 
-        // Footer removed, clean stats view
         card.innerHTML = `
           <div class="card-body">
             <div class="card-top-meta">
@@ -273,15 +258,24 @@
           const content = document.createElement("div");
           content.className = `accordion-content ${isOpen ? 'open' : ''}`;
 
+          // --- LOGIC: CLOSE OTHERS WHEN OPENING ONE ---
           header.onclick = () => {
-             header.classList.toggle('active');
-             content.classList.toggle('open');
+             const isCurrentlyOpen = content.classList.contains('open');
+             
+             // Close everything
+             document.querySelectorAll('.accordion-header').forEach(h => h.classList.remove('active'));
+             document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('open'));
+
+             // Toggle current
+             if (!isCurrentlyOpen) {
+                 header.classList.add('active');
+                 content.classList.add('open');
+             }
           };
 
           validVideos.forEach(v => {
              const link = document.createElement("div");
              link.className = "video-link";
-             // Changed logic: Just show a standard play icon for all
              link.innerHTML = `<span class="video-status-icon">▶</span> <span>${v.title}</span>`;
              link.onclick = () => {
                  document.querySelectorAll(".video-link").forEach(l => l.classList.remove("active"));
@@ -296,9 +290,10 @@
       }
 
       if (module.has_submodules) {
+        // Open the first module by default
         module.sub_modules.forEach((sub, idx) => createSection(sub.title, sub.videos, idx === 0)); 
       } else if (module.videos) {
-        createSection("Course Modules", module.videos, true);
+        createSection("Course Playlist", module.videos, true);
       } else {
         sidebar.innerHTML += `<div style="padding:24px;">No content available.</div>`;
       }
@@ -318,16 +313,13 @@
         <div class="video-aspect-ratio">
            <iframe src="https://drive.google.com/file/d/${video.drive_file_id}/preview" allow="autoplay; fullscreen"></iframe>
         </div>
-        <div class="video-meta-tabs">
-           <div class="tab-btn active">Overview</div>
-        </div>
         <div class="tab-content">
            <h3>About this lesson</h3>
            <p>${video.description || "No description provided for this lesson."}</p>
            
            ${video.resource_id ? `
            <div class="resource-box">
-              <div><strong>Lesson Files</strong><br><span style="font-size:13px">Supporting materials for this exercise.</span></div>
+              <div><strong>Lesson Files</strong><br><span style="font-size:13px">Supporting materials.</span></div>
               <a href="https://drive.google.com/uc?export=download&id=${video.resource_id}" target="_blank" class="btn-download">Download</a>
            </div>` : ''}
         </div>
