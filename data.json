@@ -249,14 +249,16 @@
         {
           "title": "JSON Handling",
           "videos": [
-            { "video_id": 13, "title": "Parsing Single Dict Json ", "description": "Handling Single JSON", "drive_file_id": "1S6C8SHQvMuJOQ4oS_9mlVBD3HmhsYPn5","resource_id":"13m-AkGqcm3vRWFvdPgDciEzWi5PKNDyT"},
-            { "video_id": 14, "title": "Parsing Array of JSON", "description": "Handling multi-line JSON with Explode and Explode Outer", "drive_file_id": "1k-McmA2k0P0jdlztR_l9Cf2uve8ZIaSo","resource_id":"13m-AkGqcm3vRWFvdPgDciEzWi5PKNDyT"}
+            { "video_id": 13, "title": "13. Parsing Single Dict Json ", "description": "Handling Single JSON", "drive_file_id": "1S6C8SHQvMuJOQ4oS_9mlVBD3HmhsYPn5","resource_id":"13m-AkGqcm3vRWFvdPgDciEzWi5PKNDyT"},
+            { "video_id": 14, "title": "14. Parsing Array of JSON", "description": "Handling multi-line JSON with Explode and Explode Outer", "drive_file_id": "1k-McmA2k0P0jdlztR_l9Cf2uve8ZIaSo","resource_id":"13m-AkGqcm3vRWFvdPgDciEzWi5PKNDyT"}
           ]
         },
         {
           "title": "Dataframe Write Operations",
           "videos": [
-            { "video_id": 15, "title": "Apache Spark Write API - Part 1", "description": "How to write the dataframe as file, as table and managed vs external table differences.", "drive_file_id": "175T4ctuinVFj-xok3upnqnlNiNfCZK3Z","resource_id":"1eCZ0z1RdSDwxUP48PSG9oyjwGXwyAxOQ"}
+            { "video_id": 15, "title": "15. Apache Spark Write API - Part 1", "description": "How to write the dataframe as file, as table and managed vs external table differences.", "drive_file_id": "175T4ctuinVFj-xok3upnqnlNiNfCZK3Z","resource_id":"1eCZ0z1RdSDwxUP48PSG9oyjwGXwyAxOQ"},
+            { "video_id": 16, "title": "16. Data Cardinality", "description": "Understand What is Data Cardinality ?", "drive_file_id": "1IU_HDXPuw3sVDKbst8PDoB0MDPtvORRa","resource_id":""},
+            { "video_id": 17, "title": "17. Data Partitioning", "description": "Understand What is Data Partitioning ?", "drive_file_id": "1imEWOhGKhuyaT1Nde1rw1l8e7716kDCc","resource_id":""}
           ]
         }
       ]
