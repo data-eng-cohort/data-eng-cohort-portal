@@ -252,6 +252,12 @@
             { "video_id": 13, "title": "Parsing Single Dict Json ", "description": "Handling Single JSON", "drive_file_id": "1S6C8SHQvMuJOQ4oS_9mlVBD3HmhsYPn5","resource_id":"13m-AkGqcm3vRWFvdPgDciEzWi5PKNDyT"},
             { "video_id": 14, "title": "Parsing Array of JSON", "description": "Handling multi-line JSON with Explode and Explode Outer", "drive_file_id": "1k-McmA2k0P0jdlztR_l9Cf2uve8ZIaSo","resource_id":"13m-AkGqcm3vRWFvdPgDciEzWi5PKNDyT"}
           ]
+        },
+        {
+          "title": "Dataframe Write Operations",
+          "videos": [
+            { "video_id": 15, "title": "Apache Spark Write API - Part 1", "description": "How to write the dataframe as file, as table and managed vs external table differences.", "drive_file_id": "175T4ctuinVFj-xok3upnqnlNiNfCZK3Z","resource_id":"1eCZ0z1RdSDwxUP48PSG9oyjwGXwyAxOQ"},
+          ]
         }
       ]
     },
