@@ -256,7 +256,7 @@
         {
           "title": "Dataframe Write Operations",
           "videos": [
-            { "video_id": 15, "title": "Apache Spark Write API - Part 1", "description": "How to write the dataframe as file, as table and managed vs external table differences.", "drive_file_id": "175T4ctuinVFj-xok3upnqnlNiNfCZK3Z","resource_id":"1eCZ0z1RdSDwxUP48PSG9oyjwGXwyAxOQ"},
+            { "video_id": 15, "title": "Apache Spark Write API - Part 1", "description": "How to write the dataframe as file, as table and managed vs external table differences.", "drive_file_id": "175T4ctuinVFj-xok3upnqnlNiNfCZK3Z","resource_id":"1eCZ0z1RdSDwxUP48PSG9oyjwGXwyAxOQ"}
           ]
         }
       ]
