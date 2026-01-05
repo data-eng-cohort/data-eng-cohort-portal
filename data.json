@@ -157,18 +157,6 @@
       ]
     },
     {
-      "user_id": 13,
-      "email": "govindhan.ss@gmail.com",
-      "password": "Govindhan@123",
-      "batch_id": "jan_2026",
-      "name": "Govindhan S",
-      "module_access": [
-        { "module_id": 1, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] },
-        { "module_id": 2, "videos": [1, 2, 3] },
-        { "module_id": 3, "videos": ["*"] }
-      ]
-    },
-    {
       "user_id": 14,
       "email": "Swapna.knbashan@gmail.com",
       "password": "Swapna@123",
@@ -227,40 +215,47 @@
         {
           "title": "Core Concepts",
           "videos": [
-            { "video_id": 1, "title": "1. Apache Spark Architecture", "description": "High Level", "drive_file_id": "1arC8VU_6NSClYzbOjii9DIH2h49q_5rQ" },
-            { "video_id": 2, "title": "2. Apache Spark Architecture in Depth", "description": "Deep Dive", "drive_file_id": "1yXXPc2OdcInVqPQzXd4399WXe3iKPXtX" },
-            { "video_id": 3, "title": "3. Why Spark not Map Reduce?", "description": "Comparison", "drive_file_id": "141vV8HwInP8bg1LVsyUOpkJl7G6QzOY1" },
-            { "video_id": 4, "title": "4. Rack Awareness Algorithm", "description": "Replication internals", "drive_file_id": "1buF_MaOOSGf7ZVu0vyaZ_j6OU9Xd3xln" },
-            { "video_id": 5, "title": "5. What is RDD?", "description": "Resilient Distributed Dataset", "drive_file_id": "1LH9mnPDx4d3Xp_SBK1BT0fzZqV_S2u9k" },
-            { "video_id": 6, "title": "6. What is Lazy Evaluation?", "description": "Transformations and actions", "drive_file_id": "14HKHtPKznVho3BM1VX3bevzD_d7xUzIe" },
-            { "video_id": 7, "title": "7. Narrow vs Wide Transformations", "description": "Difference explained", "drive_file_id": "1cDC_N4pMomD9aEgQHsiVpLaSmPLNByKt" },
-            { "video_id": 8, "title": "8. Practical - Transformations", "description": "Practical Demonstration", "drive_file_id": "1_L8AWkmSIoSiKAoMWBYFZi5SgJ6nhCfU", "resource_id": "13niqdKEvdcchj1sNxwaNTl-9eSL1vY6G" }
+            { "video_id": 1, "title": "Apache Spark Architecture", "description": "High Level", "drive_file_id": "1arC8VU_6NSClYzbOjii9DIH2h49q_5rQ" },
+            { "video_id": 2, "title": "Apache Spark Architecture in Depth", "description": "Deep Dive", "drive_file_id": "1yXXPc2OdcInVqPQzXd4399WXe3iKPXtX" },
+            { "video_id": 3, "title": "Why Spark not Map Reduce?", "description": "Comparison", "drive_file_id": "141vV8HwInP8bg1LVsyUOpkJl7G6QzOY1" },
+            { "video_id": 4, "title": "Rack Awareness Algorithm", "description": "Replication internals", "drive_file_id": "1buF_MaOOSGf7ZVu0vyaZ_j6OU9Xd3xln" },
+            { "video_id": 5, "title": "What is RDD?", "description": "Resilient Distributed Dataset", "drive_file_id": "1LH9mnPDx4d3Xp_SBK1BT0fzZqV_S2u9k" },
+            { "video_id": 6, "title": "What is Lazy Evaluation?", "description": "Transformations and actions", "drive_file_id": "14HKHtPKznVho3BM1VX3bevzD_d7xUzIe" },
+            { "video_id": 7, "title": "Narrow vs Wide Transformations", "description": "Difference explained", "drive_file_id": "1cDC_N4pMomD9aEgQHsiVpLaSmPLNByKt" },
+            { "video_id": 8, "title": "Practical - Transformations", "description": "Practical Demonstration", "drive_file_id": "1_L8AWkmSIoSiKAoMWBYFZi5SgJ6nhCfU", "resource_id": "13niqdKEvdcchj1sNxwaNTl-9eSL1vY6G" }
           ]
         },
         {
           "title": "CSV Handling",
           "videos": [
-            { "video_id": 9, "title": "9. Practical - Read a file", "description": "Reading CSV in Spark", "drive_file_id": "1XV5QjHU3mZnirbncJwLnpndwkeQ_2pUg", "resource_id": "1OpUKwmAC7FRQxFNaLkdD68_A9j9Kjus8" },
-            { "video_id": 10, "title": "10. Practical - File Read Modes", "description": "File modes explained", "drive_file_id": "18uAyW6aWYWERi0UdR1rPpIAeVvG-upx3", "resource_id": "15vYF0xiQmqT3cl3-EPY70_WJHO1cXTyS" },
-            { "video_id": 11, "title": "11. CSV File Read Options", "description": "Spark Read API options", "drive_file_id": "1ExoWTBIYKGowRBUmuAsA4me9bdSFlhq6" },
-            { "video_id": 12, "title": "12. Reading Multiple CSV Files", "description": "Read Multiple CSV File starting with same name and filtering the data based on regex pattern", "drive_file_id": "18dGlZdic8YtTll-By7Qqw5dLtb8ac4ro" }
+            { "video_id": 9, "title": "Practical - Read a file", "description": "Reading CSV in Spark", "drive_file_id": "1XV5QjHU3mZnirbncJwLnpndwkeQ_2pUg", "resource_id": "1OpUKwmAC7FRQxFNaLkdD68_A9j9Kjus8" },
+            { "video_id": 10, "title": "Practical - File Read Modes", "description": "File modes explained", "drive_file_id": "18uAyW6aWYWERi0UdR1rPpIAeVvG-upx3", "resource_id": "15vYF0xiQmqT3cl3-EPY70_WJHO1cXTyS" },
+            { "video_id": 11, "title": "CSV File Read Options", "description": "Spark Read API options", "drive_file_id": "1ExoWTBIYKGowRBUmuAsA4me9bdSFlhq6" },
+            { "video_id": 12, "title": "Reading Multiple CSV Files", "description": "Read Multiple CSV File starting with same name and filtering the data based on regex pattern", "drive_file_id": "18dGlZdic8YtTll-By7Qqw5dLtb8ac4ro" }
           ]
         },
         {
           "title": "JSON Handling",
           "videos": [
-            { "video_id": 13, "title": "13. Parsing Single Dict Json ", "description": "Handling Single JSON", "drive_file_id": "1S6C8SHQvMuJOQ4oS_9mlVBD3HmhsYPn5","resource_id":"13m-AkGqcm3vRWFvdPgDciEzWi5PKNDyT"},
-            { "video_id": 14, "title": "14. Parsing Array of JSON", "description": "Handling multi-line JSON with Explode and Explode Outer", "drive_file_id": "1k-McmA2k0P0jdlztR_l9Cf2uve8ZIaSo","resource_id":"13m-AkGqcm3vRWFvdPgDciEzWi5PKNDyT"}
+            { "video_id": 13, "title": "Parsing Single Dict Json ", "description": "Handling Single JSON", "drive_file_id": "1S6C8SHQvMuJOQ4oS_9mlVBD3HmhsYPn5","resource_id":"13m-AkGqcm3vRWFvdPgDciEzWi5PKNDyT"},
+            { "video_id": 14, "title": "Parsing Array of JSON", "description": "Handling multi-line JSON with Explode and Explode Outer", "drive_file_id": "1k-McmA2k0P0jdlztR_l9Cf2uve8ZIaSo","resource_id":"13m-AkGqcm3vRWFvdPgDciEzWi5PKNDyT"}
+          ]
+        },
+        {
+          "title": "Basic Dataframe Operations",
+          "videos": [
+            { "video_id": 15, "title": "Basic Dataframe Operations", "description": "Pratice the basic dataframe operations like filter,isin,take,tail etc..", "drive_file_id": "https://drive.google.com/file/d/1Q2Vh8EUIzxV6B18sEAFtm-WclnJWoZZ5/view?usp=sharing","resource_id":"1NoVjYT2dRhtDRrjZdE-RdzOrbgX7crmv"},
+            { "video_id": 16, "title": "Intermediate Dataframe Operations", "description": "Practice Joins, Union, UnionByAll etc..?", "drive_file_id": "","resource_id":""}
           ]
         },
         {
           "title": "Dataframe Write Operations",
           "videos": [
-            { "video_id": 15, "title": "15. Apache Spark Write API - Part 1", "description": "How to write the dataframe as file, as table and managed vs external table differences.", "drive_file_id": "175T4ctuinVFj-xok3upnqnlNiNfCZK3Z","resource_id":"1eCZ0z1RdSDwxUP48PSG9oyjwGXwyAxOQ"},
-            { "video_id": 16, "title": "16. Data Cardinality", "description": "Understand What is Data Cardinality ?", "drive_file_id": "1IU_HDXPuw3sVDKbst8PDoB0MDPtvORRa","resource_id":""},
-            { "video_id": 17, "title": "17. Data Partitioning", "description": "Understand What is Data Partitioning ?", "drive_file_id": "1imEWOhGKhuyaT1Nde1rw1l8e7716kDCc","resource_id":""},
-            { "video_id": 18, "title": "18. Data Partitioning - Practical", "description": "Practical demonstraction of data partition implementation", "drive_file_id": "1_q8ET2m0VWtbPLMvbUMr7RI4tlGYQYL1","resource_id":"12ns_F1BJNTmXDKio0QYiKolrrBWcDMZv"},
-            { "video_id": 19, "title": "19. Data Bucketing - Practical", "description": "Practical demonstraction of data bucketing implementation", "drive_file_id": "16gMya9UjsyWgIjUto3rwn5m35W5G_3Ew","resource_id":"1TrWASSK6dLpLywfYKWkyzbULVL_A37qU"}
+            { "video_id": 17, "title": "Apache Spark Write API - Part 1", "description": "How to write the dataframe as file, as table and managed vs external table differences.", "drive_file_id": "175T4ctuinVFj-xok3upnqnlNiNfCZK3Z","resource_id":"1NoVjYT2dRhtDRrjZdE-RdzOrbgX7crmv"},
+            { "video_id": 18, "title": "Data Cardinality", "description": "Understand What is Data Cardinality ?", "drive_file_id": "1IU_HDXPuw3sVDKbst8PDoB0MDPtvORRa","resource_id":""},
+            { "video_id": 19, "title": "Data Partitioning", "description": "Understand What is Data Partitioning ?", "drive_file_id": "1imEWOhGKhuyaT1Nde1rw1l8e7716kDCc","resource_id":""},
+            { "video_id": 20, "title": "Data Partitioning - Practical", "description": "Practical demonstraction of data partition implementation", "drive_file_id": "1_q8ET2m0VWtbPLMvbUMr7RI4tlGYQYL1","resource_id":"12ns_F1BJNTmXDKio0QYiKolrrBWcDMZv"},
+            { "video_id": 21, "title": "Data Bucketing - Practical", "description": "Practical demonstraction of data bucketing implementation", "drive_file_id": "16gMya9UjsyWgIjUto3rwn5m35W5G_3Ew","resource_id":"1TrWASSK6dLpLywfYKWkyzbULVL_A37qU"}
           ]
         }
       ]
