@@ -257,7 +257,17 @@
             { "video_id": 20, "title": "Data Partitioning - Practical", "description": "Practical demonstraction of data partition implementation", "drive_file_id": "1_q8ET2m0VWtbPLMvbUMr7RI4tlGYQYL1","resource_id":"12ns_F1BJNTmXDKio0QYiKolrrBWcDMZv"},
             { "video_id": 21, "title": "Data Bucketing - Practical", "description": "Practical demonstraction of data bucketing implementation", "drive_file_id": "16gMya9UjsyWgIjUto3rwn5m35W5G_3Ew","resource_id":"1TrWASSK6dLpLywfYKWkyzbULVL_A37qU"}
           ]
-        }
+        },
+        {
+          "title": "Data Engineering Terminologies",
+          "videos": [
+            { "video_id": 22, "title": "What is ACID Properties ?", "description": "What is Atomicity,Consistency,Isolation,Durability", "drive_file_id": "1V6zKci8-cf18ilYFHJKEZ6iw_HDiq5HX","resource_id":""},
+            { "video_id": 23, "title": "ETL vs ELT ?", "description": "Understand the difference between ETL and ELT", "drive_file_id": "1oG20kyNdkoolMUpD6k3ZtHkvWRyrKIYx","resource_id":""},
+            { "video_id": 24, "title": "Data Ingestion Pattern - Full Load", "description": "Understand What is Full Load Ingestion Pattern", "drive_file_id": "1ebsoBww8addXhi7H5_Qe_bEaRZGNudN6","resource_id":""},
+            { "video_id": 25, "title": "Data Ingestion Pattern - Incremental Load - CDC", "description": "Understand What is Incremental Load Ingestion Pattern - Change Data Capture", "drive_file_id": "1ockEcEyRguuv0O0EUD3CyAR7845cb7yq","resource_id":""},
+            { "video_id": 25, "title": "Data Ingestion Pattern - Incremental Load - Watermarking", "description": "Understand What is Incremental Load Ingestion Pattern - Watermarking", "drive_file_id": "1cjP88fcAHRoNfvEecPg8_FKSDYgjucGY","resource_id":""}
+        ]  
+      }
       ]
     },
     {
