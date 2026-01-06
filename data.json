@@ -242,7 +242,7 @@
           ]
         },
         {
-          "title": "Basic Dataframe Operations",
+          "title": "Dataframe Operations",
           "videos": [
             { "video_id": 15, "title": "Basic Dataframe Operations", "description": "Pratice the basic dataframe operations like filter,isin,take,tail etc..", "drive_file_id": "1Q2Vh8EUIzxV6B18sEAFtm-WclnJWoZZ5","resource_id":"1NoVjYT2dRhtDRrjZdE-RdzOrbgX7crmv"},
             { "video_id": 16, "title": "Intermediate Dataframe Operations", "description": "Practice Joins, Union, UnionByAll etc..?", "drive_file_id": "","resource_id":""}
