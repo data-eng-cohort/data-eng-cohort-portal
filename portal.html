@@ -1,349 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data Engineering Cohort</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #1a73e8;
-      --primary-dark: #1557b0;
-      --accent: #34a853;
-      --bg-body: #f8f9fa;
-      --bg-surface: #ffffff;
-      --text-primary: #202124;
-      --text-secondary: #5f6368;
-      --border-light: #dadce0;
-      --sidebar-width: 320px;
-      --nav-height: 64px;
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
-    body { background-color: var(--bg-body); color: var(--text-primary); height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
-
-    /* --- ANIMATIONS --- */
-    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-    .animate-fadeUp { animation: fadeUp 0.4s cubic-bezier(0.4, 0.0, 0.2, 1) forwards; }
-
-    /* --- NAVBAR --- */
-    .navbar {
-      height: var(--nav-height); background: var(--bg-surface); border-bottom: 1px solid var(--border-light);
-      display: flex; align-items: center; justify-content: space-between; padding: 0 30px; flex-shrink: 0; z-index: 50;
-    }
-    .brand-area { display: flex; align-items: center; gap: 20px; }
-    .brand-logo { font-weight: 700; font-size: 20px; color: var(--text-primary); display: flex; align-items: center; gap: 8px; }
-    .brand-icon { color: var(--primary); font-size: 24px; }
-    
-    .btn-back {
-      background: transparent; border: 1px solid var(--border-light); color: var(--text-secondary);
-      padding: 8px 16px; border-radius: 4px; cursor: pointer; font-weight: 500; display: none; transition: all 0.2s;
-    }
-    .btn-back:hover { background: var(--bg-body); color: var(--text-primary); border-color: var(--text-secondary); }
-
-    .user-menu { display: flex; align-items: center; gap: 20px; font-size: 14px; color: var(--text-secondary); }
-    .user-avatar { width: 32px; height: 32px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; }
-    .btn-logout { color: var(--text-secondary); text-decoration: none; font-weight: 500; transition: 0.2s; }
-    .btn-logout:hover { color: var(--primary); }
-
-    /* --- MAIN LAYOUT --- */
-    .main-container { flex: 1; position: relative; overflow: hidden; }
-
-    /* ====== DASHBOARD VIEW ====== */
-    #dashboard-view { padding: 40px; height: 100%; overflow-y: auto; }
-    .dash-header { max-width: 1200px; margin: 0 auto 40px auto; }
-    .dash-header h1 { font-size: 32px; font-weight: 400; color: var(--text-primary); }
-    .dash-header p { color: var(--text-secondary); margin-top: 8px; font-size: 16px; }
-
-    .module-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; padding-bottom: 60px;}
-
-    .learning-card {
-      background: var(--bg-surface); border-radius: 12px; overflow: hidden;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12); transition: all 0.3s;
-      cursor: pointer; display: flex; flex-direction: column;
-      border: 1px solid transparent; height: 220px;
-    }
-    .learning-card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.15); transform: translateY(-5px); border-color: var(--primary); }
-
-    .card-body { padding: 30px; flex: 1; display: flex; flex-direction: column; }
-    .card-top-meta { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
-    .module-icon { width: 50px; height: 50px; background: #e8f0fe; color: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; }
-    .module-type-badge { font-size: 11px; text-transform: uppercase; font-weight: 700; color: var(--text-secondary); background: var(--bg-body); padding: 6px 12px; border-radius: 20px; }
-    .learning-card h3 { font-size: 22px; margin-bottom: auto; color: var(--text-primary); }
-    .module-stats { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--bg-body); color: var(--text-secondary); font-size: 14px; display: flex; gap: 15px; }
-
-    /* ====== PLAYER VIEW ====== */
-    #player-view { display: none; height: 100%; }
-    .player-layout { display: grid; grid-template-columns: var(--sidebar-width) 1fr; height: 100%; }
-
-    /* SIDEBAR STYLES (Fixed Accordion) */
-    .course-sidebar { background: #f8f9fa; border-right: 1px solid var(--border-light); overflow-y: auto; display: flex; flex-direction: column; }
-    .sidebar-course-title { padding: 24px; font-size: 18px; font-weight: 700; border-bottom: 1px solid var(--border-light); color: var(--primary-dark); background: #ffffff; }
-
-    /* Distinct Headers */
-    .accordion-header {
-      padding: 18px 24px; 
-      background: #ffffff; 
-      cursor: pointer;
-      display: flex; justify-content: space-between; align-items: center;
-      font-size: 14px; font-weight: 700; color: var(--text-secondary);
-      text-transform: uppercase; letter-spacing: 0.5px;
-      border-bottom: 1px solid var(--border-light);
-      border-top: 4px solid #f1f3f4; /* Creates the gap between topics */
-      transition: all 0.2s;
-    }
-    .accordion-header:hover { background: #e8f0fe; color: var(--primary); }
-    .accordion-header.active { background: #e8f0fe; color: var(--primary-dark); border-bottom: 1px solid transparent; }
-    .accordion-header::after { content: '▼'; font-size: 10px; transition: transform 0.3s; }
-    .accordion-header.active::after { transform: rotate(180deg); }
-    
-    .accordion-content { 
-      max-height: 0; overflow: hidden; transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
-      background: #ffffff; 
-      border-bottom: 1px solid var(--border-light);
-    }
-    .accordion-content.open { max-height: 2000px; }
-
-    /* Video Links */
-    .video-link {
-      padding: 14px 24px 14px 32px; display: flex; align-items: flex-start; gap: 12px;
-      cursor: pointer; color: var(--text-primary); font-size: 14px;
-      border-left: 4px solid transparent; transition: all 0.2s; border-bottom: 1px solid #f8f9fa;
-    }
-    .video-link:hover { background: #f1f3f4; }
-    .video-link.active { background: #e8f0fe; border-left-color: var(--primary); color: var(--primary-dark); font-weight: 500; }
-    .video-status-icon { font-size: 12px; color: var(--text-secondary); margin-top: 3px; }
-
-    /* CONTENT AREA */
-    .player-content { background: #f4f5f7; overflow-y: auto; padding: 40px; }
-    .video-stage-container { max-width: 1000px; margin: 0 auto; background: var(--bg-surface); border-radius: 16px; padding: 30px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
-    
-    .video-breadcrumbs { font-size: 14px; color: var(--text-secondary); margin-bottom: 15px; }
-    .video-breadcrumbs span { color: var(--primary); font-weight: 500; }
-    .current-video-title { font-size: 26px; margin-bottom: 25px; color: var(--text-primary); }
-    .video-aspect-ratio { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; background: #000; }
-    .video-aspect-ratio iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-    
-    .tab-content { padding: 25px 0; color: var(--text-secondary); line-height: 1.6; }
-    .resource-box { margin-top: 20px; padding: 20px; background: #f8f9fa; border-radius: 8px; border: 1px solid var(--border-light); display: flex; align-items: center; justify-content: space-between; }
-    .btn-download { background: var(--primary); color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 500; }
-
-    .hidden { display: none !important; }
-    @media (max-width: 768px) {
-      .player-layout { grid-template-columns: 1fr; }
-      .course-sidebar { display: none; }
-      .navbar { padding: 0 15px; }
-      .player-content { padding: 20px; }
-    }
-  </style>
-</head>
-<body>
-
-  <nav class="navbar">
-    <div class="brand-area">
-      <button id="back-btn" class="btn-back" onclick="goHome()">← Dashboard</button>
-      <div class="brand-logo"><span class="brand-icon">⚡</span>Data Engineering Cohort</div>
-    </div>
-    <div class="user-menu">
-      <div id="user-greeting">Do Great Things</div>
-      <div class="user-avatar" id="user-initial">U</div>
-      <a href="#" class="btn-logout" onclick="logout()">Logout</a>
-    </div>
-  </nav>
-
-  <div class="main-container">
-    <div id="dashboard-view">
-      <div class="dash-header animate-fadeUp">
-        <h1 id="welcome-title">Welcome back!</h1>
-        <p>Pick up where you left off or start a new path.</p>
-      </div>
-      <div id="module-grid" class="module-grid"></div>
-    </div>
-
-    <div id="player-view">
-      <div class="player-layout">
-        <div class="course-sidebar" id="sidebar-content"></div>
-        <div class="player-content">
-          <div class="video-stage-container animate-fadeUp" id="video-stage">
-             <div style="text-align:center; padding: 60px; color: var(--text-secondary);">
-               <h2>Select a lesson from the sidebar to begin.</h2>
-             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<script>
-    let currentUser = null;
-    let allModules = [];
-
-    async function init() {
-      const userId = localStorage.getItem("user_id");
-      const userName = localStorage.getItem("user_name");
-      if (!userId) return window.location.href = "index.html";
-
-      document.getElementById("user-greeting").innerText = `Do Great Things, ${userName.split(" ")[0]}`;
-      document.getElementById("user-initial").innerText = userName.charAt(0);
-      document.getElementById("welcome-title").innerText = `Welcome back, ${userName}!`;
-
-      try {
-        const res = await fetch("data.json");
-        const data = await res.json();
-        currentUser = data.users.find(u => u.user_id == userId);
-        allModules = data.modules;
-        renderDashboard();
-      } catch (e) { console.error(e); }
-    }
-
-    function renderDashboard() {
-      const grid = document.getElementById("module-grid");
-      grid.innerHTML = "";
-      const userAccessMap = new Map(currentUser.module_access.map(m => [m.module_id, m]));
-
-      allModules.forEach((mod, index) => {
-        if (!userAccessMap.has(mod.module_id)) return;
-
-        let icon = "📊"; let type = "Course";
-        if(mod.module_name.includes("SQL")) icon = "🗄️";
-        if(mod.module_name.includes("Big Data")) { icon = "🐘"; type = "Learning Path"; }
-        if(mod.module_name.includes("Pyspark")) { icon = "⚡"; type = "Specialization"; }
-        if(mod.module_name.includes("Cloud")) icon = "☁️";
-
-        let totalVideos = mod.has_submodules 
-            ? mod.sub_modules.reduce((acc, sub) => acc + sub.videos.length, 0) 
-            : (mod.videos ? mod.videos.length : 0);
-        let totalTopics = mod.has_submodules ? mod.sub_modules.length : 1;
-
-        const card = document.createElement("div");
-        card.className = "learning-card animate-fadeUp";
-        card.style.animationDelay = `${index * 0.1}s`;
-
-        card.innerHTML = `
-          <div class="card-body">
-            <div class="card-top-meta">
-               <div class="module-icon">${icon}</div>
-               <span class="module-type-badge">${type}</span>
-            </div>
-            <h3>${mod.module_name}</h3>
-            <div class="module-stats">
-               <div class="stat-item"><span>📚</span> ${totalTopics} Topics</div>
-               <div class="stat-item"><span>▶️</span> ${totalVideos} Lessons</div>
-            </div>
-          </div>
-        `;
-        card.onclick = () => openPlayer(mod, userAccessMap.get(mod.module_id));
-        grid.appendChild(card);
-      });
-    }
-
-    function openPlayer(module, accessRight) {
-      document.getElementById("dashboard-view").classList.add("hidden");
-      document.getElementById("player-view").style.display = "block";
-      document.getElementById("back-btn").style.display = "block";
-      
-      const sidebar = document.getElementById("sidebar-content");
-      sidebar.innerHTML = `<div class="sidebar-course-title">${module.module_name}</div>`;
-
-      const hasAccess = (vidId) => accessRight.videos.includes("*") || accessRight.videos.includes(vidId);
-
-      const createSection = (title, videos, isOpen = false) => {
-          const validVideos = videos.filter(v => hasAccess(v.video_id));
-          if (validVideos.length === 0) return;
-
-          const header = document.createElement("div");
-          header.className = `accordion-header ${isOpen ? 'active' : ''}`;
-          header.innerText = title;
-          
-          const content = document.createElement("div");
-          content.className = `accordion-content ${isOpen ? 'open' : ''}`;
-
-          // --- LOGIC: CLOSE OTHERS WHEN OPENING ONE ---
-          header.onclick = () => {
-             const isCurrentlyOpen = content.classList.contains('open');
-             
-             // Close everything
-             document.querySelectorAll('.accordion-header').forEach(h => h.classList.remove('active'));
-             document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('open'));
-
-             // Toggle current
-             if (!isCurrentlyOpen) {
-                 header.classList.add('active');
-                 content.classList.add('open');
-             }
-          };
-
-          validVideos.forEach(v => {
-             const link = document.createElement("div");
-             link.className = "video-link";
-             link.innerHTML = `<span class="video-status-icon">▶</span> <span>${v.title}</span>`;
-             link.onclick = () => {
-                 document.querySelectorAll(".video-link").forEach(l => l.classList.remove("active"));
-                 link.classList.add("active");
-                 playVideo(v, module.module_name, title);
-             };
-             content.appendChild(link);
-          });
-          
-          sidebar.appendChild(header);
-          sidebar.appendChild(content);
-      }
-
-      if (module.has_submodules) {
-        // Open the first module by default
-        module.sub_modules.forEach((sub, idx) => createSection(sub.title, sub.videos, idx === 0)); 
-      } else if (module.videos) {
-        createSection("Course Playlist", module.videos, true);
-      } else {
-        sidebar.innerHTML += `<div style="padding:24px;">No content available.</div>`;
-      }
-    }
-
-    function playVideo(video, courseTitle, sectionTitle) {
-      const stage = document.getElementById("video-stage");
-      
-      if (!video.drive_file_id) {
-         stage.innerHTML = `<div style="text-align:center; padding:40px;"><h2>🚧 Coming Soon</h2><p>This lesson is under development.</p></div>`;
-         return;
-      }
-
-      stage.innerHTML = `
-        <div class="video-breadcrumbs">${courseTitle} > <span>${sectionTitle}</span></div>
-        <h2 class="current-video-title">${video.title}</h2>
-        <div class="video-aspect-ratio">
-           <iframe src="https://drive.google.com/file/d/${video.drive_file_id}/preview" allow="autoplay; fullscreen"></iframe>
-        </div>
-        <div class="tab-content">
-           <h3>About this lesson</h3>
-           <p>${video.description || "No description provided for this lesson."}</p>
-           
-           ${video.resource_id ? `
-           <div class="resource-box">
-              <div><strong>Lesson Files</strong><br><span style="font-size:13px">Supporting materials.</span></div>
-              <a href="https://drive.google.com/uc?export=download&id=${video.resource_id}" target="_blank" class="btn-download">Download</a>
-           </div>` : ''}
-        </div>
-      `;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    function goHome() {
-      document.getElementById("player-view").style.display = "none";
-      document.getElementById("dashboard-view").classList.remove("hidden");
-      document.getElementById("back-btn").style.display = "none";
-      document.getElementById("video-stage").innerHTML = `<div style="text-align:center; padding: 60px; color: var(--text-secondary);"><h2>Select a lesson to begin.</h2></div>`;
-    }
-
-    function logout() { localStorage.clear(); window.location.href = "index.html"; }
-
-    const style = document.createElement('style');
-    style.innerHTML = '.hidden { display: none !important; }';
-    document.head.appendChild(style);
-
-    init();
-</script>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -418,7 +72,7 @@
     .learning-card h3 { font-size: 22px; margin-bottom: auto; color: var(--text-primary); font-weight: 500; }
     .module-stats { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--bg-body); color: var(--text-secondary); font-size: 14px; display: flex; gap: 15px; }
 
-    /* ====== 2. TOPIC GALLERY VIEW (Sub-Modules) ====== */
+    /* ====== 2. TOPIC GALLERY VIEW ====== */
     #topic-gallery-view { display: none; padding: 40px; height: 100%; overflow-y: auto; background: #f8f9fa; }
     .gallery-container { max-width: 1200px; margin: 0 auto; }
     .topic-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding-bottom: 50px; }
@@ -444,7 +98,7 @@
     .topic-card .topic-footer { margin-top: 15px; padding-top: 15px; border-top: 1px dashed var(--border-light); display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--text-secondary); font-weight: 500; }
     .btn-text-link { color: var(--primary); font-weight: 700; text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px; }
 
-    /* ====== 3. LESSON GALLERY VIEW (Videos) ====== */
+    /* ====== 3. LESSON GALLERY VIEW ====== */
     #lesson-gallery-view { display: none; padding: 40px; height: 100%; overflow-y: auto; background: #f8f9fa; }
     .lesson-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; padding-bottom: 50px; }
 
@@ -466,7 +120,7 @@
     .lesson-info h4 { font-size: 15px; color: var(--text-primary); margin-bottom: 8px; font-weight: 500; line-height: 1.4; }
     .lesson-info p { font-size: 12px; color: var(--text-secondary); line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
-    /* ====== VIDEO MODAL (NEW) ====== */
+    /* ====== VIDEO MODAL ====== */
     .modal-overlay {
       position: fixed; top: 0; left: 0; width: 100%; height: 100%;
       background: rgba(0, 0, 0, 0.85); z-index: 1000;
@@ -491,10 +145,22 @@
     .modal-video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
     .modal-video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 
+    /* --- SHIELD HACK --- */
+    /* This invisible div sits over the top-right corner to block the pop-out click */
+    .popout-shield {
+      position: absolute;
+      top: 0; 
+      right: 0;
+      width: 60px; /* Covers the icon area */
+      height: 60px;
+      z-index: 20; /* Sits above iframe */
+      background: transparent; /* Invisible */
+      /* pointer-events: auto; default, but ensuring it catches clicks */
+    }
+
     .modal-footer { padding: 20px; background: white; overflow-y: auto; }
     .modal-desc-title { font-size: 18px; margin-bottom: 10px; font-weight: 500; }
     .modal-desc-text { color: var(--text-secondary); font-size: 14px; line-height: 1.5; margin-bottom: 15px; }
-
 
     .hidden { display: none !important; }
 
@@ -585,7 +251,6 @@
         allModules = data.modules;
         
         document.getElementById("back-btn").onclick = handleBack;
-        // Close modal on escape key
         document.addEventListener('keydown', (e) => { if(e.key === "Escape") closeModal(); });
         
         renderDashboard();
@@ -595,9 +260,8 @@
     /* ================= NAVIGATION LOGIC ================= */
     function navigateTo(viewId) {
         ['dashboard-view', 'topic-gallery-view', 'lesson-gallery-view'].forEach(id => {
-            const el = document.getElementById(id);
-            el.classList.add("hidden");
-            el.style.display = "none";
+            document.getElementById(id).classList.add("hidden");
+            document.getElementById(id).style.display = "none";
         });
 
         const target = document.getElementById(viewId);
@@ -615,7 +279,6 @@
     function handleBack() {
         if (navigationStack.length > 0) {
             const prevState = navigationStack.pop();
-            
             if (prevState.view === "dashboard") {
                 renderDashboard();
             } else if (prevState.view === "topic_gallery") {
@@ -747,15 +410,12 @@
                </div>
             `;
 
-            // CHANGED: Now opens Modal instead of Sidebar Player
-            lessonCard.onclick = () => {
-                openModal(video, module.module_name);
-            };
+            lessonCard.onclick = () => openModal(video, module.module_name);
             grid.appendChild(lessonCard);
         });
     }
 
-    /* ================= MODAL LOGIC ================= */
+    /* ================= MODAL LOGIC (WITH SHIELD) ================= */
     function openModal(video, courseTitle) {
         const modal = document.getElementById("video-modal");
         const container = document.getElementById("modal-iframe-container");
@@ -766,7 +426,11 @@
         document.getElementById("modal-desc").innerText = video.description || "No description available.";
         
         if(video.drive_file_id) {
-           container.innerHTML = `<iframe src="https://drive.google.com/file/d/${video.drive_file_id}/preview" allow="autoplay; fullscreen"></iframe>`;
+           // Inject iframe AND the invisible shield
+           container.innerHTML = `
+              <iframe src="https://drive.google.com/file/d/${video.drive_file_id}/preview" allow="autoplay; fullscreen"></iframe>
+              <div class="popout-shield" title="External navigation is disabled"></div>
+           `;
         } else {
            container.innerHTML = `<div style="display:flex; align-items:center; justify-content:center; height:100%; color:white;">Video not available</div>`;
         }
@@ -783,9 +447,7 @@
     function closeModal() {
         const modal = document.getElementById("video-modal");
         const container = document.getElementById("modal-iframe-container");
-        
         modal.classList.remove("active");
-        // Important: Remove iframe to stop audio/video playback
         setTimeout(() => { container.innerHTML = ""; }, 300);
     }
 
