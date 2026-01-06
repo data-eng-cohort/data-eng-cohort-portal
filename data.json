@@ -265,7 +265,8 @@
             { "video_id": 23, "title": "ETL vs ELT ?", "description": "Understand the difference between ETL and ELT", "drive_file_id": "1oG20kyNdkoolMUpD6k3ZtHkvWRyrKIYx","resource_id":""},
             { "video_id": 24, "title": "Data Ingestion Pattern - Full Load", "description": "Understand What is Full Load Ingestion Pattern", "drive_file_id": "1ebsoBww8addXhi7H5_Qe_bEaRZGNudN6","resource_id":""},
             { "video_id": 25, "title": "Data Ingestion Pattern - Incremental Load - CDC", "description": "Understand What is Incremental Load Ingestion Pattern - Change Data Capture", "drive_file_id": "1ockEcEyRguuv0O0EUD3CyAR7845cb7yq","resource_id":""},
-            { "video_id": 25, "title": "Data Ingestion Pattern - Incremental Load - Watermarking", "description": "Understand What is Incremental Load Ingestion Pattern - Watermarking", "drive_file_id": "1cjP88fcAHRoNfvEecPg8_FKSDYgjucGY","resource_id":""}
+            { "video_id": 26, "title": "Data Ingestion Pattern - Incremental Load - Watermarking", "description": "Understand What is Incremental Load Ingestion Pattern - Watermarking", "drive_file_id": "1cjP88fcAHRoNfvEecPg8_FKSDYgjucGY","resource_id":""},
+            { "video_id": 27, "title": "Data Modelling", "description": "Understand What is Data Modelling - Thoerotically ", "drive_file_id": "1PKdoJJm4CRbpXW9hw-mLZy2aRCMQA4_i","resource_id":""}
         ]  
       }
       ]
