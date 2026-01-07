@@ -271,7 +271,8 @@
             { "video_id": 29, "title": "Use Case - 2 Gen AI Chat Bot", "description": " How to get business insights using Gen AI ?", "drive_file_id": "12E2vye7ilA71pTMXQRhkZsx2hzAeptQx","resource_id":""},
             { "video_id": 30, "title": "Dimensional Modelling - Sales Dashboard", "description": "What is Dimensional Modelling ? and what are its key components ?", "drive_file_id": "19aEe08hE5JzAzxt6b-k5JGdalUN4CWlJ","resource_id":""},
             { "video_id": 31, "title": "Dimensional Modelling - Fact and Dimensional Tables", "description": "What is Dimensional Tables and Fact Tables", "drive_file_id": "1hlxoCApYZWVvrShcgeVGxeHuOMvCtSQ7","resource_id":""},
-            { "video_id": 32, "title": "Dimensional Modelling - Star Schema", "description": "What is Star Schema ?", "drive_file_id": "1gx4nbI1v4mNlK16Xb3aWFUjvX3d5mccn","resource_id":""}
+            { "video_id": 32, "title": "Dimensional Modelling - Star Schema", "description": "What is Star Schema ?", "drive_file_id": "1gx4nbI1v4mNlK16Xb3aWFUjvX3d5mccn","resource_id":""},
+            { "video_id": 33, "title": "Batch Processing", "description": "Understand the concept of batch processing of data", "drive_file_id": "1Wa-k_DI7aENe0P-hrg8Yj1_pzvKSHh-F","resource_id":""}
           ]  
       }
       ]
