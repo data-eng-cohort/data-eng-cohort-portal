@@ -274,7 +274,7 @@
             { "video_id": 32, "title": "Dimensional Modelling - Star Schema", "description": "What is Star Schema ?", "drive_file_id": "1gx4nbI1v4mNlK16Xb3aWFUjvX3d5mccn","resource_id":""},
             { "video_id": 33, "title": "Batch Processing", "description": "Understand the concept of batch processing of data", "drive_file_id": "1Wa-k_DI7aENe0P-hrg8Yj1_pzvKSHh-F","resource_id":""},
             { "video_id": 34, "title": "Stream Processing", "description": "Understand the concept of stream processing of data", "drive_file_id": "1oEgiGpFofoQC-_QzGztdx-WVt7yI0mZX","resource_id":""},
-            { "video_id": 35, "title": "Realistic Joins Used in Data Engineer", "description": "Understand the concept of Left Semi and Left Anti Joins", "drive_file_id": "1SsacxNjig59vnNHWHHZl8Af6tKHYeS_r","resource_id":"1PoBXYZCJuc7IFzFZ2fSJp8XVW3O2v1JM"}
+            { "video_id": 35, "title": "Realistic Joins Used as Data Engineer", "description": "Understand the concept of Left Semi and Left Anti Joins", "drive_file_id": "1SsacxNjig59vnNHWHHZl8Af6tKHYeS_r","resource_id":"1PoBXYZCJuc7IFzFZ2fSJp8XVW3O2v1JM"}
           ]  
       }
       ]
