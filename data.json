@@ -306,6 +306,7 @@
         {
           "title": "Azure Databricks",
           "videos": [
+            { "video_id": 1, "title": "Databricks Architecture", "description": "Understand the components of Databricks, Data Plane and Control Plane.", "drive_file_id": "1mGFsZGZ-U4YnimSB1wfwC3QJxzczc3Jv","resource_id":""}
           ]
         }
       ]
