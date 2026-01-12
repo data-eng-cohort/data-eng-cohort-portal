@@ -305,7 +305,7 @@
         if(mod.module_name.includes("SQL")) icon = "🗄️";
         if(mod.module_name.includes("Big Data")) { icon = "🐘"; type = "Path"; }
         if(mod.module_name.includes("Pyspark")) { icon = "⚡"; type = "Specialization"; }
-        if(mod.module_name.includes("Cloud")) icon = "☁️";
+        if(mod.module_name.includes("Azure Cloud")) {icon = "☁️";type = "Specialization"; }
 
         let totalVideos = mod.has_submodules 
             ? mod.sub_modules.reduce((acc, sub) => acc + sub.videos.length, 0) 
