@@ -310,6 +310,19 @@
           ]
         }
       ]
+    },
+    {
+      "module_id": 5,
+      "module_name": "Project - Chennai Bites Data Intelligence",
+      "has_submodules": true,
+      "sub_modules": [
+        {
+          "title": "Chennai Bites Data Intelligence Platform",
+          "videos": [
+              { "video_id": 1, "title": "What is Chennai Bites ?", "description": "Understand the business requireent.", "drive_file_id": "1vY1lGxci1zLtl-p_JmEMeSzG3Otie0k6","resource_id":""}
+          ]
+        }
+      ] 
     }
   ]
 }
