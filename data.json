@@ -332,7 +332,8 @@
         {
           "title": "Chennai Bites Data Intelligence Platform",
           "videos": [
-              { "video_id": 1, "title": "What is Chennai Bites ?", "description": "Understand the business requirement.", "drive_file_id": "1vY1lGxci1zLtl-p_JmEMeSzG3Otie0k6","resource_id":""}
+              { "video_id": 1, "title": "What is Chennai Bites ?", "description": "Understand the business requirement.", "drive_file_id": "1vY1lGxci1zLtl-p_JmEMeSzG3Otie0k6","resource_id":""},
+              { "video_id": 2, "title": "Chennai Bites Technical Design Document", "description": "Understand the Project Architecture Flow.", "drive_file_id": "1nDyFwj_VOlqRybrBA3LjGqsp4uYjESct","resource_id":""}
           ]
         }
       ] 
