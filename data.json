@@ -3,7 +3,7 @@
     {
       "user_id": 1,
       "email": "sridharsundarrajande@gmail.com",
-      "password": "@1Strongpasswor",
+      "password": "@1Strongpasswo",
       "batch_id": "oct_2025",
       "name": "Sridhar Sundarrajan",
       "module_access": [
@@ -21,7 +21,7 @@
       "batch_id": "oct_2025",
       "name": "Sourabh Joshi",
       "module_access": [
-        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 1, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] },
         { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
         { "module_id": 3, "videos": ["*"] },
         { "module_id": 4, "videos": ["*"] },
@@ -49,7 +49,7 @@
       "batch_id": "oct_2025",
       "name": "Pradeep Selvam",
       "module_access": [
-        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 1, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] },
         { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
         { "module_id": 3, "videos": ["*"] },
         { "module_id": 4, "videos": ["*"] },
@@ -63,7 +63,7 @@
       "batch_id": "oct_2025",
       "name": "Vishnu Priya",
       "module_access": [
-        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 1, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] },
         { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
         { "module_id": 3, "videos": ["*"] },
         { "module_id": 4, "videos": ["*"] },
@@ -77,7 +77,7 @@
       "batch_id": "oct_2025",
       "name": "Deepika Sekar",
       "module_access": [
-        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 1, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] },
         { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
         { "module_id": 3, "videos": ["*"] },
         { "module_id": 4, "videos": ["*"] },
@@ -91,7 +91,7 @@
       "batch_id": "oct_2025",
       "name": "Sindhu Sundararajan",
       "module_access": [
-        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 1, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] },
         { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
         { "module_id": 3, "videos": ["*"] },
         { "module_id": 4, "videos": ["*"] },
@@ -105,7 +105,7 @@
       "batch_id": "oct_2025",
       "name": "Sharan",
       "module_access": [
-        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 1, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] },
         { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
         { "module_id": 3, "videos": ["*"] },
         { "module_id": 4, "videos": ["*"] },
@@ -133,7 +133,7 @@
       "batch_id": "april_2025",
       "name": "Vigneshwaran",
       "module_access": [
-        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 1, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] },
         { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
         { "module_id": 3, "videos": ["*"] },
         { "module_id": 4, "videos": ["*"] },
@@ -147,7 +147,7 @@
       "batch_id": "april_2025",
       "name": "Raghul",
       "module_access": [
-        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 1, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] },
         { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
         { "module_id": 3, "videos": ["*"] },
         { "module_id": 4, "videos": ["*"] },
@@ -161,7 +161,7 @@
       "batch_id": "april_2025",
       "name": "Deva",
       "module_access": [
-        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 1, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] },
         { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
         { "module_id": 3, "videos": ["*"] },
         { "module_id": 4, "videos": ["*"] },
@@ -175,7 +175,7 @@
       "batch_id": "april_2025",
       "name": "Shailaja",
       "module_access": [
-        { "module_id": 1, "videos": [9, 10, 11, 12, 13, 14] },
+        { "module_id": 1, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] },
         { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
         { "module_id": 3, "videos": ["*"] },
         { "module_id": 4, "videos": ["*"] },
@@ -332,8 +332,7 @@
         {
           "title": "Chennai Bites Data Intelligence Platform",
           "videos": [
-              { "video_id": 1, "title": "What is Chennai Bites ?", "description": "Understand the business requirement.", "drive_file_id": "1vY1lGxci1zLtl-p_JmEMeSzG3Otie0k6","resource_id":""},
-              { "video_id": 2, "title": "Chennai Bites Technical Design Document", "description": "Understand the Project Architecture Flow.", "drive_file_id": "1nDyFwj_VOlqRybrBA3LjGqsp4uYjESct","resource_id":""}
+              { "video_id": 1, "title": "What is Chennai Bites ?", "description": "Understand the business requireent.", "drive_file_id": "1vY1lGxci1zLtl-p_JmEMeSzG3Otie0k6","resource_id":""}
           ]
         }
       ] 
