@@ -44,20 +44,6 @@
     },
     {
       "user_id": 4,
-      "email": "pradeepselvam98@gmail.com",
-      "password": "Pradeep@123",
-      "batch_id": "oct_2025",
-      "name": "Pradeep Selvam",
-      "module_access": [
-        { "module_id": 1, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] },
-        { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
-        { "module_id": 3, "videos": ["*"] },
-        { "module_id": 4, "videos": ["*"] },
-        { "module_id": 5, "videos": ["*"] }  
-      ]
-    },
-    {
-      "user_id": 5,
       "email": "vishpriya17@gmail.com",
       "password": "Vishnu@123",
       "batch_id": "oct_2025",
@@ -71,7 +57,7 @@
       ]
     },
     {
-      "user_id": 6,
+      "user_id": 5,
       "email": "dpsekar01@gmail.com",
       "password": "Deepika@123",
       "batch_id": "oct_2025",
@@ -85,7 +71,7 @@
       ]
     },
     {
-      "user_id": 7,
+      "user_id": 6,
       "email": "sindhu.sundararajan27@gmail.com",
       "password": "Sindhu@123",
       "batch_id": "oct_2025",
@@ -99,7 +85,7 @@
       ]
     },
     {
-      "user_id": 8,
+      "user_id": 7,
       "email": "sharanappakanavi7@gmail.com",
       "password": "Sharan@123",
       "batch_id": "oct_2025",
@@ -113,7 +99,7 @@
       ]
     },
     {
-      "user_id": 9,
+      "user_id": 8,
       "email": "gopinath1995gb@gmail.com",
       "password": "Gopidata@123",
       "batch_id": "oct_2025",
@@ -127,7 +113,7 @@
       ]
     },
     {
-      "user_id": 10,
+      "user_id": 9,
       "email": "vigneshwaran.viki@gmail.com",
       "password": "Vignesh@123",
       "batch_id": "april_2025",
@@ -141,7 +127,7 @@
       ]
     },
     {
-      "user_id": 11,
+      "user_id": 10,
       "email": "ragulmanohar939@gmail.com",
       "password": "Ragul@123",
       "batch_id": "april_2025",
@@ -155,7 +141,7 @@
       ]
     },
     {
-      "user_id": 12,
+      "user_id": 11,
       "email": "devramkrish33@gmail.com",
       "password": "Deva@123",
       "batch_id": "april_2025",
@@ -169,7 +155,7 @@
       ]
     },
     {
-      "user_id": 13,
+      "user_id": 12,
       "email": "sailajachelli2812@gmail.com",
       "password": "Shailaja@123",
       "batch_id": "april_2025",
@@ -183,7 +169,7 @@
       ]
     },
     {
-      "user_id": 14,
+      "user_id": 13,
       "email": "Swapna.knbashan@gmail.com",
       "password": "Swapna@123",
       "batch_id": "jan_2026",
