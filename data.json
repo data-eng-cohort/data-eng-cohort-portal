@@ -179,6 +179,18 @@
         { "module_id": 3, "videos": ["*"] },
         { "module_id": 4, "videos": ["*"] }
       ]
+    },
+    {
+      "user_id": 14,
+      "email": "prassy.harish@gmail.com",
+      "password": "Prasanna@123",
+      "batch_id": "jan_2026",
+      "name": "Prasanna K",
+      "module_access": [
+        { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+        { "module_id": 3, "videos": ["*"] },
+        { "module_id": 4, "videos": ["*"] }
+      ]
     }
   ],
   "modules": [
