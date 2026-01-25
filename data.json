@@ -310,8 +310,13 @@
       "has_submodules": true,
       "sub_modules": [
         {
-          "title": "Azure Data Factory",
+          "title": "Incremental Data Loading",
           "videos": [
+            { "video_id": 1, "title": "Incremental Data Loading Step 1", "description": "Creating Audit Log Table in source on-prem sql and configuring last processed date for source table", "drive_file_id": "1BT_bH5-UgKvH3pSLgwfgMCgMhip0D_BU","resource_id":""},
+            { "video_id": 2, "title": "Incremental Data Loading Step 2", "description": "Creating Lookup Activity for fetching last processed date for source table", "drive_file_id": "16tvwCgDhTlXYKsKch4zESmF7jFcCXDQc","resource_id":""},
+            { "video_id": 3, "title": "Incremental Data Loading Step 3", "description": "Creating Copy Activity for fetching records greater than last processed date from source table", "drive_file_id": "1TdWzeNFhb5k2rj5ChrPQSl0AJRBqvfam","resource_id":""}
+            { "video_id": 4, "title": "Incremental Data Loading Step 4", "description": "Creating Lookup Activity for fetching max(order_date) from retail_orders table", "drive_file_id": "1XMm0FKMJ_7Olcomfb9Uq-9v_IcX6B-Nj","resource_id":""},
+            { "video_id": 5, "title": "Incremental Data Loading Step 5", "description": "Use Stored Procedures Activity to update the last modified date of orders_table", "drive_file_id": "12amhr0QsylzHDE7fqlJwfLT5q-yuTZV6","resource_id":""}
           ]
         },
         {
