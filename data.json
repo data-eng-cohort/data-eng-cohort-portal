@@ -181,18 +181,6 @@
       ]
     },
     {
-      "user_id": 13,
-      "email": "Swapna.knbashan@gmail.com",
-      "password": "Swapna@123",
-      "batch_id": "jan_2026",
-      "name": "Swapna K",
-      "module_access": [
-        { "module_id": 2, "videos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
-        { "module_id": 3, "videos": ["*"] },
-        { "module_id": 4, "videos": ["*"] }
-      ]
-    },
-    {
       "user_id": 14,
       "email": "prassy.harish@gmail.com",
       "password": "Harish@1991",
