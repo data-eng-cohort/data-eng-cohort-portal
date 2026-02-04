@@ -361,6 +361,9 @@
               { "video_id": 2, "title": "Explain about your project", "description": "When the interviewer asks you to explain the project..", "drive_file_id": "1R0Txt5gYRgtNp06bU23TOn5A7y-GqcVv","resource_id":""},
               { "video_id": 3, "title": "What kind of pipelines you have built ?", "description": "When the interviewer asks you to explain the pipelines you have built.. say this and say the watermarking or cdc or marge statements based on the question", "drive_file_id": "1gVkakD6-o3i4NieLiH4VOK6TWZokR6QW","resource_id":""},
               { "video_id": 4, "title": "How incremental data pipeline is built ?", "description": "When the interviewer asks you to explain the incremental data loading..", "drive_file_id": "1GKzgzzM63j6iga-jlWZZh3B0UtmZwHW_","resource_id":""}
+              { "video_id": 5, "title": "Challenges Faced in Project", "description": "When the interviewer asks you about the challenges you faced in project", "drive_file_id": "1GtYOOhii7IKSk4OhCdvzVwC2q_bZBlYv","resource_id":""},
+              { "video_id": 5, "title": "Technology Self Rating", "description": "When the interviewer asks you rate yourself for the technologies", "drive_file_id": "1KQ93OOkpJ_Y_5zh8FAUcnzwfRzYuUeEx","resource_id":""},
+              { "video_id": 6, "title": "Narrow Vs Wide Transformations", "description": "When the interviewer asks about narrow vs wide transformations", "drive_file_id": "1mM011BG_yEYoZA7H1dZQmui_9WRHMJQA","resource_id":""}
            ]  
       }
       ] 
