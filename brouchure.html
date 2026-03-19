@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Engineering Cohort · Syllabus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+:root {
+  --bg:        #F0F2F5;
+  --white:     #FFFFFF;
+  --border:    #E4E7EC;
+  --ink:       #111827;
+  --ink2:      #374151;
+  --muted:     #6B7280;
+  --muted2:    #9CA3AF;
+  --nav-h:     60px;
+  --shadow:    0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  height: var(--nav-h);
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center;
+  padding: 0 32px;
+}
+.nav-brand {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 15px; font-weight: 600; color: var(--ink);
+  text-decoration: none;
+}
+
+/* PAGE */
+.page {
+  padding: calc(var(--nav-h) + 40px) 40px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* WELCOME */
+.welcome { margin-bottom: 32px; }
+.welcome h1 { font-size: 26px; font-weight: 700; color: var(--ink); letter-spacing: -0.3px; }
+.welcome p  { font-size: 14px; color: var(--muted); margin-top: 4px; }
+
+/* SECTION LABEL */
+.section-label {
+  font-size: 13px; font-weight: 600; color: var(--ink2);
+  margin-bottom: 14px; margin-top: 36px;
+}
+.section-label:first-of-type { margin-top: 0; }
+
+/* GRIDS */
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+
+/* CARD */
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+
+.card-header {
+  padding: 16px 20px 14px;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.card-header-left { display: flex; align-items: center; gap: 12px; }
+.card-icon {
+  width: 40px; height: 40px; border-radius: 10px;
+  background: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; flex-shrink: 0;
+}
+.card-title { font-size: 14px; font-weight: 600; color: var(--ink); }
+.card-sub   { font-size: 12px; color: var(--muted); margin-top: 1px; }
+.card-badge {
+  font-size: 10px; font-weight: 600; letter-spacing: 0.5px;
+  text-transform: uppercase; padding: 3px 10px; border-radius: 20px;
+  border: 1px solid var(--border); color: var(--muted2); background: var(--white);
+  white-space: nowrap;
+}
+
+.card-list { list-style: none; padding: 12px 20px 14px; }
+.card-list li {
+  font-size: 12.5px; color: var(--ink2);
+  padding: 4px 0 4px 14px;
+  position: relative;
+  border-bottom: 1px solid var(--bg);
+  line-height: 1.45;
+}
+.card-list li:last-child { border-bottom: none; }
+.card-list li::before {
+  content: '›'; position: absolute; left: 0;
+  color: var(--muted2); font-weight: 600; font-size: 14px; line-height: 1.2;
+}
+
+/* span helpers */
+.span-3 { grid-column: span 3; }
+.span-2 { grid-column: span 2; }
+
+/* multi-column list inside a wide card */
+.card-list.cols-3 { columns: 3; column-gap: 28px; }
+.card-list.cols-2 { columns: 2; column-gap: 28px; }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .grid-3 { grid-template-columns: repeat(2,1fr); }
+  .span-3, .span-2 { grid-column: span 2; }
+  .card-list.cols-3 { columns: 2; }
+}
+@media (max-width: 640px) {
+  .page { padding: calc(var(--nav-h) + 24px) 16px 40px; }
+  nav { padding: 0 16px; }
+  .grid-3 { grid-template-columns: 1fr; }
+  .span-3, .span-2 { grid-column: span 1; }
+  .card-list.cols-3, .card-list.cols-2 { columns: 1; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="#"><span>⚡</span> Data Engineering Cohort</a>
+</nav>
+
+<div class="page">
+
+  <div class="welcome">
+    <h1>Course Syllabus</h1>
+    <p>Complete topic breakdown — SQL, Python, Apache Spark, Azure Databricks &amp; Azure Data Factory.</p>
+  </div>
+
+  <!-- SQL -->
+  <div class="section-label">SQL</div>
+  <div class="grid-3">
+    <div class="card span-3">
+      <div class="card-header">
+        <div class="card-header-left">
+          <div class="card-icon">🗃️</div>
+          <div>
+            <div class="card-title">SQL</div>
+            <div class="card-sub">Structured query language — fundamentals to advanced</div>
+          </div>
+        </div>
+        <span class="card-badge">Language</span>
+      </div>
+      <ul class="card-list cols-3">
+        <li>DDL — Data Definition Language</li>
+        <li>DML — Data Manipulation Language</li>
+        <li>Conditional Statements</li>
+        <li>GROUP BY</li>
+        <li>ORDER BY</li>
+        <li>Aggregation Functions</li>
+        <li>Joins</li>
+        <li>Window Functions</li>
+        <li>Sub Queries</li>
+        <li>CTE — Common Table Expressions</li>
+        <li>Interview Problem Patterns</li>
+        <li>Indexing — Theory</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PYTHON -->
+  <div class="section-label">Python</div>
+  <div class="grid-3">
+    <div class="card span-3">
+      <div class="card-header">
+        <div class="card-header-left">
+          <div class="card-icon">🐍</div>
+          <div>
+            <div class="card-title">Python</div>
+            <div class="card-sub">Core programming fundamentals</div>
+          </div>
+        </div>
+        <span class="card-badge">Language</span>
+      </div>
+      <ul class="card-list cols-3">
+        <li>Data Types</li>
+        <li>Loops</li>
+        <li>Functions</li>
+        <li>OOPS — Object Oriented Programming</li>
+        <li>Data Structures</li>
+        <li>File Management</li>
+        <li>Exception Handling</li>
+        <li>Threading</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- APACHE SPARK -->
+  <div class="section-label">Apache Spark</div>
+  <div class="grid-3">
+
+    <!-- Architecture -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-header-left">
+          <div class="card-icon">⚙️</div>
+          <div>
+            <div class="card-title">Spark Architecture</div>
+            <div class="card-sub">Internals &amp; execution model</div>
+          </div>
+        </div>
+        <span class="card-badge">Core</span>
+      </div>
+      <ul class="card-list">
+        <li>Spark Architecture</li>
+        <li>Internals of Job Submission</li>
+        <li>Driver Node Roles</li>
+        <li>Worker Node Roles</li>
+        <li>DAG Internals</li>
+        <li>Catalyst Optimiser</li>
+        <li>Job → Stages → Tasks</li>
+        <li>Narrow vs Wide Transformations</li>
+        <li>Data Shuffling</li>
+        <li>DataFrames vs Datasets vs RDD</li>
+      </ul>
+    </div>
+
+    <!-- Read API -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-header-left">
+          <div class="card-icon">📥</div>
+          <div>
+            <div class="card-title">Data Read API</div>
+            <div class="card-sub">Sources, formats &amp; schema</div>
+          </div>
+        </div>
+        <span class="card-badge">I/O</span>
+      </div>
+      <ul class="card-list">
+        <li>Spark Read API with Various Option Parameters</li>
+        <li>Schema Inference</li>
+        <li>Manual Schema — String</li>
+        <li>Manual Schema — Struct</li>
+        <li>File Formats — Complex JSON</li>
+        <li>File Formats — CSV, TSV, PSV</li>
+        <li>File Formats — ORC, Parquet, Delta</li>
+        <li>REST API Read</li>
+        <li>Read from Kafka Data Producer</li>
+        <li>Read Compressed Data</li>
+      </ul>
+    </div>
+
+    <!-- Write API -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-header-left">
+          <div class="card-icon">📤</div>
+          <div>
+            <div class="card-title">Data Write API</div>
+            <div class="card-sub">Output &amp; write strategies</div>
+          </div>
+        </div>
+        <span class="card-badge">I/O</span>
+      </div>
+      <ul class="card-list">
+        <li>Write as File — CSV, JSON, Parquet</li>
+        <li>Write as Managed Table</li>
+        <li>Write as External Table</li>
+        <li>Write with PartitionBy</li>
+        <li>Write with BucketBy</li>
+        <li>Write with Custom Partition Count</li>
+        <li>Write in Compressed Format</li>
+      </ul>
+    </div>
+
+    <!-- Transformations — full width -->
+    <div class="card span-3">
+      <div class="card-header">
+        <div class="card-header-left">
+          <div class="card-icon">🔀</div>
+          <div>
+            <div class="card-title">Transformations</div>
+            <div class="card-sub">Column ops, complex types, joins &amp; aggregations</div>
+          </div>
+        </div>
+        <span class="card-badge">Transform</span>
+      </div>
+      <ul class="card-list cols-3">
+        <li>Column Manipulations — Add</li>
+        <li>Column Manipulations — Rename</li>
+        <li>Column Manipulations — Drop</li>
+        <li>Column Manipulations — Merge</li>
+        <li>String Manipulations</li>
+        <li>Deriving Calculated Values</li>
+        <li>Conditional Values — Case Statements</li>
+        <li>Handling Arrays in a Column</li>
+        <li>Handling Struct Columns</li>
+        <li>Handling Complex JSON</li>
+        <li>Filter Operations — filter API</li>
+        <li>Filter Operations — where API</li>
+        <li>Null Handling — Drop</li>
+        <li>Null Handling — Replace</li>
+        <li>Column Reversing</li>
+        <li>Type Casting</li>
+        <li>Joins — Inner</li>
+        <li>Joins — Outer</li>
+        <li>Joins — Anti</li>
+        <li>Joins — Semi</li>
+        <li>Window Functions</li>
+        <li>GroupBy Aggregations</li>
+      </ul>
+    </div>
+
+    <!-- Actions -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-header-left">
+          <div class="card-icon">▶️</div>
+          <div>
+            <div class="card-title">Actions</div>
+            <div class="card-sub">Triggers execution</div>
+          </div>
+        </div>
+        <span class="card-badge">Action</span>
+      </div>
+      <ul class="card-list">
+        <li>Count Operation</li>
+        <li>Collect Operation</li>
+        <li>Grouping</li>
+        <li>Show</li>
+      </ul>
+    </div>
+
+    <!-- Performance Tuning -->
+    <div class="card span-2">
+      <div class="card-header">
+        <div class="card-header-left">
+          <div class="card-icon">⚡</div>
+          <div>
+            <div class="card-title">Performance Tuning</div>
+            <div class="card-sub">Optimization &amp; execution analysis</div>
+          </div>
+        </div>
+        <span class="card-badge">Tuning</span>
+      </div>
+      <ul class="card-list cols-2">
+        <li>Caching</li>
+        <li>Persist</li>
+        <li>Broadcast Join Optimisation</li>
+        <li>SMB Join Optimisation</li>
+        <li>SHJ Join Optimisation</li>
+        <li>Manual Data Skew Handling</li>
+        <li>Repartition</li>
+        <li>Coalesce</li>
+        <li>Predicate Pushdown</li>
+        <li>Column Pruning</li>
+        <li>Select Required Columns</li>
+        <li>Why UDF is Not Recommended</li>
+        <li>AQE — Adaptive Query Execution</li>
+        <li>Spark Execution Plan Analysis</li>
+        <li>Spark UI Walkthrough</li>
+        <li>Bucketing In Depth &amp; its Usages</li>
+        <li>Partitioning In Depth with Parquet</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- AZURE DATABRICKS -->
+  <div class="section-label">Azure Databricks</div>
+  <div class="grid-3">
+
+    <!-- Platform -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-header-left">
+          <div class="card-icon">◈</div>
+          <div>
+            <div class="card-title">Platform &amp; Architecture</div>
+            <div class="card-sub">Workspace &amp; infrastructure</div>
+          </div>
+        </div>
+        <span class="card-badge">Platform</span>
+      </div>
+      <ul class="card-list">
+        <li>Databricks Architecture</li>
+        <li>Control Plane</li>
+        <li>Data Plane</li>
+        <li>Production Grade Databricks Workspace Setup</li>
+        <li>Workflow Creation</li>
+        <li>Alerts Management &amp; Monitoring</li>
+      </ul>
+    </div>
+
+    <!-- Unity Catalog -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-header-left">
+          <div class="card-icon">📋</div>
+          <div>
+            <div class="card-title">Unity Catalog</div>
+            <div class="card-sub">Governance framework</div>
+          </div>
+        </div>
+        <span class="card-badge">Governance</span>
+      </div>
+      <ul class="card-list">
+        <li>Unity Catalog Governance Framework</li>
+        <li>Schemas</li>
+        <li>Tables</li>
+        <li>Volumes</li>
+        <li>Views</li>
+        <li>Functions</li>
+      </ul>
+    </div>
+
+    <!-- Delta Table -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-header-left">
+          <div class="card-icon">Δ</div>
+          <div>
+            <div class="card-title">Delta Table</div>
+            <div class="card-sub">Internals &amp; metadata</div>
+          </div>
+        </div>
+        <span class="card-badge">Delta</span>
+      </div>
+      <ul class="card-list">
+        <li>Delta Table / File overview</li>
+        <li>Transactional Log Metadata Analysis</li>
+        <li>Internals of Delta Table</li>
+        <li>Delta Table Properties</li>
+        <li>Vacuum</li>
+        <li>Time Travel in Data</li>
+        <li>Optimize</li>
+        <li>Z Order By</li>
+        <li>Deletion Vector</li>
+        <li>Liquid Clustering</li>
+      </ul>
+    </div>
+
+    <!-- Advanced Features — full width -->
+    <div class="card span-3">
+      <div class="card-header">
+        <div class="card-header-left">
+          <div class="card-icon">🔧</div>
+          <div>
+            <div class="card-title">Advanced Features</div>
+            <div class="card-sub">Acceleration, CDC, pipelines, streaming &amp; DevOps</div>
+          </div>
+        </div>
+        <span class="card-badge">Advanced</span>
+      </div>
+      <ul class="card-list cols-3">
+        <li>Photon Acceleration</li>
+        <li>CDC — Change Data Capture</li>
+        <li>Merge Statements</li>
+        <li>Spark Declarative Pipelines</li>
+        <li>Auto Loader</li>
+        <li>Structured Streaming</li>
+        <li>Databricks Asset Bundle — DevOps</li>
+        <li>Genie</li>
+        <li>AI Playground</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- AZURE DATA FACTORY -->
+  <div class="section-label">Azure Data Factory</div>
+  <div class="grid-3">
+
+    <!-- Runtime & Components -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-header-left">
+          <div class="card-icon">🔌</div>
+          <div>
+            <div class="card-title">Runtime &amp; Components</div>
+            <div class="card-sub">Connectivity &amp; pipeline building blocks</div>
+          </div>
+        </div>
+        <span class="card-badge">IR</span>
+      </div>
+      <ul class="card-list">
+        <li>Integration Runtimes</li>
+        <li>Data Migration — On-Prem to Azure Cloud</li>
+        <li>Linked Services</li>
+        <li>Datasets</li>
+        <li>Triggers</li>
+      </ul>
+    </div>
+
+    <!-- Activities -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-header-left">
+          <div class="card-icon">⚙️</div>
+          <div>
+            <div class="card-title">Activities</div>
+            <div class="card-sub">All pipeline activities</div>
+          </div>
+        </div>
+        <span class="card-badge">Activities</span>
+      </div>
+      <ul class="card-list">
+        <li>Copy Activity</li>
+        <li>GetMetadata — File and Folder</li>
+        <li>LookUp Activity</li>
+        <li>ForEach Activity</li>
+        <li>If Condition Activity</li>
+        <li>Switch Activity</li>
+        <li>WaitUntil Activity</li>
+        <li>SetVariable Activity</li>
+        <li>Delete Activity</li>
+      </ul>
+    </div>
+
+    <!-- Integrations -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-header-left">
+          <div class="card-icon">🔗</div>
+          <div>
+            <div class="card-title">Integrations &amp; Scenarios</div>
+            <div class="card-sub">Databricks &amp; industry patterns</div>
+          </div>
+        </div>
+        <span class="card-badge">Integration</span>
+      </div>
+      <ul class="card-list">
+        <li>Databricks Integration</li>
+        <li>Industry-standard Scenarios</li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
