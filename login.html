@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In | Enterprise Learning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1a73e8;
+      --primary-hover: #1557b0;
+      --bg-body: #f0f2f5;
+      --bg-surface: #ffffff;
+      --text-main: #202124;
+      --text-secondary: #5f6368;
+      --border: #dadce0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+    
+    body {
+      background-color: var(--bg-body);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* --- LOGIN CARD --- */
+    .login-card {
+      background: var(--bg-surface);
+      width: 450px;
+      padding: 48px 40px 36px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+      border: 1px solid var(--border);
+      text-align: center;
+    }
+
+    /* BRANDING */
+    .brand-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .brand-icon { color: var(--primary); font-size: 28px; }
+
+    .subtitle {
+      color: var(--text-main);
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    
+    .instruction {
+      color: var(--text-secondary);
+      font-size: 16px;
+      margin-bottom: 40px;
+      line-height: 1.5;
+    }
+
+    /* --- FORM STYLES --- */
+    .input-group {
+      position: relative;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    /* Floating Label Inputs */
+    .input-field {
+      width: 100%;
+      padding: 13px 15px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-size: 16px;
+      color: var(--text-main);
+      outline: none;
+      transition: all 0.2s;
+      background: transparent;
+    }
+
+    .input-field:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(26,115,232,0.2);
+    }
+
+    /* Button */
+    .btn-login {
+      width: 100%;
+      background-color: var(--primary);
+      color: white;
+      font-weight: 500;
+      font-size: 14px;
+      padding: 12px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.2s;
+    }
+    
+    .btn-login:hover { background-color: var(--primary-hover); }
+
+    /* Footer / Help */
+    .footer-links {
+      margin-top: 30px;
+      font-size: 14px;
+    }
+    .footer-links a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* Simple responsiveness */
+    @media (max-width: 480px) {
+      .login-card {
+        width: 100%;
+        height: 100vh;
+        border: none;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-card">
+    <div class="brand-logo">
+      <span class="brand-icon">⚡</span> Data Engineering Cohort
+    </div>
+    
+    <h1 class="subtitle">Sign in</h1>
+    <p class="instruction">Use your Data Engineering Account</p>
+
+    <form onsubmit="login(event)">
+      <div class="input-group">
+        <input type="email" id="email" class="input-field" placeholder="Email or phone" required>
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" class="input-field" placeholder="Password" required>
+      </div>
+
+      <button type="submit" class="btn-login">Login</button>
+    </form>
+  </div>
+  <script src="auth.js"></script>
+</body>
+</html>
